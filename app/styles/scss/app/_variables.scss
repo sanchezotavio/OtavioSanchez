@@ -1,0 +1,41 @@
+/* - - Fontes - - */
+
+$font-primary: 'Arial';
+$font-title:'ADAM-CGPRO',
+'Arial';
+
+/* - - Cores - - */
+
+$color-primary: #f26838;
+$color-secundary: rgb(74, 87, 93);
+$color-font: rgb(30, 30, 30);
+$color-box: #ffffff;
+$color-three: rgba(21, 33, 39, 0.8);
+
+
+/* Máximo de colunas */
+
+$max-col: 12 !default;
+$child: 0.5rem !default;
+
+/* Nomenclatura */
+
+$row: 'o-row' !default;
+$col: 'o-col' !default;
+$off: 'o-off' !default;
+
+/* Width Dispositivos*/
+
+$width-desktop: 1200px;
+$width-tablet: 992px;
+$width-mobile: 778px;
+
+/*Width do container*/
+
+$max-width-container: 1280px;
+$min-width-container: 120px;
+
+/*Background*/
+$color-menu: #f26838;
+$color-servicos: #2a2c31;
+$color-home: #151C23;
