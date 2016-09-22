@@ -15,11 +15,14 @@ var Header = React.createClass({
         return (
 
             <div className="container--header">
-                <div className="o-col-xs-6 align_h_left">
+                <nav className="o-col-xs-5 align_h_left">
+                    <ButtonMenu />
+                </nav>
+                <div className="o-col-xs-2 align_h_center">
                     <Logo href={mainLink} title={name} logo={"<OS>"} />
                 </div>
-                <nav className="o-col-xs-6 align_h_right">
-                    <ButtonMenu />
+                <nav className="o-col-xs-5 align_h_right">
+                    <NavRedesSociais />
                 </nav>
             </div>
  
@@ -58,18 +61,7 @@ var Menu = React.createClass({
                             }) }
                         </ul>
                     </nav>
-                    </div>
-                    <nav className="nav__menu">
-                        <ul className="list">
-                            {redesSociais.map(function (l) {
-                                return <li className="menu__item">
-                                    <a className="menu__link" title={l.title} href={l.href} target="_blank">
-                                        <img src="styles/images/svg/ico.svg" className='menu__image' alt={l.title} />
-                                    </a>
-                                </li>
-                            }) }
-                        </ul>
-                    </nav>
+                    </div>                   
                 </div>
         
         )

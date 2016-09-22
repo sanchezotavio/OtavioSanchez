@@ -16,14 +16,19 @@ var Header = React.createClass({
             "div",
             { className: "container--header" },
             React.createElement(
+                "nav",
+                { className: "o-col-xs-5 align_h_left" },
+                React.createElement(ButtonMenu, null)
+            ),
+            React.createElement(
                 "div",
-                { className: "o-col-xs-6 align_h_left" },
+                { className: "o-col-xs-2 align_h_center" },
                 React.createElement(Logo, { href: mainLink, title: name, logo: "<OS>" })
             ),
             React.createElement(
                 "nav",
-                { className: "o-col-xs-6 align_h_right" },
-                React.createElement(ButtonMenu, null)
+                { className: "o-col-xs-5 align_h_right" },
+                React.createElement(NavRedesSociais, null)
             )
         );
     }
@@ -73,25 +78,6 @@ var Menu = React.createClass({
                             );
                         })
                     )
-                )
-            ),
-            React.createElement(
-                "nav",
-                { className: "nav__menu" },
-                React.createElement(
-                    "ul",
-                    { className: "list" },
-                    redesSociais.map(function (l) {
-                        return React.createElement(
-                            "li",
-                            { className: "menu__item" },
-                            React.createElement(
-                                "a",
-                                { className: "menu__link", title: l.title, href: l.href, target: "_blank" },
-                                React.createElement("img", { src: "styles/images/svg/ico.svg", className: "menu__image", alt: l.title })
-                            )
-                        );
-                    })
                 )
             )
         );
@@ -169,6 +155,18 @@ skrollr.init({
 var menu = true;
 
 $(document).ready(function () {
+
+  $(window).scroll(function () {
+    if (window.pageYOffset > 0) {
+      $(".scroll").addClass('hidden');
+      $(".scroll").css('display','none');
+    }
+    else {
+      $(".scroll").removeClass('hidden');
+      $(".scroll").css('display','block');
+    }
+  });
+
   $('#menu').click(function () {
     if (menu) {
       menu = false;
@@ -179,8 +177,7 @@ $(document).ready(function () {
       $('#menu').removeClass('close').addClass('open');
       $('#menu-container').removeClass('menu-close').addClass('menu-open');
     }
-  }
-  );
+  });
 
   $("#bg").jParticle({
     background: "#151C23",
@@ -205,9 +202,7 @@ $(window).on("load", function () {
   $('#load-item').fadeOut('fast', function () {
     $('.load').animate({ left: '-100%' })
   })
-})
-
-
+});
 
 var ss = TweenMax.to("#servico1", 1.2, { opacity: 1, bottom: 0 });
 
@@ -227,9 +222,20 @@ var sceneServico3 = new ScrollMagic.Scene({ triggerElement: "#servicos #servico2
   .setTween(ss3)
   .addTo(controller);
 
-var topMenu = TweenMax.to(".top__header", 1, { background: "rgba(74, 87, 93, 0.15)"});
+var topMenu = TweenMax.to(".top__header", 0.3, { background: "rgba(255, 255, 255, 1)", borderBottom: "1px solid rgb(74, 87, 93)" });
 
+var topMenuLogo = TweenMax.to(".logo__link", 0.3, { opacity: 1 });
 
-var sceneMenu= new ScrollMagic.Scene({ triggerElement: "#servicos" })
+var sceneMenu = new ScrollMagic.Scene({ triggerElement: "#servicos" })
   .setTween(topMenu)
+  .addTo(controller);
+
+var sceneMenuLogo = new ScrollMagic.Scene({ triggerElement: "#servicos" })
+  .setTween(topMenuLogo)
+  .addTo(controller);
+
+var projeto = TweenMax.to(".projeto", 1.2, { opacity: 1, bottom: 0 });
+
+var sceneProjetos = new ScrollMagic.Scene({ triggerElement: "#projetos" })
+  .setTween(projeto)
   .addTo(controller);

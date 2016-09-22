@@ -16,14 +16,19 @@ var Header = React.createClass({
             "div",
             { className: "container--header" },
             React.createElement(
+                "nav",
+                { className: "o-col-xs-5 align_h_left" },
+                React.createElement(ButtonMenu, null)
+            ),
+            React.createElement(
                 "div",
-                { className: "o-col-xs-6 align_h_left" },
+                { className: "o-col-xs-2 align_h_center" },
                 React.createElement(Logo, { href: mainLink, title: name, logo: "<OS>" })
             ),
             React.createElement(
                 "nav",
-                { className: "o-col-xs-6 align_h_right" },
-                React.createElement(ButtonMenu, null)
+                { className: "o-col-xs-5 align_h_right" },
+                React.createElement(NavRedesSociais, null)
             )
         );
     }
@@ -73,25 +78,6 @@ var Menu = React.createClass({
                             );
                         })
                     )
-                )
-            ),
-            React.createElement(
-                "nav",
-                { className: "nav__menu" },
-                React.createElement(
-                    "ul",
-                    { className: "list" },
-                    redesSociais.map(function (l) {
-                        return React.createElement(
-                            "li",
-                            { className: "menu__item" },
-                            React.createElement(
-                                "a",
-                                { className: "menu__link", title: l.title, href: l.href, target: "_blank" },
-                                React.createElement("img", { src: "styles/images/svg/ico.svg", className: "menu__image", alt: l.title })
-                            )
-                        );
-                    })
                 )
             )
         );
