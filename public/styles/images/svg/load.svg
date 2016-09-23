@@ -1,0 +1,47 @@
+<svg id="load"  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+   <style>
+
+   
+    .load__item-a{
+        font-family: ADAM-CGPRO , Arial;
+        font-size: 80px;
+        fill: none;
+        stroke: #f26838;
+        stroke-dasharray: 200;
+        stroke-dashoffset: 200;
+         animation: dash 2s linear alternate infinite;
+    }
+
+    .load__item-b{
+        font-family: ADAM-CGPRO , Arial;
+        font-size: 80px;
+        fill: none;
+        stroke: #ffffff;
+        stroke-dasharray: 250;
+        stroke-dashoffset: 250;
+        animation: dash 2s linear alternate infinite;
+    }
+
+     .load__item-c{
+         font-family: ADAM-CGPRO , Arial;
+        font-size: 80px;
+        fill: none;
+        stroke: #f26838;
+        stroke-dasharray: 200;
+        stroke-dashoffset: 200;
+        animation: dash 2s linear alternate infinite;
+    }
+
+
+
+        @keyframes dash {
+        
+        to {
+            stroke-dashoffset: 0;
+        }
+        }
+   </style>
+    <text x="0" class="load__item-a" y="95">&lt;</text>
+    <text x="40"  class="load__item-b" y="95">OS</text>
+    <text x="150"  class="load__item-c" y="95">&gt;</text>
+</svg>

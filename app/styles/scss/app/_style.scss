@@ -43,11 +43,31 @@ body {
 .align_h_left {
     align-items: flex-start;
     text-align: left;
+     &--responsive{
+         @extend .align_h_left;
+     }
+     @media(max-width: $width-desktop){
+        &--responsive{
+          align-items: center;
+    text-align: center;
+     } 
+     }
 }
+
+
 
 .align_h_right {
     align-items: flex-end;
     text-align: right;
+      &--responsive{
+         @extend .align_h_right;
+     }
+     @media(max-width: $width-desktop){
+        &--responsive{
+          align-items: center;
+    text-align: center;
+     } 
+     }
 }
 
 .display-flex {
@@ -232,12 +252,50 @@ $breakpoints: ( (xs), (sm, $width-mobile), (md, $width-tablet), (lg, $width-desk
     height: 100%;
     z-index: 10000;
 
-    &__item{
-        width: 100%;
-        max-width: 100px;
-        min-width: 70px;
+    &__item{       
+      width: 250px;
     }
+
+     &__item-a{
+        font-family: $font-title;
+        font-size: 80px;
+        fill: none;
+        stroke: $color-primary;
+        stroke-dasharray: 150;
+        stroke-dashoffset: 150;
+         animation: dash 2s linear alternate infinite;
+    }
+
+    &__item-b{
+        font-family: $font-title;
+        font-size: 80px;
+        fill: none;
+        stroke: #ffffff;
+        stroke-dasharray: 250;
+        stroke-dashoffset: 250;
+        animation: dash 2s linear alternate infinite;
+    }
+
+     &__item-c{
+        font-family: $font-title;
+        font-size: 80px;
+        fill: none;
+        stroke: $color-primary;
+        stroke-dasharray: 150;
+        stroke-dashoffset: 150;
+        animation: dash 2s linear alternate infinite;
+    }
+
 }
+
+@keyframes dash {
+ 
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+
 
 .menu{
     align-items: center;
@@ -270,9 +328,24 @@ $breakpoints: ( (xs), (sm, $width-mobile), (md, $width-tablet), (lg, $width-desk
     left: 0;
 }
 
+.list{
+    align-self: flex-start;
+    text-align: left;
+
+    &__item{
+        display: block;
+        padding-top: 10px;
+    }
+    &__link{
+        font-size:2em;
+        color:$color-secundary;
+        text-decoration: none;
+    }
+}
+
 .nav{
     &__menu{
-        text-align: center;
+        text-align: left;
     }
 }
 
@@ -606,6 +679,10 @@ $breakpoints: ( (xs), (sm, $width-mobile), (md, $width-tablet), (lg, $width-desk
     background-color: $color-box;
 }
 
+.footer{
+    align-self: flex-end;
+}
+
 .row {
     padding-top: 1%;
     padding-bottom: 1%;
@@ -613,8 +690,16 @@ $breakpoints: ( (xs), (sm, $width-mobile), (md, $width-tablet), (lg, $width-desk
     width: 100%;
 }
 
+.space{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
 .border{
     border-top: 1px solid hsla(0,0%,100%,.03);
+    &--top{
+         border-top: 1px solid hsla(0,0%,100%,.1);
+    }
 }
  
 #menu{

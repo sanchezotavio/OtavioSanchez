@@ -17,11 +17,13 @@
     "images": "gulp images",
     "sass": "gulp sass",
     "watch": "gulp watch",
-    "default": "gulp default"
+    "default": "gulp default",
+    "svg2png": "gulp svg2png"
   },
   "devDependencies": {
     "babel-cli": "^6.14.0",
     "babel-preset-react": "^6.11.1",
+    "babel-preset-stage-0": "^6.5.0",
     "bower": "*",
     "browserify": "^13.1.0",
     "envify": "^3.4.1",
@@ -32,6 +34,7 @@
     "gulp-sass": "*",
     "gulp-sourcemaps": "*",
     "gulp-svg-sprite": "*",
+    "gulp-svg2png": "^2.0.2",
     "gulp-uglify": "*",
     "gulp-watch": "*",
     "react": "^15.3.1",

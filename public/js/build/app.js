@@ -1,10 +1,16 @@
-
-
 var Load = React.createClass({
     displayName: "Load",
 
     render: function () {
-        return React.createElement("img", { id: "load-item", className: "load__item", src: "http://simpleicon.com/wp-content/uploads/cloud-2.svg" });
+        return React.createElement(SVG, { name: "load", id: "load-item", "class": "load__item" });
+    }
+});
+
+var SVG = React.createClass({
+    displayName: "SVG",
+
+    render: function () {
+        return React.createElement("img", { id: this.props.id, className: this.props.class, src: "./styles/images/svg/" + this.props.name + ".svg" });
     }
 });
 
@@ -16,7 +22,7 @@ var Header = React.createClass({
             "div",
             { className: "container--header" },
             React.createElement(
-                "nav",
+                "div",
                 { className: "o-col-xs-5 align_h_left" },
                 React.createElement(ButtonMenu, null)
             ),
@@ -56,28 +62,80 @@ var Menu = React.createClass({
     render: function () {
         return React.createElement(
             "div",
-            { className: "container center" },
+            { className: "container" },
+            React.createElement(
+                "nav",
+                { className: "nav__menu o-col-xs-12" },
+                React.createElement(
+                    "ul",
+                    { className: "list", id: "navigation" },
+                    paginas.map(function (l) {
+                        return React.createElement(
+                            "li",
+                            { className: "list__item" },
+                            React.createElement(
+                                "a",
+                                { className: "list__link", title: l.title, href: l.href },
+                                l.title
+                            )
+                        );
+                    })
+                )
+            ),
             React.createElement(
                 "div",
-                { "class": "" },
+                { className: "footer" },
+                React.createElement(FooterText, null)
+            )
+        );
+    }
+});
+
+var FooterText = React.createClass({
+    displayName: "FooterText",
+
+    render: function () {
+        return React.createElement(
+            "div",
+            { className: "container border--top space" },
+            React.createElement(
+                "div",
+                { className: "o-col-xs-12  align_h_left--responsive" },
                 React.createElement(
-                    "nav",
-                    { className: "nav__menu" },
+                    "div",
+                    { "class": "text" },
+                    "Desenvolvido por ",
                     React.createElement(
-                        "ul",
-                        { className: "list", id: "navigation" },
-                        paginas.map(function (l) {
-                            return React.createElement(
-                                "li",
-                                { className: "item" },
-                                React.createElement(
-                                    "a",
-                                    { className: "menu__link", title: l.title, href: l.href },
-                                    l.title
-                                )
-                            );
-                        })
-                    )
+                        "a",
+                        { href: mainLink, "class": "link", title: name },
+                        name
+                    ),
+                    "."
+                ),
+                React.createElement(
+                    "div",
+                    { "class": "text" },
+                    "Copyright © ",
+                    ano,
+                    " ",
+                    name,
+                    ".Todos os direitos reservados."
+                ),
+                React.createElement(
+                    "div",
+                    { "class": "text" },
+                    " Entre em contato: "
+                ),
+                React.createElement(
+                    "div",
+                    { "class": "text" },
+                    " ",
+                    React.createElement(
+                        "a",
+                        { href: "mailto:" + email, "class": "link", title: email },
+                        email
+                    ),
+                    " "
                 )
             )
         );
@@ -98,7 +156,7 @@ var NavRedesSociais = React.createClass({
                     React.createElement(
                         "a",
                         { className: "social_network__link", title: l.title, href: l.href },
-                        React.createElement("img", { src: l.svg, className: "social_network__image", alt: l.title })
+                        React.createElement(SVG, { "class": "social_network__image", name: l.name, alt: l.title })
                     )
                 );
             })
@@ -116,9 +174,13 @@ var ButtonMenu = React.createClass({
 
 var mainLink = "otaviosanchez.com";
 
+var email = "dev@otaviosanchez.com";
+
 var name = "Otávio Sanchez";
 
-var redesSociais = [{ title: 'Linkedin', href: 'https://br.linkedin.com/in/ot%C3%A1vio-sanchez-88440294', svg: 'styles/images/svg/linkedin.svg' }, { title: 'GitHub', href: 'https://github.com/sanchezotavio', svg: 'styles/images/svg/github.svg' }];
+var ano = new Date().getFullYear;
+
+var redesSociais = [{ title: 'Linkedin', href: 'https://br.linkedin.com/in/ot%C3%A1vio-sanchez-88440294', name: 'linkedin' }, { title: 'GitHub', href: 'https://github.com/sanchezotavio', name: 'github' }];
 
 var paginas = [{ title: 'Home', href: '#home' }, { title: 'Quem Sou', href: '#quemsou' }, { title: 'Projetos', href: '#projetos' }, { title: 'Contato', href: '#contato' }];
 

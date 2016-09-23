@@ -8,6 +8,7 @@ var rename = require('gulp-rename');
 var svgSprite = require('gulp-svg-sprite');
 var concat = require('gulp-concat');
 var sync = require('gulp-npm-script-sync');
+var svg2png = require('gulp-svg2png');
 
 var config = {
     mode: {
@@ -24,10 +25,18 @@ var config = {
 };
 
 gulp.task('sprites', function() {
-    return gulp.src('public/styles/images/svg/*.svg')
+    return gulp.src('./public/styles/images/svg/*.svg')
         .pipe(svgSprite(config))
-        .pipe(gulp.dest('.'));
+        .pipe(gulp.dest('/sprites'));
 });
+
+gulp.task('svg2png', function () {
+    gulp.src('public/styles/images/svg/*.svg')
+        .pipe(svg2png())
+        .pipe(gulp.dest('public/styles/images/png/'));
+});
+
+
 
 gulp.task('sync', function () {
   sync(gulp, {
@@ -74,9 +83,9 @@ gulp.task('watch', function() {
     gulp.watch('app/styles/scss/app/*.scss', ['sass']);
     gulp.watch('app/build/app/components/*.js', ['concat']);
     gulp.watch('public/js/*.js', ['concat']);
-    gulp.watch('public/styles/images/*', ['images']);
+    gulp.watch('public/styles/images/svg/*.svg', ['svg2png']);
     gulp.watch('app/components/*.js', ['sync']);
     gulp.watch('app/components/*.js', ['concat']);
 });
 
-gulp.task('default', ['sass', 'images','concat', 'sprites' , 'sync', 'watch']);
+gulp.task('default', ['sass', 'images','concat', 'svg2png' , 'sprites' , 'sync', 'watch']);
