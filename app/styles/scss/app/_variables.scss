@@ -7,10 +7,11 @@ $font-title:'ADAM-CGPRO',
 /* - - Cores - - */
 
 $color-primary: #f26838;
-$color-secundary: rgb(74, 87, 93);
-$color-font: rgb(30, 30, 30);
-$color-box: #ffffff;
-$color-three: #151C23;
+$color-secundary: #6d737f;
+$color-font: #ffffff;
+$color-box: #272D39;
+$color-three: #232730;
+$color-border: #1A1D22;
 
 
 /* Máximo de colunas */
@@ -37,6 +38,7 @@ $min-width-container: 120px;
 
 /*Background*/
 $color-menu: $color-three;
-$color-servicos: #ffffff;
+$color-servicos: $color-box;
 $color-home: $color-three;
-$color-load: $color-secundary;
+$color-sobre: $color-box;
+$color-load: $color-box;

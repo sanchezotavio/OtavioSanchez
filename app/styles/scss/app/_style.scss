@@ -486,7 +486,7 @@ $breakpoints: ( (xs), (sm, $width-mobile), (md, $width-tablet), (lg, $width-desk
     align-items: center;
     justify-content: center;
     position: absolute;
-    background-color: rgba(50,50,50,0.1);
+    background-color: rgba(25, 29, 38, 0.8);
     bottom: -10%;
     z-index: 1000;
     height: 10%;
@@ -501,7 +501,7 @@ $breakpoints: ( (xs), (sm, $width-mobile), (md, $width-tablet), (lg, $width-desk
         width: 100%;
         position: fixed;
         z-index: 9999;
-        background-color: rgba(74, 87, 93, 0);        
+        background-color: rgba(35, 39, 48, 0);        
     }
 }
 
@@ -635,8 +635,7 @@ $breakpoints: ( (xs), (sm, $width-mobile), (md, $width-tablet), (lg, $width-desk
 .sobre {
     position: relative;
     z-index: 2;
-    background-color: $color-box;
-    height: 100% !important;
+    background-color: $color-sobre;
     text-justify: center;
     &__figure {
         @extend .figure;
@@ -649,18 +648,25 @@ $breakpoints: ( (xs), (sm, $width-mobile), (md, $width-tablet), (lg, $width-desk
         height: 150px;
         border-radius: 100px;
         box-shadow: 
-	0 0 0 4px #ffffff,
+	0 0 0 4px #232730,
 	0 0 0 5px $color-primary;  
     }
   
-    &__header {
+     &__header{
         width: 100%;
-        background-color: red;
-        height: 20%;
-        position: relative;
-        @extend .display-flex;
-        flex-flow: row wrap;
-        justify-content: center;
+        text-align: center;
+        padding-top: 2%;
+        padding-bottom: 2%;        
+    }
+    &--bg{
+          background-color: $color-servicos;
+    }
+    &__title{
+        @extend .title;
+        padding-top: 10px;
+        font-size: 1.5em;
+        padding-bottom: 10px;
+        color: $color-primary;
     }
     &__image{
         width: auto;
@@ -668,16 +674,18 @@ $breakpoints: ( (xs), (sm, $width-mobile), (md, $width-tablet), (lg, $width-desk
         position: relative;
         left: -50%;
     }
-    &__title{
-        color:  $color-three; 
-        margin-top: 10px;
-        margin-bottom: 10px;
-        font-size: 18px;
-        font-weight: 600;      
-    }
     &__row{
         margin-top: 30px;
         margin-bottom: 30px;
+    }
+}
+
+.quem_sou{
+    &__title{
+        @extend .title;
+        padding-top: 10px;
+        font-size: 1.2em;
+        padding-bottom: 10px;
     }
 }
 
@@ -699,15 +707,25 @@ $breakpoints: ( (xs), (sm, $width-mobile), (md, $width-tablet), (lg, $width-desk
         padding-bottom: 10px;
         color: $color-primary;
     }
+     &__title--sub{
+        text-align: center;
+        padding: 10px;
+        font-size: 1em;
+        color: $color-secundary;
+    }
 }
 
 .contato{
     position: relative;
     z-index: 2;
-    background-color: $color-box;
+    background-color: $color-three;
 }
 
 .footer{
+    background-color: $color-box;
+    z-index: 1;
+    font-size: 0.9em;
+    position: relative;
     align-self: flex-end;
 }
 
@@ -715,6 +733,7 @@ $breakpoints: ( (xs), (sm, $width-mobile), (md, $width-tablet), (lg, $width-desk
     padding-top: 1%;
     padding-bottom: 1%;
     justify-content: center;
+    text-align: center;
     width: 100%;
 }
 
@@ -724,11 +743,11 @@ $breakpoints: ( (xs), (sm, $width-mobile), (md, $width-tablet), (lg, $width-desk
 }
 
 .border{
-    border-top: 1px solid #dddddd;   
+    border-top: 1px solid $color-border;   
 }
 
  .border--bottom{
-         border-bottom:1px solid #dddddd;
+         border-bottom:1px solid $color-border;   
     }
  
 #menu{
@@ -752,3 +771,4 @@ $breakpoints: ( (xs), (sm, $width-mobile), (md, $width-tablet), (lg, $width-desk
     z-index: 1;
     position: fixed;
 }
+

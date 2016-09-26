@@ -101,7 +101,7 @@ var FooterText = React.createClass({
     render: function () {
         return React.createElement(
             "div",
-            { className: "container border--top space" },
+            { className: "container border space" },
             React.createElement(
                 "div",
                 { className: "o-col-xs-6 o-col-lg-12  align_h_left--responsive" },
@@ -180,6 +180,18 @@ var ButtonMenu = React.createClass({
     }
 });
 
+var Footer = React.createClass({
+    displayName: "Footer",
+
+    render: function () {
+        return React.createElement(
+            "div",
+            { "class": "container" },
+            React.createElement(FooterText, null)
+        );
+    }
+});
+
 var mainLink = "otaviosanchez.com";
 
 var email = "dev@otaviosanchez.com";
@@ -197,3 +209,5 @@ ReactDOM.render(React.createElement(Header, null), document.getElementById('head
 ReactDOM.render(React.createElement(Load, null), document.getElementById('load'));
 
 ReactDOM.render(React.createElement(Menu, null), document.getElementById('menu-container'));
+
+ReactDOM.render(React.createElement(Footer, null), document.getElementById('footer'));

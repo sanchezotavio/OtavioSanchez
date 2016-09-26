@@ -30,11 +30,11 @@ $(document).ready(function () {
   $(window).scroll(function () {
     if (window.pageYOffset > 0) {
       $(".scroll").addClass('hidden');
-      $(".scroll").css('display','none');
+      $(".scroll").css('opacity','0');
     }
     else {
       $(".scroll").removeClass('hidden');
-      $(".scroll").css('display','block');
+      $(".scroll").css('opacity','1');
     }
   });
 
@@ -51,9 +51,11 @@ $(document).ready(function () {
   });
 
   $("#bg").jParticle({
-    background: "#151C23",
-    color: "#262D34"
+    background: "#232730",
+    color: "rgba(70, 83, 93, 0.4)"
 		});
+
+   
 
   $('#navigation li a').click(function () {
     if (menu) {
@@ -93,7 +95,7 @@ var sceneServico3 = new ScrollMagic.Scene({ triggerElement: "#servicos #servico2
   .setTween(ss3)
   .addTo(controller);
 
-var topMenu = TweenMax.to(".top__header", 0.3, { background: "rgba(255, 255, 255, 1)", borderBottom: "1px solid rgb(74, 87, 93)" });
+var topMenu = TweenMax.to(".top__header", 0.3, { background: "rgba(25, 29, 38, 0.8)", borderBottom: "1px solid rgba(26, 29, 34, 1)" });
 
 var topMenuLogo = TweenMax.to(".logo__link", 0.3, { opacity: 1 });
 
@@ -105,8 +107,3 @@ var sceneMenuLogo = new ScrollMagic.Scene({ triggerElement: "#servicos" })
   .setTween(topMenuLogo)
   .addTo(controller);
 
-var projeto = TweenMax.to(".projeto", 1.2, { opacity: 1, bottom: 0 });
-
-var sceneProjetos = new ScrollMagic.Scene({ triggerElement: "#projetos" })
-  .setTween(projeto)
-  .addTo(controller);

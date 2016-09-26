@@ -76,7 +76,7 @@ var Menu = React.createClass({
 var FooterText = React.createClass({
     render: function () {
         return (
-            <div className="container border--top space">
+            <div className="container border space">
                 <div className="o-col-xs-6 o-col-lg-12  align_h_left--responsive">
                     <div class="text">
                         Desenvolvido por <a href={mainLink} className="link" title={name}>{name}</a>.
@@ -123,6 +123,19 @@ var ButtonMenu = React.createClass({
     }
 })
 
+var Footer = React.createClass({
+    render: function () {
+        return (
+
+<div class="container">
+            <FooterText />
+</div>
+
+        )
+    }
+})
+
+
 
 var mainLink = "otaviosanchez.com";
 
@@ -150,3 +163,5 @@ ReactDOM.render(<Header />, document.getElementById('header'));
 ReactDOM.render(<Load />, document.getElementById('load'));
 
 ReactDOM.render(<Menu />, document.getElementById('menu-container'));
+
+ReactDOM.render(<Footer />, document.getElementById('footer'));
