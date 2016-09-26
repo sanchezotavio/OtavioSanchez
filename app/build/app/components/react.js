@@ -62,30 +62,34 @@ var Menu = React.createClass({
     render: function () {
         return React.createElement(
             "div",
-            { className: "container" },
-            React.createElement(
-                "nav",
-                { className: "nav__menu o-col-xs-12" },
-                React.createElement(
-                    "ul",
-                    { className: "list", id: "navigation" },
-                    paginas.map(function (l) {
-                        return React.createElement(
-                            "li",
-                            { className: "list__item" },
-                            React.createElement(
-                                "a",
-                                { className: "list__link", title: l.title, href: l.href },
-                                l.title
-                            )
-                        );
-                    })
-                )
-            ),
+            { "class": "row" },
             React.createElement(
                 "div",
-                { className: "footer" },
-                React.createElement(FooterText, null)
+                { className: "container" },
+                React.createElement(
+                    "nav",
+                    { className: "nav__menu o-col-xs-12" },
+                    React.createElement(
+                        "ul",
+                        { className: "list", id: "navigation" },
+                        paginas.map(function (l) {
+                            return React.createElement(
+                                "li",
+                                { className: "list__item" },
+                                React.createElement(
+                                    "a",
+                                    { className: "list__link", title: l.title, href: l.href },
+                                    l.title
+                                )
+                            );
+                        })
+                    )
+                ),
+                React.createElement(
+                    "div",
+                    { className: "footer o-col-xs-12" },
+                    React.createElement(FooterText, null)
+                )
             )
         );
     }
@@ -100,14 +104,14 @@ var FooterText = React.createClass({
             { className: "container border--top space" },
             React.createElement(
                 "div",
-                { className: "o-col-xs-12  align_h_left--responsive" },
+                { className: "o-col-xs-6 o-col-lg-12  align_h_left--responsive" },
                 React.createElement(
                     "div",
                     { "class": "text" },
                     "Desenvolvido por ",
                     React.createElement(
                         "a",
-                        { href: mainLink, "class": "link", title: name },
+                        { href: mainLink, className: "link", title: name },
                         name
                     ),
                     "."
@@ -120,7 +124,11 @@ var FooterText = React.createClass({
                     " ",
                     name,
                     ".Todos os direitos reservados."
-                ),
+                )
+            ),
+            React.createElement(
+                "div",
+                { className: "o-col-xs-6 o-col-lg-12  align_h_right--responsive" },
                 React.createElement(
                     "div",
                     { "class": "text" },
@@ -132,7 +140,7 @@ var FooterText = React.createClass({
                     " ",
                     React.createElement(
                         "a",
-                        { href: "mailto:" + email, "class": "link", title: email },
+                        { href: "mailto:" + email, className: "link", title: email },
                         email
                     ),
                     " "

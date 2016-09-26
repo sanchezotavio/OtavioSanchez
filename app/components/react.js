@@ -51,7 +51,8 @@ var Logo = React.createClass({
 var Menu = React.createClass({
     render: function () {
         return (
-            <div className="container">                
+            <div class="row">
+                 <div className="container">                
                     <nav className="nav__menu o-col-xs-12">
                         <ul className="list" id="navigation">
                             {paginas.map(function (l) {
@@ -63,12 +64,11 @@ var Menu = React.createClass({
                             }) }
                         </ul>
                     </nav>
-                      <div className="footer">
-                    <FooterText />
-                </div>
+                    <div className="footer o-col-xs-12">
+                        <FooterText />
                     </div>
-
-              
+                 </div>   
+            </div>            
         )
     }
 });
@@ -76,17 +76,18 @@ var Menu = React.createClass({
 var FooterText = React.createClass({
     render: function () {
         return (
-
             <div className="container border--top space">
-                <div className="o-col-xs-12  align_h_left--responsive">
+                <div className="o-col-xs-6 o-col-lg-12  align_h_left--responsive">
                     <div class="text">
-                        Desenvolvido por <a href={mainLink} class="link" title={name}>{name}</a>.
-                    </div>
+                        Desenvolvido por <a href={mainLink} className="link" title={name}>{name}</a>.
+                    </div>                   
                     <div class="text">
                         Copyright © {ano} {name}.Todos os direitos reservados.
                     </div>
+                </div>
+                <div className="o-col-xs-6 o-col-lg-12  align_h_right--responsive">
                     <div class="text"> Entre em contato: </div>
-                    <div class="text"> <a href={"mailto:" + email} class="link" title={email}>{email}</a> </div>
+                    <div class="text"> <a href={"mailto:" + email} className="link" title={email}>{email}</a> </div>
                 </div>
             </div>
         )

@@ -10,7 +10,7 @@ $color-primary: #f26838;
 $color-secundary: rgb(74, 87, 93);
 $color-font: rgb(30, 30, 30);
 $color-box: #ffffff;
-$color-three: rgba(21, 33, 39, 0.8);
+$color-three: #151C23;
 
 
 /* Máximo de colunas */
@@ -36,6 +36,7 @@ $max-width-container: 1280px;
 $min-width-container: 120px;
 
 /*Background*/
-$color-menu: rgba(21, 33, 39, 0.8);
-$color-servicos: #191919;
-$color-home: #151C23;
+$color-menu: $color-three;
+$color-servicos: #ffffff;
+$color-home: $color-three;
+$color-load: $color-secundary;

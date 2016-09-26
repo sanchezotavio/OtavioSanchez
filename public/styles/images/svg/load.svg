@@ -32,6 +32,13 @@
         animation: dash 2s linear alternate infinite;
     }
 
+     .load__item{
+        font-family: Arial;
+        font-size:12px;
+        color: red;
+        fill: #ffffff;
+    }
+
 
 
         @keyframes dash {
@@ -43,5 +50,6 @@
    </style>
     <text x="0" class="load__item-a" y="95">&lt;</text>
     <text x="40"  class="load__item-b" y="95">OS</text>
-    <text x="150"  class="load__item-c" y="95">&gt;</text>
+    <text x="150" class="load__item-c" y="95">&gt;</text>
+    <text x="65"  class="load__item" y="130">carregando</text>
 </svg>
