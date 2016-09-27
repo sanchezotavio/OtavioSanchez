@@ -43,29 +43,33 @@ body {
 .align_h_left {
     align-items: flex-start;
     text-align: left;
-     &--responsive{
-         @extend .align_h_left;
-     }
-     @media(max-width: $width-desktop){
-        &--responsive{
-          align-items: center;
-    text-align: center;
-     } 
-     }
+
+    &--responsive {
+        @extend .align_h_left;
+    }
+
+    @media(max-width: $width-desktop) {
+        &--responsive {
+            align-items: center;
+            text-align: center;
+        }
+    }
 }
 
 .align_h_right {
     align-items: flex-end;
     text-align: right;
-      &--responsive{
-         @extend .align_h_right;
-     }
-     @media(max-width: $width-desktop){
-        &--responsive{
-          align-items: center;
-    text-align: center;
-     } 
-     }
+
+    &--responsive {
+        @extend .align_h_right;
+    }
+
+    @media(max-width: $width-desktop) {
+        &--responsive {
+            align-items: center;
+            text-align: center;
+        }
+    }
 }
 
 .display-flex {
@@ -76,7 +80,7 @@ body {
     display: flex;
 }
 
-.center{
+.center {
     text-align: center;
     align-items: center;
     justify-content: center;
@@ -89,8 +93,8 @@ body {
     margin-bottom: 10px;
 }
 
-.lite{
-    color:#ffffff;
+.lite {
+    color: #ffffff;
 }
 
 .container {
@@ -100,6 +104,7 @@ body {
     width: 98%;
     max-width: $max-width-container;
     min-width: $min-width-container;
+
     &--header {
         @extend .container;
         max-width: 99%;
@@ -110,49 +115,71 @@ body {
 
 
 .scroll {
-  bottom: 0;
-  left: 50%;
-  position: fixed;
-  z-index: 3;
+    bottom: 0;
+    left: 50%;
+    position: fixed;
+    z-index: 3;
     transform: translate( -50%,-50%);
-  display: block;
+    display: block;
 }
 
 
 
-@keyframes arrow
-{
-0% {opacity:0}
-40% {opacity:1}
-80% {opacity:0}
-100% {opacity:0}
+@keyframes arrow {
+    0% {
+        opacity: 0;
+    }
+
+    40% {
+        opacity: 1;
+    }
+
+    80% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0;
+    }
 }
 
 @-webkit-keyframes arrow /*Safari and Chrome*/
 {
-0% {opacity:0}
-40% {opacity:1}
-80% {opacity:0}
-100% {opacity:0}
+    0% {
+        opacity: 0;
+    }
+
+    40% {
+        opacity: 1;
+    }
+
+    80% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0;
+    }
 }
 
 .arrows path.a1 {
-	animation-delay:-1s;
-	-webkit-animation-delay:-1s; 
+    animation-delay: -1s;
+    -webkit-animation-delay: -1s;
 }
 
 .arrows path.a2 {
-	animation-delay:-0.5s;
-	-webkit-animation-delay:-0.5s; 
+    animation-delay: -0.5s;
+    -webkit-animation-delay: -0.5s;
 }
 
-.arrows path.a3 {	
-	animation-delay:0s;
-	-webkit-animation-delay:0s; 
+.arrows path.a3 {
+    animation-delay: 0s;
+    -webkit-animation-delay: 0s;
 }
 
 
 $breakpoints: ( (xs), (sm, $width-mobile), (md, $width-tablet), (lg, $width-desktop)) !default;
+
 @function convert-col-percent($column-num) {
     @return $column-num / $max-col * 100%;
 }
@@ -196,6 +223,7 @@ $breakpoints: ( (xs), (sm, $width-mobile), (md, $width-tablet), (lg, $width-desk
     .#{ $col }-#{$namespace} {
         @extend %#{ $col }-flex;
     }
+
     @for $i from 1 through $max-col {
         .#{ $col }-#{$namespace}-#{$i} {
             @extend %#{ $col };
@@ -210,6 +238,7 @@ $breakpoints: ( (xs), (sm, $width-mobile), (md, $width-tablet), (lg, $width-desk
             max-width: convert-col-percent($i);
         }
     }
+
     @for $i from 1 through $max-col {
         @if ( $i !=$max-col) {
             .#{ $off }-#{$namespace}-#{$i} {
@@ -232,39 +261,40 @@ $breakpoints: ( (xs), (sm, $width-mobile), (md, $width-tablet), (lg, $width-desk
     @else {
         $namespace: nth($val, 1);
         $size: nth($val, 2);
+
         @media only screen and (max-width: #{$size}) {
             @include grid-sizes( $namespace);
         }
     }
 }
 
-.load{
+.load {
     @extend .display-flex;
     align-items: center;
     justify-content: center;
-    background-color:$color-load; 
+    background-color: $color-load;
     position: fixed;
-    top:0;
+    top: 0;
     left: 0;
     width: 100%;
     height: 100%;
     z-index: 10000;
 
-    &__item{       
-      width: 250px;
+    &__item {
+        width: 250px;
     }
 
-     &__item-a{
+    &__item-a {
         font-family: $font-title;
         font-size: 80px;
         fill: none;
         stroke: $color-primary;
         stroke-dasharray: 150;
         stroke-dashoffset: 150;
-         animation: dash 2s linear alternate infinite;
+        animation: dash 2s linear alternate infinite;
     }
 
-    &__item-b{
+    &__item-b {
         font-family: $font-title;
         font-size: 80px;
         fill: none;
@@ -274,7 +304,7 @@ $breakpoints: ( (xs), (sm, $width-mobile), (md, $width-tablet), (lg, $width-desk
         animation: dash 2s linear alternate infinite;
     }
 
-     &__item-c{
+    &__item-c {
         font-family: $font-title;
         font-size: 80px;
         fill: none;
@@ -283,70 +313,72 @@ $breakpoints: ( (xs), (sm, $width-mobile), (md, $width-tablet), (lg, $width-desk
         stroke-dashoffset: 150;
         animation: dash 2s linear alternate infinite;
     }
-
 }
 
 @keyframes dash {
- 
-  to {
-    stroke-dashoffset: 0;
-  }
+
+    to {
+        stroke-dashoffset: 0;
+    }
 }
 
-.link{
+.link {
     color: $color-primary;
     text-decoration: none;
 }
 
-.menu{
+.menu {
     align-items: center;
     padding-top: 80px;
     background-color: $color-menu;
     color: $color-secundary;
     position: fixed;
-    top:0;
+    top: 0;
     left: -100%;
     width: 100%;
     height: 100%;
     z-index: 9998;
-    &__item{
-       display: inline-block;
+
+    &__item {
+        display: inline-block;
         list-style: none;
         padding: 5px;
         border: 1px solid $color-secundary;
         margin: 5px;
     }
-    &__image{
+
+    &__image {
         width: 50px;
         height: 50px;
     }
 }
 
-.menu-open{
+.menu-open {
     left: -100%;
 }
 
-.menu-close{    
+.menu-close {
     left: 0;
 }
 
-.list{
+.list {
     align-self: flex-start;
     text-align: left;
 
-    &__item{
+    &__item {
         display: block;
         padding-top: 10px;
     }
-    &__link{
-        font-size:2em;
-        color:$color-secundary;
+
+    &__link {
+        font-size: 2em;
+        color: $color-secundary;
         text-decoration: none;
     }
 }
 
-.nav{
-    &__menu{
+.nav {
+    &__menu {
         text-align: left;
     }
 }
@@ -355,11 +387,12 @@ $breakpoints: ( (xs), (sm, $width-mobile), (md, $width-tablet), (lg, $width-desk
     min-width: 100%;
     width: 100%;
     height: auto;
-    min-height: 110%;    
+    min-height: 110%;
     flex-flow: row wrap;
     @extend .display-flex;
     justify-content: center;
-    &--mobile{
+
+    &--mobile {
         @extend .full;
     }
 }
@@ -383,13 +416,14 @@ $breakpoints: ( (xs), (sm, $width-mobile), (md, $width-tablet), (lg, $width-desk
 
 .title {
     font-family: $font-title;
+
     &--sub {
         @extend .title;
         color: $color-secundary;
     }
 }
 
-.logo { 
+.logo {
     &__link {
         @extend .link;
         padding-top: 5px;
@@ -406,12 +440,14 @@ $breakpoints: ( (xs), (sm, $width-mobile), (md, $width-tablet), (lg, $width-desk
         @extend .link;
         text-decoration: none;
     }
+
     &__image {
         @extend .image;
         width: 100%;
         height: 100%;
         fill: $color-secundary;
     }
+
     &__item {
         @extend .item;
         width: 28px;
@@ -431,29 +467,31 @@ $breakpoints: ( (xs), (sm, $width-mobile), (md, $width-tablet), (lg, $width-desk
     font-size: 0.7em;
     display: inline-block;
     background-repeat: no-repeat;
+
     &--main {
         @extend .button;
-         color: $color-secundary;
-         border: 1px solid $color-secundary;
+        color: $color-secundary;
+        border: 1px solid $color-secundary;
     }
-    &--menu{
-            width: 35px;
-            height: 35px;
-            background-color: transparent;
-            background-size: 28px 28px;
-            background-repeat: no-repeat;
-            background-position-x: center;
-            background-position-y: center;
-            border: 1px solid $color-secundary;
-            cursor: pointer;                        
+
+    &--menu {
+        width: 35px;
+        height: 35px;
+        background-color: transparent;
+        background-size: 28px 28px;
+        background-repeat: no-repeat;
+        background-position-x: center;
+        background-position-y: center;
+        border: 1px solid $color-secundary;
+        cursor: pointer;
     }
 }
 
-.open{
+.open {
     background-image: url(../images/svg/icon_mobile_menu.svg);
 }
 
-.hidden{
+.hidden {
     -webkit-transition: all 0.5s ease;
     -moz-transition: all 0.5s ease;
     -o-transition: all 0.5s ease;
@@ -461,8 +499,8 @@ $breakpoints: ( (xs), (sm, $width-mobile), (md, $width-tablet), (lg, $width-desk
     opacity: 0;
 }
 
-.close{
-     background-image: url(../images/svg/close.svg);
+.close {
+    background-image: url(../images/svg/close.svg);
 }
 
 .button:hover {
@@ -481,7 +519,7 @@ $breakpoints: ( (xs), (sm, $width-mobile), (md, $width-tablet), (lg, $width-desk
     }
 }
 
-.bar{
+.bar {
     @extend .display-flex;
     align-items: center;
     justify-content: center;
@@ -495,13 +533,14 @@ $breakpoints: ( (xs), (sm, $width-mobile), (md, $width-tablet), (lg, $width-desk
     padding: 10px 0 10px 0;
 }
 
-.top{
+.top {
     align-items: center;
-    &__header{
+
+    &__header {
         width: 100%;
         position: fixed;
         z-index: 9999;
-        background-color: rgba(35, 39, 48, 0);        
+        background-color: rgba(35, 39, 48, 0);
     }
 }
 
@@ -512,94 +551,107 @@ $breakpoints: ( (xs), (sm, $width-mobile), (md, $width-tablet), (lg, $width-desk
     min-width: 100%;
     width: 100%;
     height: 110%;
-    flex-flow: row wrap; 
+    flex-flow: row wrap;
     @extend .display-flex;
     justify-content: center;
+
     &__group {
         text-align: center;
         align-self: center;
         padding: 7%;
     }
+
     &__title {
         @extend .title;
         color: $color-primary;
         font-size: 600%;
-
     }
+
     @media(max-width:$width-desktop) {
         &__title {
             font-size: 500%;
         }
     }
+
     @media(max-width:$width-tablet) {
         &__title {
             font-size: 400%;
         }
     }
+
     @media(max-width:$width-mobile) {
         &__title {
             font-size: 300%;
         }
     }
-    &__title--sub{
+
+    &__title--sub {
         color: $color-secundary;
         font-size: 140%;
         margin-top: 10%;
-        margin-bottom: 10%
+        margin-bottom: 10%;
     }
+
     @media(max-width:$width-desktop) {
-          &__title--sub{       
+        &__title--sub {
             font-size: 120%;
             margin-top: 30px;
             margin-bottom: 30px;
-         }
+        }
     }
+
     @media(max-width:$width-tablet) {
-          &__title--sub{
+        &__title--sub {
             font-size: 110%;
             margin-top: 20px;
             margin-bottom: 20px;
         }
     }
+
     @media(max-width:$width-mobile) {
-          &__title--sub{
+        &__title--sub {
             font-size: 100%;
-           }
+        }
     }
-    &__center{
+
+    &__center {
         align-self: center;
     }
-    &__article{
+
+    &__article {
         align-items: center;
-       @extend .display-flex;
-       z-index: 2;
+        @extend .display-flex;
+        z-index: 2;
     }
 }
 
-.servicos{
-    position: relative ;
-    overflow:hidden;
+.servicos {
+    position: relative;
+    overflow: hidden;
     z-index: 2;
     background-color: $color-servicos;
-    padding-bottom:5%;
-     
-    &__header{
+    padding-bottom: 5%;
+
+    &__header {
         width: 100%;
         text-align: center;
         padding-top: 2%;
-        padding-bottom: 2%;        
+        padding-bottom: 2%;
     }
-    &--bg{
-          background-color: $color-servicos;
+
+    &--bg {
+        background-color: $color-servicos;
     }
-    &__title{
+
+    &__title {
         @extend .title;
         padding-top: 10px;
         font-size: 1.5em;
         padding-bottom: 10px;
         color: $color-primary;
     }
-    &__title--main{           
+
+    &__title--main {
         @extend .title;
         padding-top: 10px;
         font-size: 1.5em;
@@ -607,29 +659,29 @@ $breakpoints: ( (xs), (sm, $width-mobile), (md, $width-tablet), (lg, $width-desk
         color: $color-primary;
         text-align: center;
     }
-}   
-
-.servico{
-    width: 100%;
-    padding-top:5%;
 }
 
-#servico1{
+.servico {
+    width: 100%;
+    padding-top: 5%;
+}
+
+#servico1 {
     opacity: 0;
     position: relative;
-    bottom:-50px;
+    bottom: -50px;
 }
 
-#servico2{
+#servico2 {
     opacity: 0;
-     position: relative;
-    bottom:-50px;
+    position: relative;
+    bottom: -50px;
 }
 
-#servico3{
+#servico3 {
     opacity: 0;
-     position: relative;
-   bottom:-50px;
+    position: relative;
+    bottom: -50px;
 }
 
 .sobre {
@@ -637,6 +689,7 @@ $breakpoints: ( (xs), (sm, $width-mobile), (md, $width-tablet), (lg, $width-desk
     z-index: 2;
     background-color: $color-sobre;
     text-justify: center;
+
     &__figure {
         @extend .figure;
         align-self: center;
@@ -647,41 +700,43 @@ $breakpoints: ( (xs), (sm, $width-mobile), (md, $width-tablet), (lg, $width-desk
         width: 150px;
         height: 150px;
         border-radius: 100px;
-        box-shadow: 
-	0 0 0 4px #232730,
-	0 0 0 5px $color-primary;  
+        box-shadow: 0 0 0 4px #232730, 0 0 0 5px $color-primary;
     }
-  
-     &__header{
+
+    &__header {
         width: 100%;
         text-align: center;
         padding-top: 2%;
-        padding-bottom: 2%;        
+        padding-bottom: 2%;
     }
-    &--bg{
-          background-color: $color-servicos;
+
+    &--bg {
+        background-color: $color-servicos;
     }
-    &__title{
+
+    &__title {
         @extend .title;
         padding-top: 10px;
         font-size: 1.5em;
         padding-bottom: 10px;
         color: $color-primary;
     }
-    &__image{
+
+    &__image {
         width: auto;
         height: 100%;
         position: relative;
         left: -50%;
     }
-    &__row{
+
+    &__row {
         margin-top: 30px;
         margin-bottom: 30px;
     }
 }
 
-.quem_sou{
-    &__title{
+.quem_sou {
+    &__title {
         @extend .title;
         padding-top: 10px;
         font-size: 1.2em;
@@ -689,17 +744,17 @@ $breakpoints: ( (xs), (sm, $width-mobile), (md, $width-tablet), (lg, $width-desk
     }
 }
 
-.projetos{
+.projetos {
     position: relative;
     z-index: 2;
     background-color: $color-three;
-  
-  &__header{
-       padding-top: 20px;
-       padding-bottom: 20px;
+
+    &__header {
+        padding-top: 20px;
+        padding-bottom: 20px;
     }
 
-    &__title{
+    &__title {
         @extend .title;
         text-align: center;
         padding-top: 10px;
@@ -707,7 +762,8 @@ $breakpoints: ( (xs), (sm, $width-mobile), (md, $width-tablet), (lg, $width-desk
         padding-bottom: 10px;
         color: $color-primary;
     }
-     &__title--sub{
+
+    &__title--sub {
         text-align: center;
         padding: 10px;
         font-size: 1em;
@@ -715,13 +771,13 @@ $breakpoints: ( (xs), (sm, $width-mobile), (md, $width-tablet), (lg, $width-desk
     }
 }
 
-.contato{
+.contato {
     position: relative;
     z-index: 2;
     background-color: $color-three;
 }
 
-.footer{
+.footer {
     background-color: $color-box;
     z-index: 1;
     font-size: 0.9em;
@@ -737,38 +793,95 @@ $breakpoints: ( (xs), (sm, $width-mobile), (md, $width-tablet), (lg, $width-desk
     width: 100%;
 }
 
-.space{
+.space {
     padding-top: 10px;
     padding-bottom: 10px;
 }
 
-.border{
-    border-top: 1px solid $color-border;   
-}
+.carousel {
+    width: 100%;
+    position: relative;
+    @extend .display-flex;
+    padding-top: 20px;
+    height: 600px;
+    overflow: hidden;
+    justify-content: center;
 
- .border--bottom{
-         border-bottom:1px solid $color-border;   
+    &__bg {
+        background-color: $color-three;
+        opacity: 0.8;
+        z-index: 2;
+        width: 100%;
+        height: 100%;
+        display: inline-block;
+        position: absolute;
     }
- 
-#menu{
+
+    &__item{
+        display: inline-block;
+        width: 288px;
+        height: 511.2px;
+    }
+
+    &__image{
+        width: 100%;
+        height: 100%;
+    }
+    
+}
+
+.slide{
+    width: 100%;
+    text-align: center;
+
+     @extend .display-flex;
+      -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+}
+
+.visor{
+    display: block;
+    overflow: hidden;
+    background-color: red;
+    position: absolute;
+    text-align: center;
+    justify-content: center;
+    z-index: 3;
+
+}
+
+.visor .slide{
+    display: block;
+}
+
+
+
+.border {
+    border-top: 1px solid $color-border;
+}
+
+.border--bottom {
+    border-bottom: 1px solid $color-border;
+}
+
+#menu {
     -webkit-transition: all 0.5s ease;
     -moz-transition: all 0.5s ease;
     -o-transition: all 0.5s ease;
     transition: all 0.5s ease;
 }
 
-#menu-container{
+#menu-container {
     -webkit-transition: all 0.5s ease;
     -moz-transition: all 0.5s ease;
     -o-transition: all 0.5s ease;
     transition: all 0.5s ease;
 }
 
-#bg{
+#bg {
     position: absolute;
     width: 100%;
     height: 100%;
     z-index: 1;
     position: fixed;
 }
-
