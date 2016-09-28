@@ -664,6 +664,7 @@ $breakpoints: ( (xs), (sm, $width-mobile), (md, $width-tablet), (lg, $width-desk
 .servico {
     width: 100%;
     padding-top: 5%;
+    @extend .display-flex;
 }
 
 #servico1 {
@@ -736,6 +737,7 @@ $breakpoints: ( (xs), (sm, $width-mobile), (md, $width-tablet), (lg, $width-desk
 }
 
 .quem_sou {
+    @extend .display-flex;
     &__title {
         @extend .title;
         padding-top: 10px;
@@ -818,14 +820,14 @@ $breakpoints: ( (xs), (sm, $width-mobile), (md, $width-tablet), (lg, $width-desk
     }
 
     &__item{
-        width: 288px;
-        height: 511.2px;
+        width: 259.2px;
+        height: 460.08px;
         float: left;  
 padding:0px;
 margin-top:0;
 margin-bottom:0; 
-margin-left:0; 
-margin-right:0; 
+margin-left: auto; 
+margin-right:auto; 
     }
 
     &__image{
@@ -838,9 +840,9 @@ margin-right:0;
 
 .slide{
     position:relative;
-left:-210px; 
+left:-100%; 
 list-style-type: none; 
-margin: 0px;
+margin: auto;
 padding: 0px;
 width:9999px;
 padding-bottom:10px;
@@ -891,16 +893,13 @@ padding-bottom:10px;
     position: fixed;
 }
 
-
-
 #carousel_inner-2 {
 float:left; 
-width:920px;
+width:1920px;
 overflow: hidden;  
 background: #F0F0F0;
+text-align: center;
 }
-
-
 
 #left_scroll, #right_scroll{
 float:left; 
