@@ -336,27 +336,25 @@ $(window).on('load', function () {
 
 var menu = true
 var item_width = 0
-var left_value = 0
-
+var left_indent = 0
+var item = 0
 
 $(document).ready(function () {
-  item_width = $('.carousel__item').outerWidth();
-  left_value = item_width * (-1);
-  $('.slide').clone().prependTo('#visor');
-  $('#visor').css("width", $('.carousel__item').outerWidth());
-  $('#visor').css("height",$('.carousel__item').outerHeight());
-  var speed = 2000
-  var run = setInterval('rotate()', speed)
+  $('#visor').css('width', $('.carousel__item').outerWidth())
+  $('#visor').css('height', $('.carousel__item').outerHeight())
+  $('#left_scroll img').click(function () {
+    var item_width = $('.carousel__item').outerWidth() + 10
+
+    var left_indent = parseInt($('.slide').css('left')) + item_width
+
+    $('.slide:not(:animated)').animate({'left': left_indent}, 500, function () {
+      $('.carousel__item:first').before($('.carousel__item:last'))
+      $('.slide').css({'left': '-210px'})
+    })
+  })
 })
 
 function rotate () {
-  var left_indent = parseInt($('.slide').css('left')) - item_width ;
-
-    $('.slide').animate({ 'left': left_indent }, 200, function () {
-    $('.carousel__item:last').after($('.carousel__item:first'))
-    $('.slide').css({ 'left': left_value })
-  })
-
   return false
 }
 

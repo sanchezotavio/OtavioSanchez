@@ -818,25 +818,32 @@ $breakpoints: ( (xs), (sm, $width-mobile), (md, $width-tablet), (lg, $width-desk
     }
 
     &__item{
-        display: inline-block;
         width: 288px;
         height: 511.2px;
+        float: left;  
+padding:0px;
+margin-top:0;
+margin-bottom:0; 
+margin-left:0; 
+margin-right:0; 
     }
 
     &__image{
         width: 100%;
         height: 100%;
+        margin-bottom:-4px; 
     }
     
 }
 
 .slide{
-    width: 100%;
-    text-align: center;
-
-     @extend .display-flex;
-      -ms-flex-wrap: nowrap;
-    flex-wrap: nowrap;
+    position:relative;
+left:-210px; 
+list-style-type: none; 
+margin: 0px;
+padding: 0px;
+width:9999px;
+padding-bottom:10px;
 }
 
 .visor{
@@ -853,8 +860,6 @@ $breakpoints: ( (xs), (sm, $width-mobile), (md, $width-tablet), (lg, $width-desk
 .visor .slide{
     display: block;
 }
-
-
 
 .border {
     border-top: 1px solid $color-border;
@@ -884,4 +889,27 @@ $breakpoints: ( (xs), (sm, $width-mobile), (md, $width-tablet), (lg, $width-desk
     height: 100%;
     z-index: 1;
     position: fixed;
+}
+
+
+
+#carousel_inner-2 {
+float:left; 
+width:920px;
+overflow: hidden;  
+background: #F0F0F0;
+}
+
+
+
+#left_scroll, #right_scroll{
+float:left; 
+height:130px; 
+width:15px; 
+background: #C0C0C0; 
+}
+#left_scroll img, #right_scroll img{
+
+cursor: pointer;
+cursor: hand;
 }
