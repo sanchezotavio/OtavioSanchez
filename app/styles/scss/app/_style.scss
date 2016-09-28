@@ -123,6 +123,16 @@ body {
     display: block;
 }
 
+.division{
+    display: inline-block;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70px;
+    height: 1px;
+    background-color: $color-secundary;
+}
 
 
 @keyframes arrow {
@@ -754,6 +764,7 @@ $breakpoints: ( (xs), (sm, $width-mobile), (md, $width-tablet), (lg, $width-desk
     &__header {
         padding-top: 20px;
         padding-bottom: 20px;
+        text-align: center;
     }
 
     &__title {
@@ -912,3 +923,4 @@ background: #C0C0C0;
 cursor: pointer;
 cursor: hand;
 }
+
