@@ -132,7 +132,8 @@ outline: none;
 }
 
 .form{
-
+ @extend .display-flex;
+  @include flex-flow(wrap);
 }
 
 .textbox{
@@ -147,6 +148,9 @@ outline: none;
     -moz-transition: all 0.5s ease;
     -o-transition: all 0.5s ease;
     transition: all 0.5s ease;
+    &--mensagem{
+        @extend .textbox;
+    }
 }
 
 .textbox:focus{
