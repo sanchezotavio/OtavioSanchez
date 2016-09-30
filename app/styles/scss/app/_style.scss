@@ -7,16 +7,16 @@ body {
     -webkit-font-smoothing: antialiased;
 }
 
-input:focus, textarea:focus, select:focus{
-outline: none;
+input:focus, textarea:focus, select:focus {
+    outline: none;
 }
 
 ::selection {
-  background: $color-primary; 
+    background: $color-primary;
 }
 
 ::-moz-selection {
-  background: $color-primary; 
+    background: $color-primary;
 }
 
 
@@ -131,34 +131,38 @@ outline: none;
     }
 }
 
-.form{
- @extend .display-flex;
-  @include flex-flow(wrap);
+.form {
+    @extend .display-flex;
+    @include flex-flow(wrap);
 }
 
-.textbox{
-    border:0;
+.textbox {
+    border: 0;
     border-bottom: 1px solid $color-secundary;
     color: $color-secundary;
     padding: 10px;
     background-color: transparent;
-    width: 90%;
+    width: calc(90% -20px);
     display: inline-block;
     -webkit-transition: all 0.5s ease;
     -moz-transition: all 0.5s ease;
     -o-transition: all 0.5s ease;
     transition: all 0.5s ease;
-    &--mensagem{
+    margin-bottom: 20px;
+
+    &--mensagem {
         @extend .textbox;
+        width: calc(100% -20px);
+        height: 80px;
     }
 }
 
-.textbox:focus{
-     border-bottom: 1px solid $color-primary;
+.textbox:focus {
+    border-bottom: 1px solid $color-primary;
 }
 
-.textbox:hover{
-     border-bottom: 1px solid $color-primary;
+.textbox:hover {
+    border-bottom: 1px solid $color-primary;
 }
 
 .scroll {
@@ -170,7 +174,7 @@ outline: none;
     display: block;
 }
 
-.division{
+.division {
     display: inline-block;
     margin-top: 20px;
     margin-bottom: 20px;
@@ -795,6 +799,7 @@ $breakpoints: ( (xs), (sm, $width-mobile), (md, $width-tablet), (lg, $width-desk
 
 .quem_sou {
     @extend .display-flex;
+
     &__title {
         @extend .title;
         padding-top: 10px;
@@ -835,6 +840,7 @@ $breakpoints: ( (xs), (sm, $width-mobile), (md, $width-tablet), (lg, $width-desk
     position: relative;
     z-index: 2;
     background-color: $color-three;
+
     &__header {
         padding-top: 20px;
         padding-bottom: 20px;
@@ -898,36 +904,87 @@ $breakpoints: ( (xs), (sm, $width-mobile), (md, $width-tablet), (lg, $width-desk
         position: absolute;
     }
 
-    &__item{
+    &__item {
         width: 259.2px;
         height: 460.08px;
-        float: left;  
-        padding:0px;
-        margin-top:0;
-        margin-bottom:0; 
-        margin-left: auto; 
-        margin-right:auto; 
+        float: left;
+        padding: 0px;
+        margin-top: 0;
+        margin-bottom: 0;
+        margin-left: auto;
+        margin-right: auto;
     }
 
-    &__image{
+    &__image {
         width: 100%;
         height: 100%;
-        margin-bottom:-4px; 
+        margin-bottom: -4px;
     }
-    
 }
 
-.slide{
+.content_social{
+    width:100%;
     position:relative;
-    left:-100%; 
-    list-style-type: none; 
+    background-image:  url(../images/jpeg/background.jpg);
+    background-size: cover;
+     background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+       z-index:2;
+    background-color:red;
+    background-color: $color-three;
+
+    &__header {
+        padding-top: 20px;
+        padding-bottom: 20px;
+        text-align: center;
+        position: relative;
+       z-index:3;
+    }
+
+     &__title {
+        @extend .title;
+        text-align: center;
+        padding-top: 10px;
+        font-size: 1.5em;
+        padding-bottom: 10px;
+        color: $color-primary;
+         position: relative;
+       z-index:3;
+    }
+
+    &__title--sub {
+        text-align: center;
+        padding: 10px;
+        font-size: 1em;
+        color: $color-secundary;
+         position: relative;
+       z-index:3;
+    }
+
+}
+
+.overlay{
+    background-color:rgba(39,45,57,0.8);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left:0;
+}
+
+.slide {
+    position: relative;
+    left: -100%;
+    list-style-type: none;
     margin: auto;
     padding: 0px;
-    width:9999px;
-    padding-bottom:10px;
+    width: 9999px;
+    padding-bottom: 10px;
 }
 
-.visor{
+.visor {
     display: block;
     overflow: hidden;
     background-color: red;
@@ -937,7 +994,7 @@ $breakpoints: ( (xs), (sm, $width-mobile), (md, $width-tablet), (lg, $width-desk
     z-index: 3;
 }
 
-.visor .slide{
+.visor .slide {
     display: block;
 }
 
@@ -972,10 +1029,9 @@ $breakpoints: ( (xs), (sm, $width-mobile), (md, $width-tablet), (lg, $width-desk
 }
 
 #carousel_inner-2 {
-    float:left; 
-    width:1920px;
-    overflow: hidden;  
+    float: left;
+    width: 1920px;
+    overflow: hidden;
     background: #F0F0F0;
     text-align: center;
 }
-
