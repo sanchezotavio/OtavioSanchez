@@ -20,7 +20,8 @@
             <polygon opacity="0" points="19.9,21 0,1.3 1.4,0 19.9,18.3 38.6,0 40,1.3 "><animate id="first" attributeName="opacity" attributeType="XML" dur="1.5s" from="0.5" to="0" repeatCount="indefinite" begin="0" /></polygon>
             <polygon id="arrow-two" opacity="0" points="19.9,30.9 0,11.2 1.4,9.9 19.9,28.2 38.6,9.8 40,11.2 "><animate id="second" attributeName="opacity" attributeType="XML" dur="1.5s" from="0.5" to="0" repeatCount="indefinite" begin="0.5s" /></polygon>
             <polygon id="arrow-three" opacity="0" points="19.9,40 0,20.3 1.4,19 19.9,37.3 38.6,19 40,20.3 "><animate id="third" attributeName="opacity" attributeType="XML" dur="1.5s" from="0.5" to="0" repeatCount="indefinite" begin="1s" /></polygon>
-            </svg>       
+            </svg>
+       
     </div>
 
     <header id="header" class="top__header"></header>
@@ -52,7 +53,7 @@
             <span class="division"></span>
         </header>
 
-        <div class="container">
+        <div class="container--body">
 
             <article class="servico">
                 <div class="o-col-md-12 o-col-xs-5" id="servico1">
@@ -73,7 +74,6 @@
             <article class="servico">
 
                 <div class="o-col-md-12 o-col-xs-6">
-
                 </div>
                 <div class="o-col-md-12 o-col-xs-1">
                 </div>
@@ -200,10 +200,34 @@
     </section>
 
     <section id="contato" class="contato border">
-        <div>
-            <h1>
-                ASFFAS
+        <header class="contato__header">
+            <h1 class="contato__title">
+               Contato
             </h1>
+            <span class="division"></span>
+            <h2 class="contato__title--sub">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit
+            </h2>
+        </header>
+        <div class="container">
+            <div class=" o-col-md-12 o-col-xs-4">
+               <h2 class="title"> ABC </h2>
+            </div>
+            <div class="o-col-md-12 o-col-xs-8">
+                <form class="form">
+                    
+                    <input type="text" name="assunto" id="assunto" class="textbox" placeholder="Assunto*" />
+                    
+                        <input type="tel" name="telefone" id="telefone" class="textbox" placeholder="Telefone" />
+                
+                        <input type="text" name="nome" id="nome" class="textbox" placeholder="Seu Nome*" />
+                
+                        <input type="email" name="email" id="email" class="textbox" placeholder="Email*" />
+            
+                        <input type="text" name="mensagem" id="mensagem" class="textbox" placeholder="Mensagem" />
+                
+                </form>
+            </div>
         </div>
     </section>
 

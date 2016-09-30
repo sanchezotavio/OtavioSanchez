@@ -7,6 +7,19 @@ body {
     -webkit-font-smoothing: antialiased;
 }
 
+input:focus, textarea:focus, select:focus{
+outline: none;
+}
+
+::selection {
+  background: $color-primary; 
+}
+
+::-moz-selection {
+  background: $color-primary; 
+}
+
+
 @mixin flex-flow($value) {
     -webkit-flex-flow: $value;
     -moz-flex-flow: $value;
@@ -111,8 +124,38 @@ body {
         padding-top: 10px;
         padding-bottom: 10px;
     }
+
+    &--body {
+        @extend .container;
+        max-width: 960px;
+    }
 }
 
+.form{
+
+}
+
+.textbox{
+    border:0;
+    border-bottom: 1px solid $color-secundary;
+    color: $color-secundary;
+    padding: 10px;
+    background-color: transparent;
+    width: 90%;
+    display: inline-block;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+.textbox:focus{
+     border-bottom: 1px solid $color-primary;
+}
+
+.textbox:hover{
+     border-bottom: 1px solid $color-primary;
+}
 
 .scroll {
     bottom: 0;
@@ -788,6 +831,27 @@ $breakpoints: ( (xs), (sm, $width-mobile), (md, $width-tablet), (lg, $width-desk
     position: relative;
     z-index: 2;
     background-color: $color-three;
+    &__header {
+        padding-top: 20px;
+        padding-bottom: 20px;
+        text-align: center;
+    }
+
+    &__title {
+        @extend .title;
+        text-align: center;
+        padding-top: 10px;
+        font-size: 1.5em;
+        padding-bottom: 10px;
+        color: $color-primary;
+    }
+
+    &__title--sub {
+        text-align: center;
+        padding: 10px;
+        font-size: 1em;
+        color: $color-secundary;
+    }
 }
 
 .footer {
@@ -834,11 +898,11 @@ $breakpoints: ( (xs), (sm, $width-mobile), (md, $width-tablet), (lg, $width-desk
         width: 259.2px;
         height: 460.08px;
         float: left;  
-padding:0px;
-margin-top:0;
-margin-bottom:0; 
-margin-left: auto; 
-margin-right:auto; 
+        padding:0px;
+        margin-top:0;
+        margin-bottom:0; 
+        margin-left: auto; 
+        margin-right:auto; 
     }
 
     &__image{
@@ -851,12 +915,12 @@ margin-right:auto;
 
 .slide{
     position:relative;
-left:-100%; 
-list-style-type: none; 
-margin: auto;
-padding: 0px;
-width:9999px;
-padding-bottom:10px;
+    left:-100%; 
+    list-style-type: none; 
+    margin: auto;
+    padding: 0px;
+    width:9999px;
+    padding-bottom:10px;
 }
 
 .visor{
@@ -867,7 +931,6 @@ padding-bottom:10px;
     text-align: center;
     justify-content: center;
     z-index: 3;
-
 }
 
 .visor .slide{
@@ -905,22 +968,10 @@ padding-bottom:10px;
 }
 
 #carousel_inner-2 {
-float:left; 
-width:1920px;
-overflow: hidden;  
-background: #F0F0F0;
-text-align: center;
-}
-
-#left_scroll, #right_scroll{
-float:left; 
-height:130px; 
-width:15px; 
-background: #C0C0C0; 
-}
-#left_scroll img, #right_scroll img{
-
-cursor: pointer;
-cursor: hand;
+    float:left; 
+    width:1920px;
+    overflow: hidden;  
+    background: #F0F0F0;
+    text-align: center;
 }
 

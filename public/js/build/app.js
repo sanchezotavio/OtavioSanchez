@@ -357,11 +357,9 @@ function timeout() {
 }
 
 function rotate() {
-  item_width_2 = $('#carousel_container-2 .carousel__item').outerWidth()
-
-  left_indent_2 = parseInt($('.slide').css('left')) + item_width_2
-
-  $('#carousel_container-2 .slide:not(:animated)').animate({ 'left': left_indent_2 }, 500, function () {
+    item_width_2 = $('#carousel_container-2 .carousel__item').outerWidth()
+    left_indent_2 = parseInt($('.slide').css('left')) + item_width_2
+    $('#carousel_container-2 .slide:not(:animated)').animate({ 'left': left_indent_2 }, 500, function () {
     $('#carousel_container-2 .carousel__item:first').before($('#carousel_container-2 .carousel__item:last'))
     $('#carousel_container-2 .slide').css({ 'left': - item_width_2 + 'px' })
   })
