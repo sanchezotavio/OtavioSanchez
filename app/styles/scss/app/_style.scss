@@ -746,6 +746,19 @@ $breakpoints: ( (xs), (sm, $width-mobile), (md, $width-tablet), (lg, $width-desk
     bottom: -50px;
 }
 
+#contatos {
+    opacity: 0;
+    position: relative;
+    bottom: -50px;
+}
+
+#quemsou {
+    opacity: 0;
+    position: relative;
+    bottom: -50px;
+}
+
+
 .sobre {
     position: relative;
     z-index: 2;
@@ -1049,4 +1062,39 @@ $breakpoints: ( (xs), (sm, $width-mobile), (md, $width-tablet), (lg, $width-desk
     overflow: hidden;
     background: #F0F0F0;
     text-align: center;
+}
+
+
+#home__titleNameMain{
+    opacity:0;
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    transition: all 1s ease;
+}
+
+#home__titleName
+{
+    opacity:0;
+    -webkit-transition: all 1.5s ease;
+    -moz-transition: all  1.5s ease;
+    -o-transition: all  1.5s ease;
+    transition: all  1.5s ease;
+}
+
+#home__titleSub
+{
+    opacity:0;
+    -webkit-transition: all 2s ease;
+    -moz-transition: all 2s ease;
+    -o-transition: all 2s ease;
+    transition: all 2s ease;
+}
+
+.fadeOn{
+     opacity:0;
+    -webkit-transition: all 2s ease;
+    -moz-transition: all 2s ease;
+    -o-transition: all 2s ease;
+    transition: all 2s ease;
 }

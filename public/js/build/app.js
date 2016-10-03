@@ -268,6 +268,22 @@ var sceneMenuLogo = new ScrollMagic.Scene({ triggerElement: '#servicos' })
   .setTween(topMenuLogo)
   .addTo(controller)
 
+var sqs = TweenMax.to('#quemsou', 1.6, { opacity: 1, bottom: 0 })
+
+var sceneQuemSou = new ScrollMagic.Scene({ triggerElement: '#sobre' })
+  .setTween(sqs)
+  .addTo(controller)
+
+
+
+var sc = TweenMax.to('#contatos', 1.6, { opacity: 1, bottom: 0 })
+
+var sceneContato = new ScrollMagic.Scene({ triggerElement: '#contato' })
+  .setTween(sc)
+  .addTo(controller)
+
+
+
 $(document).ready(function () {
   $(window).scroll(function () {
     if (window.pageYOffset > 0) {
@@ -326,7 +342,12 @@ $('#bg').jParticle({
 
 $(window).on('load', function () {
   $('#load-item').fadeOut('fast', function () {
-    $('.load').animate({ left: '-100%' })
+      $('.load').animate({ left: '-100%' }, function () {
+          $('#home__titleNameMain').css('opacity', '1');
+          $('#home__titleName').css('opacity', '1');
+          $('#home__titleSub').css('opacity', '1');
+          $('.fadeOn').css('opacity', '1');
+      })
   })
 })
 
@@ -351,7 +372,8 @@ $(document).ready(function () {
 
 function timeout() {
   setTimeout(function () {
-    rotate()
+      rotate()
+      rotateMobile()
     timeout()
   }, speed)
 }
@@ -363,6 +385,15 @@ function rotate() {
     $('#carousel_container-2 .carousel__item:first').before($('#carousel_container-2 .carousel__item:last'))
     $('#carousel_container-2 .slide').css({ 'left': - item_width_2 + 'px' })
   })
+}
+
+function rotateMobile() {
+    item_width = $('#carousel_container .carousel__item').outerWidth()
+    left_indent = parseInt($('.slide').css('left')) + item_width
+    $('#carousel_container .slide:not(:animated)').animate({ 'left': left_indent }, 500, function () {
+        $('#carousel_container .carousel__item:first').before($('#carousel_container .carousel__item:last'))
+        $('#carousel_container .slide').css({ 'left': -item_width + 'px' })
+    })
 }
 
 /* Slide End */

@@ -30,11 +30,11 @@
         <article class="home__article">
             <div class="home__center">
                 <hgroup class="home__group">
-                    <h1 class="home__title">OTÁVIO</h1>
-                    <h1 class="home__title">SANCHEZ</h1>
-                    <h1 class="home__title--sub">DESENVOLVEDOR WEB</h1>
+                    <h1 id="home__titleNameMain" class="home__title">OTÁVIO</h1>
+                    <h1 id="home__titleName" class="home__title">SANCHEZ</h1>
+                    <h1 id="home__titleSub" class="home__title--sub">DESENVOLVEDOR WEB</h1>
                 </hgroup>
-                <div class="row display-flex">
+                <div class="row display-flex fadeOn">
                     <a href="#" class="button--main"> Conheça Meus Projetos </a>
                 </div>
             </div>
@@ -119,7 +119,7 @@
             <div class="carousel">
                 <div class="mobile">
                     <div id="visor" class="visor">
-                        <div id='carousel_inner'>
+                        <div id='carousel_container'>
                             <ul class="slide" id='carousel_ul'>
                                 <li class="carousel__item">
                                     <a href='#'><img class="carousel__image" src="http://img.ibxk.com.br/2014/4/materias/6560518801091954-t640.jpg" alt="Slide 1" /></a>
@@ -142,9 +142,8 @@
                 </div>
                 <div class="carousel__bg"></div>
                 <div id='carousel_container-2'>
-
                     <div id='carousel_inner-2'>
-                        <ul class="slide" id='carousel_ul'>
+                        <ul class="slide" id='carousel_ul-2'>
 
                         </ul>
                     </div>
@@ -162,11 +161,10 @@
         <div class="container">
             <article class="quem_sou">
 
-                <div class="o-col-md-12 o-col-xs-5">
+                <div id="quemsou" class="o-col-md-12 o-col-xs-5">
                     <figure class="sobre__figure">
                         <img src="http://im.ziffdavisinternational.com/ign_br/screenshot/default/star-wars-darth-vader-sixth-scale-feature-1000763_e72v.jpg" class="sobre__image" alt="Otávio Sanchez" />
                     </figure>
-
                     <h3 class="quem_sou__title">Olá, </h3>
                     <p class="paragraph">
                        Me chamo Otávio Sanchez, sou Desenvolvedor Web, entusiasta de tecnologia, autodidata e apaixonado por código.
@@ -174,8 +172,6 @@
                     <p class="paragraph">
                         Estudante do Bacharelado em Ciência e Tecnologia pela Universidade Federal do ABC - curso multidisciplinar - que me permitiu abrir espaço para novas possibilidades através da tecnologia da informação em suas mais diferentes vertentes.
                     </p>
-
-
                     <div class="sobre__row">
                         <a href="#" class="button">Veja Completo</a>
                     </div>
@@ -186,8 +182,6 @@
                 <div class="o-col-md-12 o-col-xs-6">
                     <div style="width: 80%; background-color:#ffffff">a</div>
                 </div>
-
-
             </article>
         </div>
     </section>
@@ -216,7 +210,7 @@
             </h2>
         </header>
         <div class="container">
-            <div class="o-col-md-12 o-col-xs-4">
+            <div id="contatos" class="o-col-md-12 o-col-xs-4">
                 <h2 class="title"> ABC </h2>
             </div>
             <div class="o-col-md-12 o-col-xs-8">
