@@ -101,49 +101,76 @@ var FooterText = React.createClass({
     render: function () {
         return React.createElement(
             "div",
-            { className: "container border space" },
+            { classe: "footer" },
             React.createElement(
                 "div",
-                { className: "o-col-xs-6 o-col-lg-12  align_h_left--responsive" },
+                { className: "container  align_h_center" },
                 React.createElement(
-                    "div",
-                    { "class": "text" },
-                    "Desenvolvido por ",
+                    "nav",
+                    { className: "nav" },
                     React.createElement(
-                        "a",
-                        { href: mainLink, className: "link", title: name },
-                        name
-                    ),
-                    "."
-                ),
-                React.createElement(
-                    "div",
-                    { "class": "text" },
-                    "Copyright © ",
-                    ano,
-                    " ",
-                    name,
-                    ".Todos os direitos reservados."
+                        "ul",
+                        { className: "footer__nav", id: "navigation" },
+                        paginas.map(function (l) {
+                            return React.createElement(
+                                "li",
+                                { className: "footer__item" },
+                                React.createElement(
+                                    "a",
+                                    { className: "link", title: l.title, href: l.href },
+                                    l.title
+                                )
+                            );
+                        })
+                    )
                 )
             ),
             React.createElement(
                 "div",
-                { className: "o-col-xs-6 o-col-lg-12  align_h_right--responsive" },
+                { className: "border space container" },
                 React.createElement(
                     "div",
-                    { "class": "text" },
-                    " Entre em contato: "
+                    { className: "o-col-xs-6 o-col-lg-12  align_h_left--responsive" },
+                    React.createElement(
+                        "div",
+                        { "class": "text" },
+                        "Desenvolvido por ",
+                        React.createElement(
+                            "a",
+                            { href: mainLink, className: "link", title: name },
+                            name
+                        ),
+                        "."
+                    ),
+                    React.createElement(
+                        "div",
+                        { "class": "text" },
+                        "Copyright © ",
+                        ano,
+                        " ",
+                        name,
+                        ".Todos os direitos reservados."
+                    )
                 ),
                 React.createElement(
                     "div",
-                    { "class": "text" },
-                    " ",
+                    { className: "o-col-xs-6 o-col-lg-12  align_h_right--responsive" },
                     React.createElement(
-                        "a",
-                        { href: "mailto:" + email, className: "link", title: email },
-                        email
+                        "div",
+                        { "class": "text" },
+                        " Entre em contato: "
                     ),
-                    " "
+                    React.createElement(
+                        "div",
+                        { "class": "text" },
+                        " ",
+                        React.createElement(
+                            "a",
+                            { href: "mailto:" + email, className: "link", title: email },
+                            email
+                        ),
+                        " "
+                    )
                 )
             )
         );

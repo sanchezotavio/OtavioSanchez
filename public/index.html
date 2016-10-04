@@ -42,8 +42,10 @@
         </article>
 
     </section>
-    <div class="bar lite o-col-lg-12">
-        auui
+    <div class="bar lite">
+
+    </div>
+    <div class="o-col-md-12 o-col-xs-1"></div>
     </div>
     <section class="servicos border" id="servicos">
 
@@ -69,9 +71,6 @@
             </article>
 
             <article class="servico">
-
-                <div class="o-col-md-12 o-col-xs-6">
-                </div>
                 <div class="o-col-md-12 o-col-xs-6" id="servico2">
                     <h2 class="servicos__title">
                         SAV
@@ -81,7 +80,8 @@
                         ullamcorper augue velit at leo. Fusce id luctus ipsum. Nullam et bibendum justo.
                     </p>
                 </div>
-
+                <div class="o-col-md-12 o-col-xs-6">
+                </div>
             </article>
 
             <article class="servico">
@@ -144,7 +144,6 @@
                 <div id='carousel_container-2'>
                     <div id='carousel_inner-2'>
                         <ul class="slide" id='carousel_ul-2'>
-
                         </ul>
                     </div>
                 </div>
@@ -161,13 +160,13 @@
         <div class="container">
             <article class="quem_sou">
 
-                <div id="quemsou" class="o-col-md-12 o-col-xs-5">
+                <div id="quemsou" class=" o-col-xs-6">
                     <figure class="sobre__figure">
                         <img src="http://im.ziffdavisinternational.com/ign_br/screenshot/default/star-wars-darth-vader-sixth-scale-feature-1000763_e72v.jpg" class="sobre__image" alt="Otávio Sanchez" />
                     </figure>
                     <h3 class="quem_sou__title">Olá, </h3>
                     <p class="paragraph">
-                       Me chamo Otávio Sanchez, sou Desenvolvedor Web, entusiasta de tecnologia, autodidata e apaixonado por código.
+                        Me chamo Otávio Sanchez, sou Desenvolvedor Web, entusiasta de tecnologia, autodidata e apaixonado por código.
                     </p>
                     <p class="paragraph">
                         Estudante do Bacharelado em Ciência e Tecnologia pela Universidade Federal do ABC - curso multidisciplinar - que me permitiu abrir espaço para novas possibilidades através da tecnologia da informação em suas mais diferentes vertentes.
@@ -176,11 +175,8 @@
                         <a href="#" class="button">Veja Completo</a>
                     </div>
                 </div>
-                <div class="o-col-md-12 o-col-xs-1">
-
-                </div>
                 <div class="o-col-md-12 o-col-xs-6">
-                    <div style="width: 80%; background-color:#ffffff">a</div>
+
                 </div>
             </article>
         </div>
@@ -197,6 +193,22 @@
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit
             </h2>
         </header>
+        <div>
+            <nav class="nav">
+                <ul class="social_network">
+                    <li class="social_network__item--lite">
+                        <a class="social_network__link" title="" href="#">
+                            <img src="styles/images/svg/githubWhite.svg" class="social_network__image" name="" alt="" />
+                        </a>
+                    </li>
+                    <li class="social_network__item--lite">
+                        <a class="social_network__link" title="" href="#">
+                            <img src="styles/images/svg/linkedinWhite.svg" class="social_network__image" name="" alt="" />
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
     </div>
 
     <section id="contato" class="contato border">
@@ -211,24 +223,36 @@
         </header>
         <div class="container">
             <div id="contatos" class="o-col-md-12 o-col-xs-4">
-                <h2 class="title"> ABC </h2>
+                <h2 class="contato__title--info">Entre em contato</h2>
+               <div class="contato__text">
+                   Email: <a class="link" href="#">dev@otaviosanchez.com</a>
+               </div>
+                <div class="contato__text">
+                  São Paulo - SP
+               </div>
+                <div class="contato__text">
+                   Celular: <a class="link" href="#">1234-5678</a>
+               </div>
             </div>
             <div class="o-col-md-12 o-col-xs-8">
                 <form class="form">
                     <div class="o-col-md-12 o-col-xs-6">
-                        <input type="text" name="assunto" id="assunto" class="textbox" placeholder="Assunto*" />
+                        <input type="text" name="assunto" id="assunto" class="textbox" placeholder="Assunto*" required />
                     </div>
                     <div class="o-col-md-12 o-col-xs-6">
                         <input type="tel" name="telefone" id="telefone" class="textbox" placeholder="Telefone" />
                     </div>
                     <div class="o-col-md-12 o-col-xs-6">
-                        <input type="text" name="nome" id="nome" class="textbox" placeholder="Seu Nome*" />
+                        <input type="text" name="nome" id="nome" class="textbox" placeholder="Seu Nome*" required />
                     </div>
                     <div class="o-col-md-12 o-col-xs-6">
-                        <input type="email" name="email" id="email" class="textbox" placeholder="Email*" />
+                        <input type="email" name="email" id="email" class="textbox" placeholder="Email*" required />
                     </div>
                     <div class="o-col-md-12 o-col-xs-12">
-                        <textarea class="textbox--mensagem" name="mensagem" id="mensagem" placeholder="Mensagem"></textarea>
+                        <textarea class="textbox--mensagem" name="mensagem" id="mensagem" placeholder="Mensagem*" required></textarea>
+                    </div>
+                    <div class="row">
+                        <input type="submit"  class="button" value="Enviar" name="enviar" id="enviar" />                        
                     </div>
                 </form>
             </div>

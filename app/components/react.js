@@ -76,7 +76,21 @@ var Menu = React.createClass({
 var FooterText = React.createClass({
     render: function () {
         return (
-            <div className="container border space">
+            <div classe="footer">
+            <div className="container  align_h_center">
+            <nav className="nav">
+                <ul className="footer__nav" id="navigation">
+                            {paginas.map(function (l) {
+                                return <li className="footer__item">
+                                    <a className="link" title={l.title} href={l.href}>
+                                        {l.title}
+                                    </a>
+                                </li>
+                            }) }
+                        </ul>
+            </nav>
+            </div>                 
+            <div className="border space container">
                 <div className="o-col-xs-6 o-col-lg-12  align_h_left--responsive">
                     <div class="text">
                         Desenvolvido por <a href={mainLink} className="link" title={name}>{name}</a>.
@@ -89,6 +103,7 @@ var FooterText = React.createClass({
                     <div class="text"> Entre em contato: </div>
                     <div class="text"> <a href={"mailto:" + email} className="link" title={email}>{email}</a> </div>
                 </div>
+            </div>
             </div>
         )
     }
