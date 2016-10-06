@@ -51,8 +51,6 @@
 	
 	var _react = __webpack_require__(/*! react */ 1);
 	
-	var _react2 = _interopRequireDefault(_react);
-	
 	var _reactDom = __webpack_require__(/*! react-dom */ 34);
 	
 	var _reactRouter = __webpack_require__(/*! react-router */ 172);
@@ -71,15 +69,261 @@
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
-	(0, _reactDom.render)(_react2.default.createElement(
+	(0, _reactDom.render)(React.createElement(
 	    _reactRouter.Router,
-	    null,
-	    _react2.default.createElement(_reactRouter.Route, { path: '/', component: _homeComponent2.default }),
-	    _react2.default.createElement(_reactRouter.Route, { path: '/projetos', component: _projetosComponent2.default }),
-	    _react2.default.createElement(_reactRouter.Route, { path: '/sobre', component: sobre })
+	    { history: _reactRouter.browserHistory },
+	    React.createElement(
+	        _reactRouter.Route,
+	        { component: _homeComponent2.default },
+	        React.createElement(_reactRouter.Route, { path: '/', component: _homeComponent2.default }),
+	        React.createElement(_reactRouter.Route, { path: '/projetos', component: _projetosComponent2.default }),
+	        React.createElement(_reactRouter.Route, { path: '/sobre', component: _sobreComponent2.default })
+	    )
 	), document.getElementById('container'));
 	
 	/* Páginas */
+	
+	
+	var Load = React.createClass({
+	    displayName: 'Load',
+	
+	    render: function render() {
+	        return React.createElement(SVG, { name: 'load', id: 'load-item', 'class': 'load__item' });
+	    }
+	});
+	
+	var SVG = React.createClass({
+	    displayName: 'SVG',
+	
+	    render: function render() {
+	        return React.createElement('img', { id: this.props.id, className: this.props.class, src: "./styles/images/svg/" + this.props.name + ".svg" });
+	    }
+	});
+	
+	var Header = React.createClass({
+	    displayName: 'Header',
+	
+	    render: function render() {
+	        return React.createElement(
+	            'div',
+	            { className: 'container--header' },
+	            React.createElement(
+	                'div',
+	                { className: 'o-col-xs-5 align_h_left' },
+	                React.createElement(ButtonMenu, null)
+	            ),
+	            React.createElement(
+	                'div',
+	                { className: 'o-col-xs-2 align_h_center' },
+	                React.createElement(Logo, { href: mainLink, title: name, logo: "<OS>" })
+	            ),
+	            React.createElement(
+	                'nav',
+	                { className: 'o-col-xs-5 align_h_right' },
+	                React.createElement(NavRedesSociais, null)
+	            )
+	        );
+	    }
+	});
+	
+	var Logo = React.createClass({
+	    displayName: 'Logo',
+	
+	    render: function render() {
+	        return React.createElement(
+	            'h1',
+	            { id: 'logo', className: 'logo__title' },
+	            React.createElement(
+	                'a',
+	                { className: 'logo__link', href: this.props.href, title: this.props.title },
+	                this.props.logo
+	            )
+	        );
+	    }
+	});
+	
+	var Menu = React.createClass({
+	    displayName: 'Menu',
+	
+	    render: function render() {
+	        return React.createElement(
+	            'div',
+	            { 'class': 'row' },
+	            React.createElement(
+	                'div',
+	                { className: 'container' },
+	                React.createElement(
+	                    'nav',
+	                    { className: 'nav__menu o-col-xs-12' },
+	                    React.createElement(
+	                        'ul',
+	                        { className: 'list', id: 'navigation' },
+	                        paginas.map(function (l) {
+	                            return React.createElement(
+	                                'li',
+	                                { className: 'list__item' },
+	                                React.createElement(
+	                                    'a',
+	                                    { className: 'list__link', title: l.title, href: l.href },
+	                                    l.title
+	                                )
+	                            );
+	                        })
+	                    )
+	                ),
+	                React.createElement(
+	                    'div',
+	                    { className: 'footer o-col-xs-12' },
+	                    React.createElement(FooterText, null)
+	                )
+	            )
+	        );
+	    }
+	});
+	
+	var FooterText = React.createClass({
+	    displayName: 'FooterText',
+	
+	    render: function render() {
+	        return React.createElement(
+	            'div',
+	            { classe: 'footer' },
+	            React.createElement(
+	                'div',
+	                { className: 'container  align_h_center' },
+	                React.createElement(
+	                    'nav',
+	                    { className: 'nav' },
+	                    React.createElement(
+	                        'ul',
+	                        { className: 'footer__nav', id: 'navigation' },
+	                        paginas.map(function (l) {
+	                            return React.createElement(
+	                                'li',
+	                                { className: 'footer__item' },
+	                                React.createElement(
+	                                    'a',
+	                                    { className: 'link', title: l.title, href: l.href },
+	                                    l.title
+	                                )
+	                            );
+	                        })
+	                    )
+	                )
+	            ),
+	            React.createElement(
+	                'div',
+	                { className: 'border space container' },
+	                React.createElement(
+	                    'div',
+	                    { className: 'o-col-xs-6 o-col-lg-12  align_h_left--responsive' },
+	                    React.createElement(
+	                        'div',
+	                        { 'class': 'text' },
+	                        'Desenvolvido por ',
+	                        React.createElement(
+	                            'a',
+	                            { href: mainLink, className: 'link', title: name },
+	                            name
+	                        ),
+	                        '.'
+	                    ),
+	                    React.createElement(
+	                        'div',
+	                        { 'class': 'text' },
+	                        'Copyright © ',
+	                        ano,
+	                        ' ',
+	                        name,
+	                        '.Todos os direitos reservados.'
+	                    )
+	                ),
+	                React.createElement(
+	                    'div',
+	                    { className: 'o-col-xs-6 o-col-lg-12  align_h_right--responsive' },
+	                    React.createElement(
+	                        'div',
+	                        { 'class': 'text' },
+	                        ' Entre em contato: '
+	                    ),
+	                    React.createElement(
+	                        'div',
+	                        { 'class': 'text' },
+	                        ' ',
+	                        React.createElement(
+	                            'a',
+	                            { href: "mailto:" + email, className: 'link', title: email },
+	                            email
+	                        ),
+	                        ' '
+	                    )
+	                )
+	            )
+	        );
+	    }
+	});
+	
+	var NavRedesSociais = React.createClass({
+	    displayName: 'NavRedesSociais',
+	
+	    render: function render() {
+	        return React.createElement(
+	            'ul',
+	            { className: 'social_network' },
+	            redesSociais.map(function (l) {
+	                return React.createElement(
+	                    'li',
+	                    { className: 'social_network__item' },
+	                    React.createElement(
+	                        'a',
+	                        { className: 'social_network__link', title: l.title, href: l.href },
+	                        React.createElement(SVG, { 'class': 'social_network__image', name: l.name, alt: l.title })
+	                    )
+	                );
+	            })
+	        );
+	    }
+	});
+	
+	var ButtonMenu = React.createClass({
+	    displayName: 'ButtonMenu',
+	
+	    render: function render() {
+	        return React.createElement('input', { type: 'button', id: 'menu', title: 'Menu', className: 'button--menu open' });
+	    }
+	});
+	
+	var Footer = React.createClass({
+	    displayName: 'Footer',
+	
+	    render: function render() {
+	        return React.createElement(
+	            'div',
+	            { 'class': 'container' },
+	            React.createElement(FooterText, null)
+	        );
+	    }
+	});
+	
+	var mainLink = "otaviosanchez.com";
+	
+	var email = "dev@otaviosanchez.com";
+	
+	var name = "Otávio Sanchez";
+	
+	var ano = new Date().getFullYear;
+	
+	var redesSociais = [{ title: 'Linkedin', href: 'https://br.linkedin.com/in/ot%C3%A1vio-sanchez-88440294', name: 'linkedin' }, { title: 'GitHub', href: 'https://github.com/sanchezotavio', name: 'github' }];
+	
+	var paginas = [{ title: 'Home', href: '#home' }, { title: 'Quem Sou', href: '#quemsou' }, { title: 'Projetos', href: '#projetos' }, { title: 'Contato', href: '#contato' }];
+	
+	ReactDOM.render(React.createElement(Header, null), document.getElementById('header'));
+	
+	ReactDOM.render(React.createElement(Load, null), document.getElementById('load'));
+	
+	ReactDOM.render(React.createElement(Menu, null), document.getElementById('menu-container'));
+	
+	ReactDOM.render(React.createElement(Footer, null), document.getElementById('footer'));
 
 /***/ },
 /* 1 */
@@ -27809,7 +28053,7 @@
   \***************************************/
 /***/ function(module, exports, __webpack_require__) {
 
-	'use strict';
+	"use strict";
 	
 	Object.defineProperty(exports, "__esModule", {
 	    value: true
@@ -27839,18 +28083,515 @@
 	    }
 	
 	    _createClass(Home, [{
-	        key: 'render',
+	        key: "render",
 	        value: function render() {
 	            return _react2.default.createElement(
-	                'h1',
+	                "div",
 	                null,
-	                'Home'
+	                _react2.default.createElement(HomeSection, null),
+	                _react2.default.createElement(ServicosSection, null),
+	                _react2.default.createElement(ProjetosSection, null),
+	                _react2.default.createElement(SocialSection, null),
+	                _react2.default.createElement(ContatoSection, null)
 	            );
 	        }
 	    }]);
 	
 	    return Home;
 	}(_react.Component);
+	
+	var HomeSection = _react2.default.createClass({
+	    displayName: "HomeSection",
+	
+	    render: function render() {
+	        return _react2.default.createElement(
+	            "section",
+	            { className: "home", id: "home" },
+	            _react2.default.createElement("div", { id: "bg" }),
+	            _react2.default.createElement(
+	                "article",
+	                { className: "home__article" },
+	                _react2.default.createElement(
+	                    "div",
+	                    { className: "home__center" },
+	                    _react2.default.createElement(
+	                        "hgroup",
+	                        { className: "home__group" },
+	                        _react2.default.createElement(
+	                            "h1",
+	                            { id: "home__titleNameMain", className: "home__title" },
+	                            "OTÁVIO"
+	                        ),
+	                        _react2.default.createElement(
+	                            "h1",
+	                            { id: "home__titleName", className: "home__title" },
+	                            "SANCHEZ"
+	                        ),
+	                        _react2.default.createElement(
+	                            "h1",
+	                            { id: "home__titleSub", className: "home__title--sub" },
+	                            "DESENVOLVEDOR WEB"
+	                        )
+	                    ),
+	                    _react2.default.createElement(
+	                        "div",
+	                        { className: "row display-flex fadeOn" },
+	                        _react2.default.createElement(
+	                            "div",
+	                            { className: "o-col-xs-12" },
+	                            _react2.default.createElement(
+	                                "a",
+	                                { className: "button button-1--main", href: "/projetos" },
+	                                _react2.default.createElement(
+	                                    "svg",
+	                                    null,
+	                                    _react2.default.createElement("rect", { fill: "none", height: "100%", width: "100%", x: "0", y: "0" })
+	                                ),
+	                                " Conheça Meus Projetos"
+	                            )
+	                        )
+	                    )
+	                )
+	            )
+	        );
+	    }
+	});
+	
+	var ServicosSection = _react2.default.createClass({
+	    displayName: "ServicosSection",
+	
+	    render: function render() {
+	        return _react2.default.createElement(
+	            "section",
+	            { className: "servicos border", id: "servicos" },
+	            _react2.default.createElement(
+	                "header",
+	                { className: "servicos__header", id: "app" },
+	                _react2.default.createElement(
+	                    "h1",
+	                    { className: "servicos__title" },
+	                    "Serviços"
+	                ),
+	                _react2.default.createElement("span", { className: "division" })
+	            ),
+	            _react2.default.createElement(
+	                "div",
+	                { className: "container--body" },
+	                _react2.default.createElement(
+	                    "article",
+	                    { className: "servico" },
+	                    _react2.default.createElement(
+	                        "div",
+	                        { className: "o-col-md-12 o-col-xs-6", id: "servico1" },
+	                        _react2.default.createElement(
+	                            "h2",
+	                            { className: "servicos__title" },
+	                            "SAV"
+	                        ),
+	                        _react2.default.createElement(
+	                            "p",
+	                            { className: "paragraph" },
+	                            "Lorem ipsum dolor sit amet, consectetur adipiscing elit.Nunc nec accumsan velit, quis gravida odio.Aliquam mattis fermentum dictum.Vivamus ac diam vitae erat euismod maximus.Aenean porta, diam eu maximus finibus, libero magna facilisis odio, sit amet ullamcorper augue velit at leo.Fusce id luctus ipsum.Nullam et bibendum justo."
+	                        )
+	                    ),
+	                    _react2.default.createElement("div", { className: "o-col-md-12 o-col-xs-6" })
+	                ),
+	                _react2.default.createElement(
+	                    "article",
+	                    { className: "servico" },
+	                    _react2.default.createElement(
+	                        "div",
+	                        { className: "o-col-md-12 o-col-xs-6", id: "servico2" },
+	                        _react2.default.createElement(
+	                            "h2",
+	                            { className: "servicos__title" },
+	                            "SAV"
+	                        ),
+	                        _react2.default.createElement(
+	                            "p",
+	                            { className: "paragraph" },
+	                            "Lorem ipsum dolor sit amet, consectetur adipiscing elit.Nunc nec accumsan velit, quis gravida odio.Aliquam mattis fermentum dictum.Vivamus ac diam vitae erat euismod maximus.Aenean porta, diam eu maximus finibus, libero magna facilisis odio, sit amet ullamcorper augue velit at leo.Fusce id luctus ipsum.Nullam et bibendum justo."
+	                        )
+	                    ),
+	                    _react2.default.createElement("div", { className: "o-col-md-12 o-col-xs-6" })
+	                ),
+	                _react2.default.createElement(
+	                    "article",
+	                    { className: "servico" },
+	                    _react2.default.createElement(
+	                        "div",
+	                        { className: "o-col-md-12 o-col-xs-6", id: "servico3" },
+	                        _react2.default.createElement(
+	                            "h2",
+	                            { className: "servicos__title" },
+	                            "SAV"
+	                        ),
+	                        _react2.default.createElement(
+	                            "p",
+	                            { className: "paragraph" },
+	                            "Lorem ipsum dolor sit amet, consectetur adipiscing elit.Nunc nec accumsan velit, quis gravida odio.Aliquam mattis fermentum dictum.Vivamus ac diam vitae erat euismod maximus.Aenean porta, diam eu maximus finibus, libero magna facilisis odio, sit amet ullamcorper augue velit at leo.Fusce id luctus ipsum.Nullam et bibendum justo."
+	                        )
+	                    ),
+	                    _react2.default.createElement("div", { className: "o-col-md-12 o-col-xs-6" })
+	                )
+	            )
+	        );
+	    }
+	});
+	
+	var ProjetosSection = _react2.default.createClass({
+	    displayName: "ProjetosSection",
+	
+	    render: function render() {
+	        return _react2.default.createElement(
+	            "section",
+	            { className: "projetos border", id: "projetos" },
+	            _react2.default.createElement(
+	                "header",
+	                { className: "projetos__header" },
+	                _react2.default.createElement(
+	                    "h1",
+	                    { className: "projetos__title" },
+	                    "Projetos"
+	                ),
+	                _react2.default.createElement("span", { className: "division" }),
+	                _react2.default.createElement(
+	                    "h2",
+	                    { className: "projetos__title--sub" },
+	                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+	                ),
+	                _react2.default.createElement(
+	                    "div",
+	                    { className: "row" },
+	                    _react2.default.createElement(
+	                        "div",
+	                        { className: "o-col-xs-12" },
+	                        _react2.default.createElement(
+	                            "a",
+	                            { className: "button button-1", href: "/projetos" },
+	                            _react2.default.createElement(
+	                                "svg",
+	                                null,
+	                                _react2.default.createElement("rect", { fill: "none", height: "100%", width: "100%", x: "0", y: "0" })
+	                            ),
+	                            " Ver Todos"
+	                        )
+	                    )
+	                )
+	            ),
+	            _react2.default.createElement(
+	                "div",
+	                { className: "article" },
+	                _react2.default.createElement(
+	                    "div",
+	                    { className: "carousel" },
+	                    _react2.default.createElement(
+	                        "div",
+	                        { className: "mobile" },
+	                        _react2.default.createElement(
+	                            "div",
+	                            { id: "visor", className: "visor" },
+	                            _react2.default.createElement(
+	                                "div",
+	                                { id: "carousel_container" },
+	                                _react2.default.createElement(
+	                                    "ul",
+	                                    { className: "slide", id: "carousel_ul" },
+	                                    _react2.default.createElement(
+	                                        "li",
+	                                        { className: "carousel__item" },
+	                                        _react2.default.createElement(
+	                                            "a",
+	                                            { href: "#" },
+	                                            _react2.default.createElement("img", { className: "carousel__image", src: "http://img.ibxk.com.br/2014/4/materias/6560518801091954-t640.jpg", alt: "Slide 1" })
+	                                        )
+	                                    ),
+	                                    _react2.default.createElement(
+	                                        "li",
+	                                        { className: "carousel__item" },
+	                                        _react2.default.createElement(
+	                                            "a",
+	                                            { href: "#" },
+	                                            _react2.default.createElement("img", { className: "carousel__image", src: "http://img.ibxk.com.br/2014/4/materias/6560518801091954-t640.jpg", alt: "Slide 1" })
+	                                        )
+	                                    ),
+	                                    _react2.default.createElement(
+	                                        "li",
+	                                        { className: "carousel__item" },
+	                                        _react2.default.createElement(
+	                                            "a",
+	                                            { href: "#" },
+	                                            _react2.default.createElement("img", { className: "carousel__image", src: "http://img.ibxk.com.br/2014/4/materias/6560518801091954-t640.jpg", alt: "Slide 1" })
+	                                        )
+	                                    ),
+	                                    _react2.default.createElement(
+	                                        "li",
+	                                        { className: "carousel__item" },
+	                                        _react2.default.createElement(
+	                                            "a",
+	                                            { href: "#" },
+	                                            _react2.default.createElement("img", { className: "carousel__image", src: "http://img.ibxk.com.br/2014/4/materias/6560518801091954-t640.jpg", alt: "Slide 1" })
+	                                        )
+	                                    ),
+	                                    _react2.default.createElement(
+	                                        "li",
+	                                        { className: "carousel__item" },
+	                                        _react2.default.createElement(
+	                                            "a",
+	                                            { href: "#" },
+	                                            _react2.default.createElement("img", { className: "carousel__image", src: "http://img.ibxk.com.br/2014/4/materias/6560518801091954-t640.jpg", alt: "Slide 1" })
+	                                        )
+	                                    )
+	                                )
+	                            )
+	                        )
+	                    ),
+	                    _react2.default.createElement("div", { className: "carousel__bg" }),
+	                    _react2.default.createElement(
+	                        "div",
+	                        { id: "carousel_container-2" },
+	                        _react2.default.createElement(
+	                            "div",
+	                            { id: "carousel_inner-2" },
+	                            _react2.default.createElement("ul", { className: "slide", id: "carousel_ul-2" })
+	                        )
+	                    )
+	                )
+	            )
+	        );
+	    }
+	});
+	
+	var SobreSection = _react2.default.createClass({
+	    displayName: "SobreSection",
+	
+	    render: function render() {
+	        return _react2.default.createElement(
+	            "section",
+	            { className: "sobre border", id: "sobre" },
+	            _react2.default.createElement(
+	                "header",
+	                { className: "sobre__header" },
+	                _react2.default.createElement(
+	                    "h2",
+	                    { className: "sobre__title" },
+	                    "Quem Sou"
+	                ),
+	                _react2.default.createElement("span", { className: "division" })
+	            ),
+	            _react2.default.createElement(
+	                "div",
+	                { className: "container" },
+	                _react2.default.createElement(
+	                    "article",
+	                    { className: "quem_sou" },
+	                    _react2.default.createElement(
+	                        "div",
+	                        { id: "quemsou", className: " o-col-xs-6" },
+	                        _react2.default.createElement(
+	                            "figure",
+	                            { className: "sobre__figure" },
+	                            _react2.default.createElement("img", { src: "http://im.ziffdavisinternational.com/ign_br/screenshot/default/star-wars-darth-vader-sixth-scale-feature-1000763_e72v.jpg", className: "sobre__image", alt: "Otávio Sanchez" })
+	                        ),
+	                        _react2.default.createElement(
+	                            "h3",
+	                            { className: "quem_sou__title" },
+	                            "Olá, "
+	                        ),
+	                        _react2.default.createElement(
+	                            "p",
+	                            { className: "paragraph" },
+	                            "Me chamo Otávio Sanchez, sou Desenvolvedor Web, entusiasta de tecnologia, autodidata e apaixonado por código."
+	                        ),
+	                        _react2.default.createElement(
+	                            "p",
+	                            { className: "paragraph" },
+	                            "Estudante do Bacharelado em Ciência e Tecnologia pela Universidade Federal do ABC - curso multidisciplinar - que me permitiu abrir espaço para novas possibilidades através da tecnologia da informação em suas mais diferentes vertentes."
+	                        ),
+	                        _react2.default.createElement(
+	                            "div",
+	                            { className: "sobre__row" },
+	                            _react2.default.createElement(
+	                                "div",
+	                                { className: "o-col-xs-12" },
+	                                _react2.default.createElement(
+	                                    "a",
+	                                    { className: "button button-1", href: "/quem_sou" },
+	                                    _react2.default.createElement(
+	                                        "svg",
+	                                        null,
+	                                        _react2.default.createElement("rect", { fill: "none", height: "100%", width: "100%", x: "0", y: "0" })
+	                                    ),
+	                                    " Veja Completo"
+	                                )
+	                            )
+	                        )
+	                    ),
+	                    _react2.default.createElement("div", { className: "o-col-md-12 o-col-xs-6" })
+	                )
+	            )
+	        );
+	    }
+	});
+	
+	var SocialSection = _react2.default.createClass({
+	    displayName: "SocialSection",
+	
+	    render: function render() {
+	        return _react2.default.createElement(
+	            "div",
+	            { className: "content_social border" },
+	            _react2.default.createElement("div", { className: "overlay" }),
+	            _react2.default.createElement(
+	                "header",
+	                { className: "content_social__header" },
+	                _react2.default.createElement(
+	                    "h1",
+	                    { className: "content_social__title" },
+	                    "Redes Sociais"
+	                ),
+	                _react2.default.createElement("span", { className: "division" }),
+	                _react2.default.createElement(
+	                    "h2",
+	                    { className: "content_social__title--sub" },
+	                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+	                )
+	            ),
+	            _react2.default.createElement(
+	                "div",
+	                null,
+	                _react2.default.createElement(
+	                    "nav",
+	                    { className: "nav" },
+	                    _react2.default.createElement(
+	                        "ul",
+	                        { className: "social_network" },
+	                        _react2.default.createElement(
+	                            "li",
+	                            { className: "social_network__item--lite" },
+	                            _react2.default.createElement(
+	                                "a",
+	                                { className: "social_network__link", title: "", href: "#" },
+	                                _react2.default.createElement("img", { src: "styles/images/svg/githubWhite.svg", className: "social_network__image", name: "", alt: "" })
+	                            )
+	                        ),
+	                        _react2.default.createElement(
+	                            "li",
+	                            { className: "social_network__item--lite" },
+	                            _react2.default.createElement(
+	                                "a",
+	                                { className: "social_network__link", title: "", href: "#" },
+	                                _react2.default.createElement("img", { src: "styles/images/svg/linkedinWhite.svg", className: "social_network__image", name: "", alt: "" })
+	                            )
+	                        )
+	                    )
+	                )
+	            )
+	        );
+	    }
+	});
+	
+	var ContatoSection = _react2.default.createClass({
+	    displayName: "ContatoSection",
+	
+	    render: function render() {
+	        return _react2.default.createElement(
+	            "section",
+	            { id: "contato", className: "contato border" },
+	            _react2.default.createElement(
+	                "header",
+	                { className: "contato__header" },
+	                _react2.default.createElement(
+	                    "h1",
+	                    { className: "contato__title" },
+	                    "Contato"
+	                ),
+	                _react2.default.createElement("span", { className: "division" }),
+	                _react2.default.createElement(
+	                    "h2",
+	                    { className: "contato__title--sub" },
+	                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+	                )
+	            ),
+	            _react2.default.createElement(
+	                "div",
+	                { className: "container" },
+	                _react2.default.createElement(
+	                    "div",
+	                    { id: "contatos", className: "o-col-md-12 o-col-xs-4" },
+	                    _react2.default.createElement(
+	                        "h2",
+	                        { className: "contato__title--info" },
+	                        "Entre em contato"
+	                    ),
+	                    _react2.default.createElement(
+	                        "div",
+	                        { className: "contato__text" },
+	                        "Email: ",
+	                        _react2.default.createElement(
+	                            "a",
+	                            { className: "link", href: "#" },
+	                            "dev @otaviosanchez.com"
+	                        )
+	                    ),
+	                    _react2.default.createElement(
+	                        "div",
+	                        { className: "contato__text" },
+	                        "São Paulo - SP"
+	                    ),
+	                    _react2.default.createElement(
+	                        "div",
+	                        { className: "contato__text" },
+	                        "Celular: ",
+	                        _react2.default.createElement(
+	                            "a",
+	                            { className: "link", href: "#" },
+	                            "1234-5678"
+	                        )
+	                    )
+	                ),
+	                _react2.default.createElement(
+	                    "div",
+	                    { className: "o-col-md-12 o-col-xs-8" },
+	                    _react2.default.createElement(
+	                        "form",
+	                        { className: "form" },
+	                        _react2.default.createElement(
+	                            "div",
+	                            { className: "o-col-md-12 o-col-xs-6" },
+	                            _react2.default.createElement("input", { type: "text", name: "assunto", id: "assunto", className: "textbox", placeholder: "Assunto*", required: true })
+	                        ),
+	                        _react2.default.createElement(
+	                            "div",
+	                            { className: "o-col-md-12 o-col-xs-6" },
+	                            _react2.default.createElement("input", { type: "tel", name: "telefone", id: "telefone", className: "textbox", placeholder: "Telefone" })
+	                        ),
+	                        _react2.default.createElement(
+	                            "div",
+	                            { className: "o-col-md-12 o-col-xs-6" },
+	                            _react2.default.createElement("input", { type: "text", name: "nome", id: "nome", className: "textbox", placeholder: "Seu Nome*", required: true })
+	                        ),
+	                        _react2.default.createElement(
+	                            "div",
+	                            { className: "o-col-md-12 o-col-xs-6" },
+	                            _react2.default.createElement("input", { type: "email", name: "email", id: "email", className: "textbox", placeholder: "Email*", required: true })
+	                        ),
+	                        _react2.default.createElement(
+	                            "div",
+	                            { className: "o-col-md-12 o-col-xs-12" },
+	                            _react2.default.createElement("textarea", { className: "textbox--mensagem", name: "mensagem", id: "mensagem", placeholder: "Mensagem*", required: true })
+	                        ),
+	                        _react2.default.createElement(
+	                            "div",
+	                            { className: "row" },
+	                            _react2.default.createElement("input", { type: "submit", className: "button button-2", value: "Enviar", name: "enviar", id: "enviar" })
+	                        )
+	                    )
+	                )
+	            )
+	        );
+	    }
+	});
 	
 	exports.default = Home;
 

@@ -16,7 +16,7 @@ render(
         <Route component={Home}>
             <Route path="/" component={Home}/>
             <Route path="/projetos" component={Projetos}/>
-            <Route path="/sobre" component={sobre}/>
+            <Route path="/sobre" component={Sobre}/>
         </Route>
     </Router>,
     document.getElementById('container')

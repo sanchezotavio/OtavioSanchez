@@ -45,7 +45,7 @@ gulp.task('concat', function() {
     del.sync('public/js/app.js');
 
     return gulp.src([
-            'app/components/main.js'         
+            'app/components/main.js'        
         ])
         .pipe(sourcemaps.init())
         .pipe(concat('app.js'))
