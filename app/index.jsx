@@ -1,3 +1,27 @@
+
+import { Component } from 'react';
+
+import { render } from 'react-dom';
+
+import {Router, Route, IndexRoute, browserHistory} from 'react-router';
+
+/* Páginas */
+import Home from './common/home.component.jsx'
+import Projetos from './common/projetos.component.jsx'
+import Sobre from './common/sobre.component.jsx'
+
+
+render(
+    <Router history={browserHistory}>
+        <Route component={Home}>
+            <Route path="/" component={Home}/>
+            <Route path="/projetos" component={Projetos}/>
+            <Route path="/sobre" component={sobre}/>
+        </Route>
+    </Router>,
+    document.getElementById('container')
+);
+
 var Load = React.createClass({
     render: function () {
         return (

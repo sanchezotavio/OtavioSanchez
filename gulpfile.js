@@ -13,7 +13,7 @@ var sync = require('gulp-npm-script-sync');
 var config = {
     mode: {
         symbol: {
-            dest: 'public/styles/images/svg/',
+            dest: 'public/styles/images/sprite/',
             sprite: 'sprite.svg',
             example: true
         },
@@ -45,24 +45,23 @@ gulp.task('concat', function() {
     del.sync('public/js/app.js');
 
     return gulp.src([
-            'app/build/app/components/*.js',
-            'public/js/*.js'
+            'app/components/main.js'         
         ])
         .pipe(sourcemaps.init())
         .pipe(concat('app.js'))
-        .pipe(gulp.dest('public/js/build'))
+        .pipe(gulp.dest('public/js'))
         .pipe(uglify())
-        .pipe(rename('app.min.js'))
+        .pipe(rename('main.min.js'))
         .pipe(sourcemaps.write('./'))
-        .pipe(gulp.dest('public/js/build'));
+        .pipe(gulp.dest('public/js'));
 });
 
-gulp.task('images', () => gulp.src('public/styles/images/*')
+gulp.task('images', () => gulp.src('public/styles/images/png/*.png')
     .pipe(imagemin({
         progressive: true,
         optimizationLevel: 7
     }))
-    .pipe(gulp.dest('public/styles/images'))
+    .pipe(gulp.dest('public/styles/images/min'))
 );
 
 gulp.task('sass', function() {
@@ -77,7 +76,6 @@ gulp.task('sass', function() {
 gulp.task('watch', function() {
     gulp.watch('app/styles/scss/app/*.scss', ['sass']);
     gulp.watch('app/build/app/components/*.js', ['concat']);
-    gulp.watch('public/js/*.js', ['concat']);
     gulp.watch('app/components/*.js', ['sync']);
     gulp.watch('app/components/*.js', ['concat']);
 });
