@@ -3,8 +3,6 @@ import { Component } from 'react';
 
 import { render } from 'react-dom';
 
-import {Router, Route, IndexRoute, browserHistory} from 'react-router';
-
 import Main from './common/main.component.jsx'
 
 /* Páginas */
@@ -14,12 +12,6 @@ import Sobre from './common/sobre.component.jsx'
 
 
 render(
-    <Router history={browserHistory}>
-        <Route  path='/' component={Main}>
-             <IndexRoute component={Home} />
-            <Route path="projetos" component={Projetos}/>
-            <Route path="sobre" component={Sobre}/>
-        </Route>
-    </Router>,
+    <Home />,
     document.getElementById('container')
 );

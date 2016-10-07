@@ -23,9 +23,9 @@ var HomeSection = React.createClass({
                 <article className="home__article">
                     <div className="home__center">
                         <hgroup className="home__group">
-                            <h1 id="home__titleNameMain" className="home__title">ABC</h1>
-                            <h1 id="home__titleName" className="home__title">DER</h1>
-                            <h1 id="home__titleSub" className="home__title--sub">ABCB</h1>
+                            <h1 id="home__titleNameMain" className="home__title">Otávio</h1>
+                            <h1 id="home__titleName" className="home__title">Sanchez</h1>
+                            <h1 id="home__titleSub" className="home__title--sub">DESENVOLVEDOR WEB</h1>
                         </hgroup>
                         <div className="row display-flex fadeOn">
                             <div className="o-col-xs-12">

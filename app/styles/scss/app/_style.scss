@@ -593,12 +593,10 @@ $breakpoints: ( (xs), (sm, $width-mobile), (md, $width-tablet), (lg, $width-desk
 stroke:  $color-secundary;
   stroke-dasharray: 40, 261;
   stroke-dashoffset: 48;
-  transition-timing-function: ease-in-out;
-
-  -webkit-transition: all 1.5s  cubic-bezier(0.19, 1, 0.22, 1);
-    -moz-transition: all 1.5s  cubic-bezier(0.19, 1, 0.22, 1);
-    -o-transition: all 1.5s  cubic-bezier(0.19, 1, 0.22, 1);
-    transition: all 1.5s  cubic-bezier(0.19, 1, 0.22, 1);
+  -webkit-transition: all 1s  ease-in-out;
+    -moz-transition: all 1s  ease-in-out;
+    -o-transition: all 1s  ease-in-out;
+    transition: all 1s  ease-in-out;
 }
 
 .button-2{
@@ -634,12 +632,11 @@ stroke:  $color-secundary;
 stroke:  $color-primary;
   stroke-dasharray: 40, 261;
   stroke-dashoffset: 48;
-  transition-timing-function: ease-in-out;
 
-  -webkit-transition: all 1.5s  cubic-bezier(0.19, 1, 0.22, 1);
-    -moz-transition: all 1.5s  cubic-bezier(0.19, 1, 0.22, 1);
-    -o-transition: all 1.5s  cubic-bezier(0.19, 1, 0.22, 1);
-    transition: all 1.5s  cubic-bezier(0.19, 1, 0.22, 1);
+  -webkit-transition: all 1s  ease-in-out;
+    -moz-transition: all 1s ease-in-out;
+    -o-transition: all 1s  ease-in-out;
+    transition: all 1s  ease-in-out;
 }
 
 
