@@ -3,10 +3,11 @@ import React, { Component } from 'react';
 class Home extends Component {
     render() {
         return (
-            <div>
+            <div className="wrap">
                 <HomeSection />
                 <ServicosSection />
                 <ProjetosSection />
+                <SobreSection />
                 <SocialSection />
                 <ContatoSection />
             </div>
@@ -22,9 +23,9 @@ var HomeSection = React.createClass({
                 <article className="home__article">
                     <div className="home__center">
                         <hgroup className="home__group">
-                            <h1 id="home__titleNameMain" className="home__title">OTÁVIO</h1>
-                            <h1 id="home__titleName" className="home__title">SANCHEZ</h1>
-                            <h1 id="home__titleSub" className="home__title--sub">DESENVOLVEDOR WEB</h1>
+                            <h1 id="home__titleNameMain" className="home__title">ABC</h1>
+                            <h1 id="home__titleName" className="home__title">DER</h1>
+                            <h1 id="home__titleSub" className="home__title--sub">ABCB</h1>
                         </hgroup>
                         <div className="row display-flex fadeOn">
                             <div className="o-col-xs-12">
@@ -178,7 +179,7 @@ var SobreSection = React.createClass({
                 <div className="container">
                     <article className="quem_sou">
 
-                        <div id="quemsou" className=" o-col-xs-6">
+                        <div id="quemsou" className="o-col-xs-6 o-col-lg-12">
                             <figure className="sobre__figure">
                                 <img src="http://im.ziffdavisinternational.com/ign_br/screenshot/default/star-wars-darth-vader-sixth-scale-feature-1000763_e72v.jpg" className="sobre__image" alt="Otávio Sanchez" />
                             </figure>
@@ -203,7 +204,17 @@ var SobreSection = React.createClass({
 
                         </div>
                         <div className="o-col-md-12 o-col-xs-6">
-
+                            <div className="sobre__mobile">
+                            <div className="display">
+                          
+                             <SVG name="battery" id="battery" class="battery" />
+                         
+                            <div className="hour">
+                            {new Date().toLocaleString('en-US', { hour: 'numeric', minute: 'numeric' , hour12: true })}
+                            </div>
+                            <SVG name="wifi" id="wifi" class="wifi" />
+                            </div>
+                            </div>
                         </div>
                     </article>
                 </div>
@@ -302,5 +313,16 @@ var ContatoSection = React.createClass({
 });
 
 
+
+
+
+
+var SVG = React.createClass({
+    render: function () {
+        return (
+            <img id={this.props.id} className={this.props.class} src={"./styles/images/svg/" + this.props.name + ".svg"} />
+        );
+    }
+});
 
 export default Home

@@ -311,7 +311,7 @@
 	
 	var name = "Otávio Sanchez";
 	
-	var ano = new Date().getFullYear;
+	var ano = new Date().toLocaleString('en-US', { year: 'numeric' });
 	
 	var redesSociais = [{ title: 'Linkedin', href: 'https://br.linkedin.com/in/ot%C3%A1vio-sanchez-88440294', name: 'linkedin' }, { title: 'GitHub', href: 'https://github.com/sanchezotavio', name: 'github' }];
 	
@@ -28087,10 +28087,11 @@
 	        value: function render() {
 	            return _react2.default.createElement(
 	                "div",
-	                null,
+	                { className: "wrap" },
 	                _react2.default.createElement(HomeSection, null),
 	                _react2.default.createElement(ServicosSection, null),
 	                _react2.default.createElement(ProjetosSection, null),
+	                _react2.default.createElement(SobreSection, null),
 	                _react2.default.createElement(SocialSection, null),
 	                _react2.default.createElement(ContatoSection, null)
 	            );
@@ -28120,17 +28121,17 @@
 	                        _react2.default.createElement(
 	                            "h1",
 	                            { id: "home__titleNameMain", className: "home__title" },
-	                            "OTÁVIO"
+	                            "ABC"
 	                        ),
 	                        _react2.default.createElement(
 	                            "h1",
 	                            { id: "home__titleName", className: "home__title" },
-	                            "SANCHEZ"
+	                            "DER"
 	                        ),
 	                        _react2.default.createElement(
 	                            "h1",
 	                            { id: "home__titleSub", className: "home__title--sub" },
-	                            "DESENVOLVEDOR WEB"
+	                            "ABCB"
 	                        )
 	                    ),
 	                    _react2.default.createElement(
@@ -28387,7 +28388,7 @@
 	                    { className: "quem_sou" },
 	                    _react2.default.createElement(
 	                        "div",
-	                        { id: "quemsou", className: " o-col-xs-6" },
+	                        { id: "quemsou", className: "o-col-xs-6 o-col-lg-12" },
 	                        _react2.default.createElement(
 	                            "figure",
 	                            { className: "sobre__figure" },
@@ -28427,7 +28428,25 @@
 	                            )
 	                        )
 	                    ),
-	                    _react2.default.createElement("div", { className: "o-col-md-12 o-col-xs-6" })
+	                    _react2.default.createElement(
+	                        "div",
+	                        { className: "o-col-md-12 o-col-xs-6" },
+	                        _react2.default.createElement(
+	                            "div",
+	                            { className: "sobre__mobile" },
+	                            _react2.default.createElement(
+	                                "div",
+	                                { className: "display" },
+	                                _react2.default.createElement(SVG, { name: "battery", id: "battery", "class": "battery" }),
+	                                _react2.default.createElement(
+	                                    "div",
+	                                    { className: "hour" },
+	                                    new Date().toLocaleString('en-US', { hour: 'numeric', minute: 'numeric', hour12: true })
+	                                ),
+	                                _react2.default.createElement(SVG, { name: "wifi", id: "wifi", "class": "wifi" })
+	                            )
+	                        )
+	                    )
 	                )
 	            )
 	        );
@@ -28590,6 +28609,14 @@
 	                )
 	            )
 	        );
+	    }
+	});
+	
+	var SVG = _react2.default.createClass({
+	    displayName: "SVG",
+	
+	    render: function render() {
+	        return _react2.default.createElement("img", { id: this.props.id, className: this.props.class, src: "./styles/images/svg/" + this.props.name + ".svg" });
 	    }
 	});
 	

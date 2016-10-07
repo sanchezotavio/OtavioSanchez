@@ -182,7 +182,7 @@ var email = "dev@otaviosanchez.com"
 
 var name = "Otávio Sanchez";
 
-var ano = new Date().getFullYear;
+var ano =new Date().toLocaleString('en-US', { year: 'numeric' })
 
 var redesSociais = [
     { title: 'Linkedin', href: 'https://br.linkedin.com/in/ot%C3%A1vio-sanchez-88440294', name: 'linkedin' },
