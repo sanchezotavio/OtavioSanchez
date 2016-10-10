@@ -53,19 +53,19 @@
 	
 	var _reactDom = __webpack_require__(/*! react-dom */ 34);
 	
-	var _mainComponent = __webpack_require__(/*! ./common/main.component.jsx */ 235);
+	var _mainComponent = __webpack_require__(/*! ./common/main.component.jsx */ 172);
 	
 	var _mainComponent2 = _interopRequireDefault(_mainComponent);
 	
-	var _homeComponent = __webpack_require__(/*! ./common/home.component.jsx */ 236);
+	var _homeComponent = __webpack_require__(/*! ./common/home.component.jsx */ 173);
 	
 	var _homeComponent2 = _interopRequireDefault(_homeComponent);
 	
-	var _projetosComponent = __webpack_require__(/*! ./common/projetos.component.jsx */ 237);
+	var _projetosComponent = __webpack_require__(/*! ./common/projetos.component.jsx */ 174);
 	
 	var _projetosComponent2 = _interopRequireDefault(_projetosComponent);
 	
-	var _sobreComponent = __webpack_require__(/*! ./common/sobre.component.jsx */ 238);
+	var _sobreComponent = __webpack_require__(/*! ./common/sobre.component.jsx */ 175);
 	
 	var _sobreComponent2 = _interopRequireDefault(_sobreComponent);
 	
@@ -21956,70 +21956,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./~/process/browser.js */ 3)))
 
 /***/ },
-/* 172 */,
-/* 173 */,
-/* 174 */,
-/* 175 */,
-/* 176 */,
-/* 177 */,
-/* 178 */,
-/* 179 */,
-/* 180 */,
-/* 181 */,
-/* 182 */,
-/* 183 */,
-/* 184 */,
-/* 185 */,
-/* 186 */,
-/* 187 */,
-/* 188 */,
-/* 189 */,
-/* 190 */,
-/* 191 */,
-/* 192 */,
-/* 193 */,
-/* 194 */,
-/* 195 */,
-/* 196 */,
-/* 197 */,
-/* 198 */,
-/* 199 */,
-/* 200 */,
-/* 201 */,
-/* 202 */,
-/* 203 */,
-/* 204 */,
-/* 205 */,
-/* 206 */,
-/* 207 */,
-/* 208 */,
-/* 209 */,
-/* 210 */,
-/* 211 */,
-/* 212 */,
-/* 213 */,
-/* 214 */,
-/* 215 */,
-/* 216 */,
-/* 217 */,
-/* 218 */,
-/* 219 */,
-/* 220 */,
-/* 221 */,
-/* 222 */,
-/* 223 */,
-/* 224 */,
-/* 225 */,
-/* 226 */,
-/* 227 */,
-/* 228 */,
-/* 229 */,
-/* 230 */,
-/* 231 */,
-/* 232 */,
-/* 233 */,
-/* 234 */,
-/* 235 */
+/* 172 */
 /*!***************************************!*\
   !*** ./app/common/main.component.jsx ***!
   \***************************************/
@@ -22269,7 +22206,7 @@
 	ReactDOM.render(React.createElement(Footer, null), document.getElementById('footer'));
 
 /***/ },
-/* 236 */
+/* 173 */
 /*!***************************************!*\
   !*** ./app/common/home.component.jsx ***!
   \***************************************/
@@ -22330,7 +22267,6 @@
 	        return _react2.default.createElement(
 	            "section",
 	            { className: "home", id: "home" },
-	            _react2.default.createElement("div", { id: "bg" }),
 	            _react2.default.createElement(
 	                "article",
 	                { className: "home__article" },
@@ -22845,7 +22781,7 @@
 	exports.default = Home;
 
 /***/ },
-/* 237 */
+/* 174 */
 /*!*******************************************!*\
   !*** ./app/common/projetos.component.jsx ***!
   \*******************************************/
@@ -22897,7 +22833,7 @@
 	exports.default = Projetos;
 
 /***/ },
-/* 238 */
+/* 175 */
 /*!****************************************!*\
   !*** ./app/common/sobre.component.jsx ***!
   \****************************************/

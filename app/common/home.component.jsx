@@ -18,8 +18,7 @@ class Home extends Component {
 var HomeSection = React.createClass({
     render: function () {
         return (
-            <section className="home" id="home">
-                <div id="bg"></div>
+            <section className="home" id="home">                
                 <article className="home__article">
                     <div className="home__center">
                         <hgroup className="home__group">

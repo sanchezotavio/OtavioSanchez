@@ -17,6 +17,7 @@
     "jquery-ui": "^1.12.1",
     "scrollmagic": "^2.0.5",
     "skrollr": "^0.6.30",
-    "react": "^15.3.2"
+    "react": "^15.3.2",
+    "particles.js": "^2.0.0"
   }
 }
