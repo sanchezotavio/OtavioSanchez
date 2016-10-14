@@ -206,7 +206,7 @@ var SobreSection = React.createClass({
                             <div className="sobre__mobile">
                             <div className="display">
                           
-                             <SVG name="battery" id="battery" class="battery" />
+                             <SVG name="battery" id="battery" class="battery" erro />
                          
                             <div className="hour">
                             {new Date().toLocaleString('en-US', { hour: 'numeric', minute: 'numeric' , hour12: true })}
@@ -319,7 +319,7 @@ var ContatoSection = React.createClass({
 var SVG = React.createClass({
     render: function () {
         return (
-            <img id={this.props.id} className={this.props.class} src={"./styles/images/svg/" + this.props.name + ".svg"} />
+            <img id={this.props.id} className={this.props.class} onerror="this.src={'./styles/images/png/' + this.props.name + '.png'}" src={"./styles/images/svg/" + this.props.name + ".svg"} />
         );
     }
 });

@@ -8,10 +8,11 @@ var Load = React.createClass({
     }
 });
 
+
 var SVG = React.createClass({
     render: function () {
         return (
-            <img id={this.props.id} className={this.props.class} src={"./styles/images/svg/" + this.props.name + ".svg"} />
+            <img id={this.props.id} className={this.props.class} onerror={this.src='./styles/images/png/' + this.props.name + '.png'} src={"./styles/images/svg/" + this.props.name + ".svg"} />
         );
     }
 });
