@@ -8,7 +8,7 @@ var rename = require('gulp-rename');
 var svgSprite = require('gulp-svg-sprite');
 var concat = require('gulp-concat');
 var sync = require('gulp-npm-script-sync');
-
+var svg2png = require('gulp-svg2png');
 
 var config = {
     mode: {
@@ -30,8 +30,11 @@ gulp.task('sprites', function() {
         .pipe(gulp.dest('/sprites'));
 });
 
-
-
+gulp.task('svg2png', function () {
+    gulp.src('./public/styles/images/svg/*.svg')
+        .pipe(svg2png())
+        .pipe(gulp.dest('./public/styles/images/png'));
+});
 
 gulp.task('sync', function () {
   sync(gulp, {
@@ -80,4 +83,4 @@ gulp.task('watch', function() {
     gulp.watch('app/components/*.js', ['concat']);
 });
 
-gulp.task('default', ['sass', 'images','concat',  'sprites' , 'sync', 'watch']);
+gulp.task('default', ['sass', 'images','concat',  'sprites' , 'sync', 'watch' , 'svg2png']);
