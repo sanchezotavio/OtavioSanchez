@@ -22,7 +22,10 @@
     "watch": "gulp watch",
     "watchpack": "webpack -d --watch",
     "build": "webpack",
-    "serve": "serve ./public"
+    "serve": "serve ./public",
+    "concatComponents": "gulp concatComponents",
+    "scripts": "gulp scripts",
+    "AllScripts": "gulp AllScripts"
   },
   "devDependencies": {
     "babel-cli": "^6.14.0",
