@@ -1,5 +1,6 @@
 
 
+
 var Load = React.createClass({
     render: function () {
         return (
@@ -68,10 +69,9 @@ var Menu = React.createClass({
                         </ul>
                     </nav>
                     <div className="footer o-col-xs-12">
-                        <FooterText />
+                        <FooterConteudo />
                     </div>
                 </div>
-
                 <div className="scroll">
                     <SVG name="scroll" id="scroll" class="scroll__button"  />
                 </div>
@@ -97,19 +97,28 @@ var FooterText = React.createClass({
                         </ul>
                     </nav>
                 </div>
-                <div className="border space container">
-                    <div className="o-col-xs-6 o-col-lg-12  align_h_left--responsive">
-                        <div class="text">
-                            Desenvolvido por <a href={mainLink} className="link" title={name}>{name}</a>.
-                        </div>
-                        <div class="text">
-                            Copyright © {ano} {name}.Todos os direitos reservados.
-                        </div>
+                <FooterConteudo />
+            </div>
+        )
+    }
+});
+
+
+var FooterConteudo = React.createClass({
+    render: function () {
+        return (
+            <div className="border space container">
+                <div className="o-col-xs-6 o-col-lg-12  align_h_left--responsive">
+                    <div class="text">
+                        Desenvolvido por <a href={mainLink} className="link" title={name}>{name}</a>.
                     </div>
-                    <div className="o-col-xs-6 o-col-lg-12  align_h_right--responsive">
-                        <div class="text"> Entre em contato: </div>
-                        <div class="text"> <a href={"mailto:" + email} className="link" title={email}>{email}</a> </div>
+                    <div class="text">
+                        Copyright © {ano} {name}.Todos os direitos reservados.
                     </div>
+                </div>
+                <div className="o-col-xs-6 o-col-lg-12  align_h_right--responsive">
+                    <div class="text"> Entre em contato: </div>
+                    <div class="text"> <a href={"mailto:" + email} className="link" title={email}>{email}</a> </div>
                 </div>
             </div>
         )

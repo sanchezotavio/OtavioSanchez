@@ -8,17 +8,11 @@
   }
 }
 
-html {
-  -ms-overflow-style: -ms-autohiding-scrollbar;
-}
 
 body {
     color: $color-font;
     font-family: $font-primary;
-    -webkit-font-smoothing: antialiased;
-    -ms-overflow-style: auto;
-     overflow-y: auto !important; 
-   position: relative;
+    -webkit-font-smoothing: antialiased;    
 }
 
 input:focus, textarea:focus, select:focus {
