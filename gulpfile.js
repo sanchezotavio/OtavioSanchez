@@ -86,6 +86,15 @@ gulp.task('images', () => gulp.src('public/styles/images/png/*.png')
     .pipe(gulp.dest('public/styles/images/min'))
 )
 
+gulp.task('imagesJPG', () => gulp.src('public/styles/images/*.jpg')
+    .pipe(imagemin({
+        progressive: true,
+        optimizationLevel: 7
+    }))
+    .pipe(gulp.dest('public/styles/images/min'))
+)
+
+
 gulp.task('sass', function () {
     return gulp.src('app/styles/scss/*.scss')
         .pipe(sourcemaps.init())
@@ -102,4 +111,4 @@ gulp.task('watch', function () {
     gulp.watch('app/components/*.js', ['concat'])
 })
 
-gulp.task('default', ['AllScripts','sass', 'images', 'concat', 'sprites', 'sync', 'watch', 'svg2png'])
+gulp.task('default', ['AllScripts','sass', 'images', 'concat', 'sprites', 'sync', 'watch', 'svg2png', 'imagesJPG'])

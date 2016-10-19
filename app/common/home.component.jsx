@@ -34,7 +34,7 @@ var HomeSection = React.createClass({
                                         </rect></svg> Conheça Meus Projetos
                                 </a>
                             </div>
-                        </div>
+                        </div>                     
                     </div>
                 </article>
             </section>
@@ -134,19 +134,19 @@ var ProjetosSection = React.createClass({
                                 <div id='carousel_container'>
                                     <ul className="slide" id='carousel_ul'>
                                         <li className="carousel__item">
-                                            <a href='#'><img className="carousel__image" src="http://img.ibxk.com.br/2014/4/materias/6560518801091954-t640.jpg" alt="Slide 1" /></a>
+                                            <a href='#'><img className="carousel__image"  src="styles/images/min/mobile.jpg" alt="Slide 1" /></a>
                                         </li>
                                         <li className="carousel__item">
-                                            <a href='#'><img className="carousel__image" src="http://img.ibxk.com.br/2014/4/materias/6560518801091954-t640.jpg" alt="Slide 1" /></a>
+                                            <a href='#'><img className="carousel__image"  src="styles/images/min/mobile.jpg" alt="Slide 1" /></a>
                                         </li>
                                         <li className="carousel__item">
-                                            <a href='#'><img className="carousel__image" src="http://img.ibxk.com.br/2014/4/materias/6560518801091954-t640.jpg" alt="Slide 1" /></a>
+                                            <a href='#'><img className="carousel__image"  src="styles/images/min/mobile.jpg" alt="Slide 1" /></a>
                                         </li>
                                         <li className="carousel__item">
-                                            <a href='#'><img className="carousel__image" src="http://img.ibxk.com.br/2014/4/materias/6560518801091954-t640.jpg" alt="Slide 1" /></a>
+                                            <a href='#'><img className="carousel__image"  src="styles/images/min/mobile.jpg"alt="Slide 1" /></a>
                                         </li>
                                         <li className="carousel__item">
-                                            <a href='#'><img className="carousel__image" src="http://img.ibxk.com.br/2014/4/materias/6560518801091954-t640.jpg" alt="Slide 1" /></a>
+                                            <a href='#'><img className="carousel__image" src="styles/images/min/mobile.jpg" alt="Slide 1" /></a>
                                         </li>
                                     </ul>
                                 </div>
@@ -180,7 +180,7 @@ var SobreSection = React.createClass({
 
                         <div id="quemsou" className="o-col-xs-6 o-col-lg-12">
                             <figure className="sobre__figure">
-                                <img src="http://im.ziffdavisinternational.com/ign_br/screenshot/default/star-wars-darth-vader-sixth-scale-feature-1000763_e72v.jpg" className="sobre__image" alt="Otávio Sanchez" />
+                                <img src="styles/images/otavio-sanchez.jpg" className="sobre__image" alt="Otávio Sanchez" />
                             </figure>
                             <h3 className="quem_sou__title">Olá, </h3>
                             <p className="paragraph">

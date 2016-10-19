@@ -25,7 +25,8 @@
     "serve": "serve ./public",
     "concatComponents": "gulp concatComponents",
     "scripts": "gulp scripts",
-    "AllScripts": "gulp AllScripts"
+    "AllScripts": "gulp AllScripts",
+    "imagesJPG": "gulp imagesJPG"
   },
   "devDependencies": {
     "babel-cli": "^6.14.0",

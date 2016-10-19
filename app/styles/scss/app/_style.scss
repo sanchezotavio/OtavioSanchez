@@ -1,8 +1,24 @@
+.ie9 img[src$=".svg"] {
+  width: 100%; 
+}
+
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  img[src$=".svg"] {
+    width: 100%; 
+  }
+}
+
+html {
+  -ms-overflow-style: -ms-autohiding-scrollbar;
+}
+
 body {
     color: $color-font;
     font-family: $font-primary;
     -webkit-font-smoothing: antialiased;
     -ms-overflow-style: auto;
+     overflow-y: auto !important; 
+   position: relative;
 }
 
 input:focus, textarea:focus, select:focus {
@@ -707,7 +723,6 @@ stroke:  $color-primary;
     &__group {
         text-align: center;
         align-self: center;
-        padding: 7%;
     }
 
     &__title {
@@ -892,7 +907,6 @@ stroke:  $color-primary;
         width: auto;
         height: 100%;
         position: relative;
-        left: -50%;
     }
 
     &__row {

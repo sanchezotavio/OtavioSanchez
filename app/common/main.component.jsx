@@ -12,7 +12,7 @@ var Load = React.createClass({
 var SVG = React.createClass({
     render: function () {
         return (
-            <img id={this.props.id} className={this.props.class} onerror={this.src='./styles/images/png/' + this.props.name + '.png'} src={"./styles/images/svg/" + this.props.name + ".svg"} />
+            <img id={this.props.id} className={this.props.class} onerror={this.src = './styles/images/png/' + this.props.name + '.png'} src={"./styles/images/svg/" + this.props.name + ".svg"} />
         );
     }
 });
@@ -55,7 +55,7 @@ var Menu = React.createClass({
     render: function () {
         return (
             <div class="row">
-                 <div className="container">                
+                <div className="container">
                     <nav className="nav__menu o-col-xs-12">
                         <ul className="list" id="navigation">
                             {paginas.map(function (l) {
@@ -70,8 +70,12 @@ var Menu = React.createClass({
                     <div className="footer o-col-xs-12">
                         <FooterText />
                     </div>
-                 </div>   
-            </div>            
+                </div>
+
+                <div className="scroll">
+                    <SVG name="scroll" id="scroll" class="scroll__button"  />
+                </div>
+            </div>
         )
     }
 });
@@ -80,9 +84,9 @@ var FooterText = React.createClass({
     render: function () {
         return (
             <div classe="footer">
-            <div className="container  align_h_center">
-            <nav className="nav">
-                <ul className="footer__nav" id="navigation">
+                <div className="container  align_h_center">
+                    <nav className="nav">
+                        <ul className="footer__nav" id="navigation">
                             {paginas.map(function (l) {
                                 return <li className="footer__item">
                                     <a className="link" title={l.title} href={l.href}>
@@ -91,22 +95,22 @@ var FooterText = React.createClass({
                                 </li>
                             }) }
                         </ul>
-            </nav>
-            </div>                 
-            <div className="border space container">
-                <div className="o-col-xs-6 o-col-lg-12  align_h_left--responsive">
-                    <div class="text">
-                        Desenvolvido por <a href={mainLink} className="link" title={name}>{name}</a>.
-                    </div>                   
-                    <div class="text">
-                        Copyright © {ano} {name}.Todos os direitos reservados.
+                    </nav>
+                </div>
+                <div className="border space container">
+                    <div className="o-col-xs-6 o-col-lg-12  align_h_left--responsive">
+                        <div class="text">
+                            Desenvolvido por <a href={mainLink} className="link" title={name}>{name}</a>.
+                        </div>
+                        <div class="text">
+                            Copyright © {ano} {name}.Todos os direitos reservados.
+                        </div>
+                    </div>
+                    <div className="o-col-xs-6 o-col-lg-12  align_h_right--responsive">
+                        <div class="text"> Entre em contato: </div>
+                        <div class="text"> <a href={"mailto:" + email} className="link" title={email}>{email}</a> </div>
                     </div>
                 </div>
-                <div className="o-col-xs-6 o-col-lg-12  align_h_right--responsive">
-                    <div class="text"> Entre em contato: </div>
-                    <div class="text"> <a href={"mailto:" + email} className="link" title={email}>{email}</a> </div>
-                </div>
-            </div>
             </div>
         )
     }
@@ -145,9 +149,9 @@ var Footer = React.createClass({
     render: function () {
         return (
 
-<div class="container">
-            <FooterText />
-</div>
+            <div class="container">
+                <FooterText />
+            </div>
 
         )
     }
@@ -161,7 +165,7 @@ var email = "dev@otaviosanchez.com"
 
 var name = "Otávio Sanchez";
 
-var ano =new Date().toLocaleString('en-US', { year: 'numeric' })
+var ano = new Date().toLocaleString('en-US', { year: 'numeric' })
 
 var redesSociais = [
     { title: 'Linkedin', href: 'https://br.linkedin.com/in/ot%C3%A1vio-sanchez-88440294', name: 'linkedin' },
