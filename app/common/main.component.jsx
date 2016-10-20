@@ -18,6 +18,16 @@ var SVG = React.createClass({
     }
 });
 
+var SVGSprite = React.createClass({
+    render: function () {
+        return (
+            <svg  className={this.props.class}>
+                <use xlinkHref={"#" + this.props.id}></use>
+            </svg>
+        );
+    }
+});
+
 var Header = React.createClass({
     render: function () {
         return (
@@ -61,16 +71,13 @@ var Menu = React.createClass({
                         <ul className="list" id="navigation">
                             {paginas.map(function (l) {
                                 return <li className="list__item">
-                                    <a className="list__link" title={l.title} href={l.href}>
+                                    <a className="list__link link first after" title={l.title} href={l.href}>
                                         {l.title}
                                     </a>
                                 </li>
                             }) }
                         </ul>
                     </nav>
-                    <div className="footer o-col-xs-12">
-                        <FooterConteudo />
-                    </div>
                 </div>
                 <div className="scroll">
                     <SVG name="scroll" id="scroll" class="scroll__button"  />
@@ -89,7 +96,7 @@ var FooterText = React.createClass({
                         <ul className="footer__nav" id="navigation">
                             {paginas.map(function (l) {
                                 return <li className="footer__item">
-                                    <a className="link" title={l.title} href={l.href}>
+                                    <a className="link first after" title={l.title} href={l.href}>
                                         {l.title}
                                     </a>
                                 </li>
@@ -110,7 +117,7 @@ var FooterConteudo = React.createClass({
             <div className="border space container">
                 <div className="o-col-xs-6 o-col-lg-12  align_h_left--responsive">
                     <div class="text">
-                        Desenvolvido por <a href={mainLink} className="link" title={name}>{name}</a>.
+                        Desenvolvido por <a href={mainLink} className="link first after" title={name}>{name}</a>.
                     </div>
                     <div class="text">
                         Copyright © {ano} {name}.Todos os direitos reservados.
@@ -118,7 +125,7 @@ var FooterConteudo = React.createClass({
                 </div>
                 <div className="o-col-xs-6 o-col-lg-12  align_h_right--responsive">
                     <div class="text"> Entre em contato: </div>
-                    <div class="text"> <a href={"mailto:" + email} className="link" title={email}>{email}</a> </div>
+                    <div class="text"> <a href={"mailto:" + email} className="link first after" title={email}>{email}</a> </div>
                 </div>
             </div>
         )
@@ -134,7 +141,7 @@ var NavRedesSociais = React.createClass({
                 {redesSociais.map(function (l) {
                     return <li className="social_network__item">
                         <a className="social_network__link" title={l.title} href={l.href}>
-                            <SVG class="social_network__image" name={l.name} alt={l.title} />
+                            <SVGSprite class="social_network__image" id={l.title} />
                         </a>
                     </li>
                 }) }
@@ -147,9 +154,7 @@ var NavRedesSociais = React.createClass({
 var ButtonMenu = React.createClass({
     render: function () {
         return (
-
             <input type="button" id="menu" title="Menu" className="button--menu open" />
-
         )
     }
 })
@@ -157,16 +162,12 @@ var ButtonMenu = React.createClass({
 var Footer = React.createClass({
     render: function () {
         return (
-
             <div class="container">
                 <FooterText />
             </div>
-
         )
     }
 })
-
-
 
 var mainLink = "otaviosanchez.com";
 
@@ -177,8 +178,8 @@ var name = "Otávio Sanchez";
 var ano = new Date().toLocaleString('en-US', { year: 'numeric' })
 
 var redesSociais = [
-    { title: 'Linkedin', href: 'https://br.linkedin.com/in/ot%C3%A1vio-sanchez-88440294', name: 'linkedin' },
-    { title: 'GitHub', href: 'https://github.com/sanchezotavio', name: 'github' }
+    { title: 'linkedin', href: 'https://br.linkedin.com/in/ot%C3%A1vio-sanchez-88440294', name: 'linkedin' },
+    { title: 'github', href: 'https://github.com/sanchezotavio', name: 'github' }
 ];
 
 var paginas = [

@@ -18,7 +18,7 @@ class Home extends Component {
 var HomeSection = React.createClass({
     render: function () {
         return (
-            <section className="home" id="home">                
+            <section className="home" id="home">
                 <article className="home__article">
                     <div className="home__center">
                         <hgroup className="home__group">
@@ -34,7 +34,7 @@ var HomeSection = React.createClass({
                                         </rect></svg> Conheça Meus Projetos
                                 </a>
                             </div>
-                        </div>                     
+                        </div>
                     </div>
                 </article>
             </section>
@@ -134,19 +134,19 @@ var ProjetosSection = React.createClass({
                                 <div id='carousel_container'>
                                     <ul className="slide" id='carousel_ul'>
                                         <li className="carousel__item">
-                                            <a href='#'><img className="carousel__image"  src="styles/images/min/mobile.jpg" alt="Slide 1" /></a>
+                                            <a href='#'><img className="carousel__image"  src="styles/images/png/nilsan-1.PNG" alt="Slide 1" /></a>
                                         </li>
                                         <li className="carousel__item">
-                                            <a href='#'><img className="carousel__image"  src="styles/images/min/mobile.jpg" alt="Slide 1" /></a>
+                                            <a href='#'><img className="carousel__image"  src="styles/images/png/igapira-1.png" alt="Slide 1" /></a>
                                         </li>
                                         <li className="carousel__item">
-                                            <a href='#'><img className="carousel__image"  src="styles/images/min/mobile.jpg" alt="Slide 1" /></a>
+                                            <a href='#'><img className="carousel__image"  src="styles/images/png/igapira-2.png" alt="Slide 1" /></a>
                                         </li>
                                         <li className="carousel__item">
-                                            <a href='#'><img className="carousel__image"  src="styles/images/min/mobile.jpg"alt="Slide 1" /></a>
+                                            <a href='#'><img className="carousel__image"  src="styles/images/png/nilsan-1.PNG"alt="Slide 1" /></a>
                                         </li>
                                         <li className="carousel__item">
-                                            <a href='#'><img className="carousel__image" src="styles/images/min/mobile.jpg" alt="Slide 1" /></a>
+                                            <a href='#'><img className="carousel__image" src="styles/images/png/igapira-2.png" alt="Slide 1" /></a>
                                         </li>
                                     </ul>
                                 </div>
@@ -204,15 +204,17 @@ var SobreSection = React.createClass({
                         </div>
                         <div className="o-col-md-12 o-col-xs-6">
                             <div className="sobre__mobile">
-                            <div className="display">
-                          
-                             <SVG name="battery" id="battery" class="battery" erro />
-                         
-                            <div className="hour">
-                            {new Date().toLocaleString('en-US', { hour: 'numeric', minute: 'numeric' , hour12: true })}
-                            </div>
-                            <SVG name="wifi" id="wifi" class="wifi" />
-                            </div>
+                                <div className="display">
+
+                                    <SVGSprite  id="battery" class="battery"  />
+
+                                    <div className="hour">
+                                        {new Date().toLocaleString('en-US', { hour: 'numeric', minute: 'numeric', hour12: true }) }
+                                    </div>
+
+                                    <SVGSprite  id="wifi" class="wifi" />
+                                    
+                                </div>
                             </div>
                         </div>
                     </article>
@@ -241,12 +243,12 @@ var SocialSection = React.createClass({
                         <ul className="social_network">
                             <li className="social_network__item--lite">
                                 <a className="social_network__link" title="" href="#">
-                                    <img src="styles/images/svg/githubWhite.svg" className="social_network__image" name="" alt="" />
+                                <SVGSprite  id="githubWhite" class="social_network__image" />   
                                 </a>
                             </li>
                             <li className="social_network__item--lite">
                                 <a className="social_network__link" title="" href="#">
-                                    <img src="styles/images/svg/linkedinWhite.svg" className="social_network__image" name="" alt="" />
+                                <SVGSprite  id="linkedinWhite" class="social_network__image" />                                 
                                 </a>
                             </li>
                         </ul>
@@ -274,13 +276,13 @@ var ContatoSection = React.createClass({
                     <div id="contatos" className="o-col-md-12 o-col-xs-4">
                         <h2 className="contato__title--info">Entre em contato</h2>
                         <div className="contato__text">
-                            Email: <a className="link" href="#">dev @otaviosanchez.com</a>
+                            Email: <a className="link first after" href="#">dev @otaviosanchez.com</a>
                         </div>
-                        <div className="contato__text">
+                        <div className="contato__text first after">
                             São Paulo - SP
                         </div>
                         <div className="contato__text">
-                            Celular: <a className="link" href="#">1234-5678</a>
+                            Celular: <a className="link first after" href="#">1234-5678</a>
                         </div>
                     </div>
                     <div className="o-col-md-12 o-col-xs-8">
@@ -315,13 +317,25 @@ var ContatoSection = React.createClass({
 
 
 
+var SVGSprite = React.createClass({
+    render: function () {
+        return (
+            <svg  className={this.props.class}>
+                <use xlinkHref={"#" + this.props.id}></use>
+            </svg>
+        );
+    }
+});
 
 var SVG = React.createClass({
     render: function () {
         return (
-            <img id={this.props.id} className={this.props.class} onerror="this.src={'./styles/images/png/' + this.props.name + '.png'}" src={"./styles/images/svg/" + this.props.name + ".svg"} />
+            <svg alt={this.props.name} className={this.props.class}>
+                <use xlinkHref={ '#' + this.props.id }></use>
+            </svg>
         );
     }
 });
+
 
 export default Home

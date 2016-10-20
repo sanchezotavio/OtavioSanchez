@@ -392,9 +392,123 @@ $breakpoints: ( (xs), (sm, $width-mobile), (md, $width-tablet), (lg, $width-desk
     }
 }
 
-.link {
-    color: $color-primary;
+
+.link,.link:visited,.link:hover,.link:active{
+  -webkit-backface-visibility:hidden;
+          backface-visibility:hidden;
+	position:relative;
+  transition:0.5s color ease;
+	text-decoration:none;
+	 color: $color-primary;
     text-decoration: none;
+}
+.link:hover{
+	color: #ffffff;
+}
+.link.before:before,.link.after:after{
+  content: "";
+  transition:0.5s all ease;
+  -webkit-backface-visibility:hidden;
+          backface-visibility:hidden;
+  position:absolute;
+}
+.link.before:before{
+  top:-0.25em;
+}
+.link.after:after{
+  bottom:-0.25em;
+}
+.link.before:before,.link.after:after{
+  height:1px;
+  width:0;
+  background: #ffffff;
+}
+.link.first:after{
+  left:0;
+}
+.link.second:after{
+  right:0;
+}
+.link.third:after,a.sixth:before,a.sixth:after{
+  left:50%;
+  -webkit-transform:translateX(-50%);
+          transform:translateX(-50%);
+}
+.link.fourth:before,a.fourth:after{
+  left:0;
+}
+.link.fifth:before,a.fifth:after{
+  right:0;
+}
+.link.seventh:before{
+  right:0;
+}
+.link.seventh:after{
+  left:0;
+}
+.link.eigth:before{
+  left:0;
+}
+.link.eigth:after{
+  right:0;
+}
+.link.before:hover:before,a.after:hover:after{
+  width:100%;
+}
+.square{
+  box-sizing:border-box;
+  margin-left:-0.4em;
+  position:relative;
+  font-size:2.5em;
+  overflow:hidden;
+}
+.square a{
+  position:static;
+  font-size:100%;
+  padding:0.2em 0.4em;
+}
+.square:before,.square:after{
+  content: "";
+  box-sizing:border-box;
+  transition:0.25s all ease;
+  -webkit-backface-visibility:hidden;
+          backface-visibility:hidden;
+  position:absolute;
+  width:5px;
+  width:0.35rem;
+  height:0;
+  background:#ffffff;
+}
+.square:before{
+  left:0;
+  bottom:-0.2em;
+}
+.square.individual:before{
+  transition-delay:0.6s;
+}
+.square:after{
+  right:0;
+  top:-0.2em;
+}
+.square.individual:after{
+  transition-delay:0.2s;
+}
+.square .link:before{
+  left:0;
+  transition:0.25s all ease;
+}
+.square .link:after{
+  right:0;
+  transition:0.25s all ease;
+}
+.square.individual .link:after{
+  transition:0.25s all ease 0.4s;
+}
+.square:hover:before,.square:hover:after{
+  height:calc(100% + 0.4em);
+}
+.square:hover .link:before,.square:hover .link:after{
+  width:100%;
 }
 
 .menu {
@@ -432,8 +546,8 @@ $breakpoints: ( (xs), (sm, $width-mobile), (md, $width-tablet), (lg, $width-desk
 }
 
 .list {
-    align-self: flex-start;
-    text-align: left;
+    align-self: center;
+    text-align: center;
 
     &__item {
         display: block;
@@ -450,11 +564,16 @@ $breakpoints: ( (xs), (sm, $width-mobile), (md, $width-tablet), (lg, $width-desk
 .nav {
     text-align: center;
     position: relative;
+    
     z-index: 3;
-    &__menu {
-        text-align: left;
+    &__menu{
+        height: 80vh;
+        align-items: center;
+        justify-content: center;
     }
+  
 }
+
 
 .full {
     min-width: 100%;
@@ -511,16 +630,16 @@ $breakpoints: ( (xs), (sm, $width-mobile), (md, $width-tablet), (lg, $width-desk
 .social_network {
     &__link {
         @extend .link;
-        text-decoration: none;
+      
     }
 
     &__image {
         @extend .image;
         width: 100%;
         height: 100%;
-        fill: $color-secundary;
+        fill: $color-secundary;         
     }
-
+    
     &__item {
         @extend .item;
         width: 28px;
@@ -528,7 +647,22 @@ $breakpoints: ( (xs), (sm, $width-mobile), (md, $width-tablet), (lg, $width-desk
         padding: 3.5px;
         border: 1px solid $color-secundary;
         margin-left: 8px;
+          text-decoration: none;
+        -webkit-transition: all 1s ease;
+        -moz-transition: all 1s ease;
+        -o-transition: all 1s ease;
+        transition: all 1s ease;
+         
     }
+
+    &__item:hover {
+       border-color: $color-primary;
+        background-color: rgba(255,255,255,0.1);
+    }
+
+
+
+
        &__item:first-child {
         margin-left: 0;
     }
@@ -542,6 +676,15 @@ $breakpoints: ( (xs), (sm, $width-mobile), (md, $width-tablet), (lg, $width-desk
         margin-left: 25px;
         border-radius: 100px;
         background-color: rgba(255,255,255,0.1);
+         -webkit-transition: all 1s  ease-in-out;
+    -moz-transition: all 1s  ease-in-out;
+    -o-transition: all 1s  ease-in-out;
+    transition: all 1s  ease-in-out;
+    }
+
+     &__item--lite:hover{
+        border-color: $color-primary;
+        background-color: rgba(255,255,255,0.3);
     }
        &__item--lite:first-child {
         margin-left: 0;
@@ -574,11 +717,20 @@ $breakpoints: ( (xs), (sm, $width-mobile), (md, $width-tablet), (lg, $width-desk
         background-position-y: center;
         border: 1px solid $color-secundary;
         cursor: pointer;
+        -webkit-transition: all 1s  ease-in-out;
+    -moz-transition: all 1s  ease-in-out;
+    -o-transition: all 1s  ease-in-out;
+    transition: all 1s  ease-in-out;
     }
 
-    
-}
+    &--menu:hover {
+        border-color: $color-primary;
+        background-color: rgba(255,255,255,0.1);
+    }
 
+       
+         
+}
 
 .button-1 svg {
   position: absolute;
@@ -910,8 +1062,8 @@ stroke:  $color-primary;
     }
 
     &__mobile{
-        width: 291.6px;
-        height: 480px;
+        width: 284.736px;
+        height: 460.8px;
         background-color: #ffffff;
         display: inline-block;
         margin: auto;
@@ -938,16 +1090,18 @@ stroke:  $color-primary;
 
 .battery{
     height: 10px;
+    width: 30px;
 }
 
 .hour{
     display: inline-block;
-    width: 240px;
+    width: 203.736px;
     line-height: 10px
 }
 
 .wifi{
      height: 11px;
+        width: 30px
 }
 
 .quem_sou {
@@ -1035,6 +1189,7 @@ stroke:  $color-primary;
     position: relative;
     align-self: flex-end;
 text-align: center;
+line-height: 24px;
 
 &__item{
     @extend .item;
@@ -1068,8 +1223,8 @@ text-align: center;
         background-color: $color-three;
         opacity: 0.9;
         z-index: 2;
-        width: 100%;
-        height: 100%;
+        width: 1920px;
+        height: 500px;
         display: inline-block;
         position: absolute;
     }
@@ -1102,7 +1257,6 @@ text-align: center;
     background-repeat: no-repeat;
     background-size: cover;
        z-index:2;
-    background-color:red;
     background-color: $color-three;
     padding-bottom: 30px;
 

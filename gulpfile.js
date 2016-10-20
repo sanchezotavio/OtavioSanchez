@@ -13,7 +13,7 @@ var svg2png = require('gulp-svg2png')
 var config = {
     mode: {
         symbol: {
-            dest: 'public/styles/images/sprite/',
+            dest: 'sprite/',
             sprite: 'sprite.svg',
             example: true
         },
@@ -25,9 +25,9 @@ var config = {
 }
 
 gulp.task('sprites', function () {
-    return gulp.src('./public/styles/images/svg/*.svg')
+    return gulp.src('./public/styles/images/svg/sprite/*.svg')
         .pipe(svgSprite(config))
-        .pipe(gulp.dest('/sprites'))
+        .pipe(gulp.dest('public/styles/images'))
 })
 
 gulp.task('svg2png', function () {
