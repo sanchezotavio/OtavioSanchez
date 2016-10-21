@@ -46,7 +46,7 @@ var HomeSection = React.createClass({
 var ServicosSection = React.createClass({
     render: function () {
         return (
-            <section className="servicos border" id="servicos">
+            <section className="section servicos border" id="servicos">
 
                 <header className="servicos__header" id="app">
                     <h1 className="servicos__title">Serviços</h1>
@@ -105,7 +105,7 @@ var ServicosSection = React.createClass({
 var ProjetosSection = React.createClass({
     render: function () {
         return (
-            <section className="projetos border" id="projetos">
+            <section className="section projetos border" id="projetos">
 
                 <header className="projetos__header">
                     <h1 className="projetos__title">

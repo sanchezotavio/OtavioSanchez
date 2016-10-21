@@ -1,28 +1,5 @@
 var controller = new ScrollMagic.Controller()
 
-var tween = new TimelineMax()
-  .add([
-    TweenMax.fromTo('#servicos #layer1', 1, { scale: 1, autoAlpha: 1, bottom: 0 + '%' }, { bottom: 0 + '%', ease: Linear.easeNone }),
-    TweenMax.fromTo('#servicos #layer2', 1, { scale: 1, autoAlpha: 1, bottom: 0 + '%' }, { bottom: 20 + '%', ease: Linear.easeNone }),
-    TweenMax.fromTo('#servicos #layer3', 1, { scale: 1, autoAlpha: 1, bottom: 0 + '%' }, { bottom: 40 + '%', ease: Linear.easeNone }),
-
-    TweenMax.fromTo('#servicos #layer4', 1, { scale: 1, autoAlpha: 1, bottom: 0 + '%', width: 100 + '%' }, { bottom: 5 + '%', ease: Linear.easeNone }),
-    TweenMax.fromTo('#servicos #layer5', 1, { scale: 1, autoAlpha: 1, bottom: 0 + '%', width: 100 + '%' }, { bottom: 15 + '%', ease: Linear.easeNone }),
-    TweenMax.fromTo('#servicos #layer6', 1, { scale: 1, autoAlpha: 1, bottom: 0 + '%', width: 100 + '%' }, { bottom: 25 + '%', ease: Linear.easeNone })
-
-  ])
-
-var parallaxScene = new ScrollMagic.Scene({
-  triggerElement: '#servicos',
-  duration: 800
-})
-  .setTween(tween)
-  .addTo(controller)
-
-skrollr.init({
-  forceHeight: false
-})
-
 var ss = TweenMax.to('#servico1', 1.2, { opacity: 1, bottom: 0 })
 
 var sceneServico1 = new ScrollMagic.Scene({ triggerElement: '#servicos' })
@@ -170,13 +147,22 @@ function rotateMobile() {
 
 /* Slide End */
 
+
+var particles = 120;
+var area = 1000;
+
+if ($(window).width() < 800) {
+  particles = 50;
+  area = 500;
+}
+
 particlesJS('particles', {
   'particles': {
     'number': {
-      'value': 120,
+      'value': particles,
       'density': {
         'enable': true,
-        'value_area': 1000
+        'value_area': area
       }
     },
     'color': {
