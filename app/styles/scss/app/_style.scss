@@ -971,6 +971,10 @@ stroke:  $color-primary;
         color: $color-primary;
     }
 
+    &__image{
+        width: 100%;
+    }
+
     &__title--main {
         @extend .title;
         padding-top: 10px;

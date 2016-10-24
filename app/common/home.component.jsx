@@ -66,10 +66,14 @@ var ServicosSection = React.createClass({
                             </p>
                         </div>
                         <div className="o-col-md-12 o-col-xs-6">
+                       <SVGSprite  id="servicos_1" class="servicos__image"  />
                         </div>
                     </article>
 
                     <article className="servico">
+                      <div className="o-col-md-12 o-col-xs-6">
+                         <SVGSprite  id="servicos_2" class="servicos__image"  />
+                        </div>
                         <div className="o-col-md-12 o-col-xs-6" id="servico2">
                             <h2 className="servicos__title">
                                 SAV
@@ -78,9 +82,7 @@ var ServicosSection = React.createClass({
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit.Nunc nec accumsan velit, quis gravida odio.Aliquam mattis fermentum dictum.Vivamus ac diam vitae erat euismod maximus.Aenean porta, diam eu maximus finibus, libero magna facilisis odio, sit amet
                                 ullamcorper augue velit at leo.Fusce id luctus ipsum.Nullam et bibendum justo.
                             </p>
-                        </div>
-                        <div className="o-col-md-12 o-col-xs-6">
-                        </div>
+                        </div>                      
                     </article>
 
                     <article className="servico">
@@ -94,6 +96,7 @@ var ServicosSection = React.createClass({
                             </p>
                         </div>
                         <div className="o-col-md-12 o-col-xs-6">
+                         <SVGSprite  id="servicos_3" class="servicos__image"  />
                         </div>
                     </article>
                 </div>
@@ -178,10 +181,11 @@ var SobreSection = React.createClass({
                 <div className="container">
                     <article className="quem_sou">
 
-                        <div id="quemsou" className="o-col-xs-6 o-col-lg-12">
+                        <div  className="o-col-xs-6 o-col-lg-12">
                             <figure className="sobre__figure">
                                 <img src="styles/images/otavio-sanchez.jpg" className="sobre__image" alt="Otávio Sanchez" />
                             </figure>
+                            <article id="quemsou">
                             <h3 className="quem_sou__title">Olá, </h3>
                             <p className="paragraph">
                                 Me chamo Otávio Sanchez, sou Desenvolvedor Web, entusiasta de tecnologia, autodidata e apaixonado por código.
@@ -199,6 +203,7 @@ var SobreSection = React.createClass({
                                     </a>
                                 </div>
                             </div>
+                            </article>
 
 
                         </div>
