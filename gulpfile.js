@@ -63,9 +63,6 @@ gulp.task('AllScripts', function () {
         './public/js/components/jquery/dist/jquery.min.js',
         './public/js/components/react/react.min.js',
         './public/js/components/react/react-dom.min.js',
-        './public/js/components/gsap/src/minified/TweenMax.min.js',
-        './public/js/components/scrollmagic/scrollmagic/minified/ScrollMagic.min.js',
-        './public/js/components/scrollmagic/scrollmagic/minified/plugins/animation.gsap.min.js',
         './public/js/components/skrollr/dist/skrollr.min.js',
         './public/js/components/particles.js/particles.min.js'
     ])

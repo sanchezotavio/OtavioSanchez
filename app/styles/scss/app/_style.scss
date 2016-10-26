@@ -132,8 +132,11 @@ input:focus, textarea:focus, select:focus {
     min-width: $min-width-container;
 
     &--header {
-        @extend .container;
-        max-width: 99%;
+          @extend .display-flex;
+    @include flex-flow(wrap);
+     margin: auto;
+    width: 100%;
+        max-width: 100%;
         padding-top: 10px;
         padding-bottom: 10px;
     }
@@ -543,6 +546,11 @@ $breakpoints: ( (xs), (sm, $width-mobile), (md, $width-tablet), (lg, $width-desk
         width: 50px;
         height: 50px;
     }
+
+    &__bar{
+        background-color: rgba(33,33,33,0.8);
+        border-bottom: 1px solid $color-secundary;
+    }
 }
 
 .menu-open {
@@ -631,7 +639,7 @@ $breakpoints: ( (xs), (sm, $width-mobile), (md, $width-tablet), (lg, $width-desk
         font-family: $font-title;
         color: $color-secundary;
         text-decoration: none;
-        opacity: 0;
+        opacity: 1;
     }
 }
 
@@ -821,6 +829,14 @@ stroke:  $color-primary;
     opacity: 0;
 }
 
+.visible {
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    opacity: 1;
+}
+
 .close {
     background-image: url(../images/svg/close.svg);
 }
@@ -972,7 +988,7 @@ stroke:  $color-primary;
     }
 
     &__image{
-        width: 100%;
+       height: 100%;
     }
 
     &__title--main {
@@ -992,33 +1008,33 @@ stroke:  $color-primary;
 }
 
 #servico1 {
-    opacity: 0;
+    opacity: 1;
     position: relative;
-    bottom: -50px;
+ 
 }
 
 #servico2 {
-    opacity: 0;
+    opacity: 1;
     position: relative;
-    bottom: -50px;
+ 
 }
 
 #servico3 {
-    opacity: 0;
+    opacity: 1;
     position: relative;
-    bottom: -50px;
+ 
 }
 
 #contatos {
-    opacity: 0;
+    opacity: 1;
     position: relative;
-    bottom: -50px;
+ 
 }
 
 #quemsou {
-    opacity: 0;
+    opacity: 1;
     position: relative;
-    bottom: -50px;
+ 
 }
 
 
@@ -1395,7 +1411,7 @@ line-height: 24px;
 
 
 #home__titleNameMain{
-    opacity:0;
+    opacity:1;
     -webkit-transition: all 1s ease;
     -moz-transition: all 1s ease;
     -o-transition: all 1s ease;
@@ -1404,7 +1420,7 @@ line-height: 24px;
 
 #home__titleName
 {
-    opacity:0;
+    opacity:1;
     -webkit-transition: all 1.5s ease;
     -moz-transition: all  1.5s ease;
     -o-transition: all  1.5s ease;
@@ -1413,7 +1429,7 @@ line-height: 24px;
 
 #home__titleSub
 {
-    opacity:0;
+    opacity:1;
     -webkit-transition: all 2s ease;
     -moz-transition: all 2s ease;
     -o-transition: all 2s ease;
@@ -1421,7 +1437,7 @@ line-height: 24px;
 }
 
 .fadeOn{
-     opacity:0;
+     opacity:1;
     -webkit-transition: all 2s ease;
     -moz-transition: all 2s ease;
     -o-transition: all 2s ease;
@@ -1445,10 +1461,29 @@ line-height: 24px;
     display: inline-block;
 }
 
+.blink{
+animation: blinker 1s linear infinite;
+}
 
+@keyframes blinker {  
+  50% { opacity: 0; }
+}
 
+.rotate{
+    position: fixed;
+    background-color: red;
+    top:0;
+    left: 0;
+animation: rotater 10s linear infinite;
+}
 
+@keyframes rotater {  
+  50% {   
+      -ms-transform: rotate(360deg); /* IE 9 */
+    -webkit-transform: rotate(360deg); /* Safari */
+    transform: rotate(360deg);}
+}
 
-
-
-
+path {
+   transform-origin: 50% 50%;
+}

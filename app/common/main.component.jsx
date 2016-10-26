@@ -32,7 +32,7 @@ var Header = React.createClass({
     render: function () {
         return (
 
-            <div className="container--header">
+            <div id="menu-bar" className="container--header">
                 <div className="o-col-xs-5 align_h_left">
                     <ButtonMenu />
                 </div>
@@ -52,7 +52,7 @@ var Logo = React.createClass({
     render: function () {
         return (
 
-            <h1 id="logo" className="logo__title">
+            <h1 id="logo" className="logo__title hidden">
                 <a className="logo__link" href={this.props.href} title={this.props.title}>
                     {this.props.logo}
                 </a>

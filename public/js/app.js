@@ -1,55 +1,19 @@
-var controller = new ScrollMagic.Controller()
-
-var ss = TweenMax.to('#servico1', 1.2, { opacity: 1, bottom: 0 })
-
-var sceneServico1 = new ScrollMagic.Scene({ triggerElement: '#servicos' })
-  .setTween(ss)
-  .addTo(controller)
-
-var ss2 = TweenMax.to('#servico2', 1.4, { opacity: 1, bottom: 0 })
-
-var sceneServico2 = new ScrollMagic.Scene({ triggerElement: '#servicos #servico1' })
-  .setTween(ss2)
-  .addTo(controller)
-
-var ss3 = TweenMax.to('#servico3', 1.6, { opacity: 1, bottom: 0 })
-
-var sceneServico3 = new ScrollMagic.Scene({ triggerElement: '#servicos #servico2' })
-  .setTween(ss3)
-  .addTo(controller)
-
-var topMenu = TweenMax.to('.top__header', 0.3, { background: 'rgba(25, 29, 38, 0.8)', borderBottom: '1px solid rgba(26, 29, 34, 1)' })
-
-var topMenuLogo = TweenMax.to('.logo__link', 0.3, { opacity: 1 })
-
-var sceneMenu = new ScrollMagic.Scene({ triggerElement: '#servicos' })
-  .setTween(topMenu)
-  .addTo(controller)
-
-var sceneMenuLogo = new ScrollMagic.Scene({ triggerElement: '#servicos' })
-  .setTween(topMenuLogo)
-  .addTo(controller)
-
-var sqs = TweenMax.to('#quemsou', 1.6, { opacity: 1, bottom: 0 })
-
-var sceneQuemSou = new ScrollMagic.Scene({ triggerElement: '#sobre' })
-  .setTween(sqs)
-  .addTo(controller)
-
-var sc = TweenMax.to('#contatos', 1.6, { opacity: 1, bottom: 0 })
-
-var sceneContato = new ScrollMagic.Scene({ triggerElement: '#contato' })
-  .setTween(sc)
-  .addTo(controller)
-
 $(document).ready(function () {
   $(window).scroll(function () {
     if (window.pageYOffset > 0) {
       $('.scroll').addClass('hidden')
-      $('.scroll').css('opacity', '0')
     } else {
       $('.scroll').removeClass('hidden')
-      $('.scroll').css('opacity', '1')
+    }
+
+    if (window.pageYOffset > 300) {
+      $('#logo').addClass('visible')
+      $('#logo').removeClass('hidden')
+      $('#menu-bar').addClass('menu__bar')
+    } else {
+      $('#logo').addClass('hidden')
+      $('#logo').removeClass('visible')
+       $('#menu-bar').removeClass('menu__bar')
     }
   })
 })
@@ -119,7 +83,7 @@ $(document).ready(function () {
   timeout()
 })
 
-function timeout() {
+function timeout () {
   setTimeout(function () {
     rotate()
     rotateMobile()
@@ -127,7 +91,7 @@ function timeout() {
   }, speed)
 }
 
-function rotate() {
+function rotate () {
   item_width_2 = $('#carousel_container-2 .carousel__item').outerWidth()
   left_indent_2 = parseInt($('.slide').css('left')) + item_width_2
   $('#carousel_container-2 .slide:not(:animated)').animate({ 'left': left_indent_2 }, 500, function () {
@@ -136,7 +100,7 @@ function rotate() {
   })
 }
 
-function rotateMobile() {
+function rotateMobile () {
   item_width = $('#carousel_container .carousel__item').outerWidth()
   left_indent = parseInt($('.slide').css('left')) + item_width
   $('#carousel_container .slide:not(:animated)').animate({ 'left': left_indent }, 500, function () {
@@ -147,13 +111,12 @@ function rotateMobile() {
 
 /* Slide End */
 
-
-var particles = 120;
-var area = 1000;
+var particles = 120
+var area = 1000
 
 if ($(window).width() < 800) {
-  particles = 50;
-  area = 500;
+  particles = 50
+  area = 500
 }
 
 particlesJS('particles', {
