@@ -56,7 +56,7 @@ var ServicosSection = React.createClass({
                 <div className="container--body">
 
                     <article className="servico">
-                        <div className="o-col-md-12 o-col-xs-6" id="servico1">
+                        <div className="o-col-xs-6 o-col-md-12 order-2" id="servico1">
                             <h2 className="servicos__title">
                                 SAV
                             </h2>
@@ -65,16 +65,16 @@ var ServicosSection = React.createClass({
                                 ullamcorper augue velit at leo.Fusce id luctus ipsum.Nullam et bibendum justo.
                             </p>
                         </div>
-                        <div className="o-col-md-12 o-col-xs-6">
-                       <SVGSprite  id="servicos_1" class="servicos__image"  />
+                        <div className="o-col-xs-6 o-col-md-12 order-1">
+                            <SVGSprite  id="servicos_1" class="servicos__image"  />
                         </div>
                     </article>
 
                     <article className="servico">
-                      <div className="o-col-md-12 o-col-xs-6">
-                         <SVGSprite  id="servicos_2" class="servicos__image"  />
+                        <div className="o-col-xs-6 o-col-md-12 order-1">
+                            <SVGSprite  id="servicos_2" class="servicos__image"  />
                         </div>
-                        <div className="o-col-md-12 o-col-xs-6" id="servico2">
+                        <div className="o-col-xs-6 o-col-md-12 order-2" id="servico2">
                             <h2 className="servicos__title">
                                 SAV
                             </h2>
@@ -82,11 +82,11 @@ var ServicosSection = React.createClass({
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit.Nunc nec accumsan velit, quis gravida odio.Aliquam mattis fermentum dictum.Vivamus ac diam vitae erat euismod maximus.Aenean porta, diam eu maximus finibus, libero magna facilisis odio, sit amet
                                 ullamcorper augue velit at leo.Fusce id luctus ipsum.Nullam et bibendum justo.
                             </p>
-                        </div>                      
+                        </div>
                     </article>
 
                     <article className="servico">
-                        <div className="o-col-md-12 o-col-xs-6" id="servico3">
+                        <div className="o-col-xs-6 o-col-md-12 order-2" id="servico3">
                             <h2 className="servicos__title">
                                 SAV
                             </h2>
@@ -95,8 +95,8 @@ var ServicosSection = React.createClass({
                                 ullamcorper augue velit at leo.Fusce id luctus ipsum.Nullam et bibendum justo.
                             </p>
                         </div>
-                        <div className="o-col-md-12 o-col-xs-6">
-                         <SVGSprite  id="servicos_3" class="servicos__image"  />
+                        <div className="o-col-xs-6 o-col-md-12 order-1">
+                            <SVGSprite  id="servicos_3" class="servicos__image"  />
                         </div>
                     </article>
                 </div>
@@ -137,19 +137,19 @@ var ProjetosSection = React.createClass({
                                 <div id='carousel_container'>
                                     <ul className="slide" id='carousel_ul'>
                                         <li className="carousel__item">
-                                            <a href='#'><img className="carousel__image"  src="styles/images/png/nilsan-1.PNG" alt="Slide 1" /></a>
+                                            <img className="carousel__image"  src="styles/images/png/nilsan-1.PNG" alt="Slide 1" />
                                         </li>
                                         <li className="carousel__item">
-                                            <a href='#'><img className="carousel__image"  src="styles/images/png/igapira-1.png" alt="Slide 1" /></a>
+                                            <img className="carousel__image"  src="styles/images/png/igapira-1.png" alt="Slide 1" />
                                         </li>
                                         <li className="carousel__item">
-                                            <a href='#'><img className="carousel__image"  src="styles/images/png/igapira-2.png" alt="Slide 1" /></a>
+                                           <img className="carousel__image"  src="styles/images/png/igapira-2.png" alt="Slide 1" />
                                         </li>
                                         <li className="carousel__item">
-                                            <a href='#'><img className="carousel__image"  src="styles/images/png/nilsan-1.PNG"alt="Slide 1" /></a>
+                                          <img className="carousel__image"  src="styles/images/png/nilsan-1.PNG"alt="Slide 1" />
                                         </li>
                                         <li className="carousel__item">
-                                            <a href='#'><img className="carousel__image" src="styles/images/png/igapira-2.png" alt="Slide 1" /></a>
+                                            <img className="carousel__image" src="styles/images/png/igapira-2.png" alt="Slide 1" />
                                         </li>
                                     </ul>
                                 </div>
@@ -178,56 +178,61 @@ var SobreSection = React.createClass({
                     <h2 className="sobre__title">Quem Sou</h2>
                     <span className="division"></span>
                 </header>
-                <div className="container">
-                    <article className="quem_sou">
+                <div className="container--body">
+                    <div className="quem_sou">
 
-                        <div  className="o-col-xs-6 o-col-lg-12">
+                        <div  className="o-col-xs-12 align_h_center">
                             <figure className="sobre__figure">
                                 <img src="styles/images/otavio-sanchez.jpg" className="sobre__image" alt="Otávio Sanchez" />
                             </figure>
-                            <article id="quemsou">
-                            <h3 className="quem_sou__title">Olá, </h3>
-                            <p className="paragraph">
-                                Me chamo Otávio Sanchez, sou Desenvolvedor Web, entusiasta de tecnologia, autodidata e apaixonado por código.
-                            </p>
-                            <p className="paragraph">
-                                Estudante do Bacharelado em Ciência e Tecnologia pela Universidade Federal do ABC - curso multidisciplinar - que me permitiu abrir espaço para novas possibilidades através da tecnologia da informação em suas mais diferentes vertentes.
-                            </p>
+                            <article id="quemsou">                               
+                                <p className="paragraph">
+                                   Olá, me chamo Otávio Sanchez. Sou Desenvolvedor Web, entusiasta de tecnologia, autodidata e apaixonado por código.
+                                </p>
+                                <p className="paragraph">
+                                    Estudante do Bacharelado em Ciência e Tecnologia pela Universidade Federal do ABC - curso multidisciplinar - que me permitiu abrir espaço para novas possibilidades através da tecnologia da informação em suas mais diferentes vertentes.
+                                </p>
 
-                            <div className="sobre__row">
-                                <div className="o-col-xs-12">
-                                    <a className="button button-1" href="/quem_sou">
-                                        <svg>
-                                            <rect fill="none" height="100%" width="100%" x="0" y="0">
-                                            </rect></svg> Veja Completo
-                                    </a>
+                                <div className="sobre__row">
+                                    <div className="o-col-xs-12">
+                                        <a className="button button-1" href="/quem_sou">
+                                            <svg>
+                                                <rect fill="none" height="100%" width="100%" x="0" y="0">
+                                                </rect></svg> Veja Completo
+                                        </a>
+                                    </div>
                                 </div>
-                            </div>
                             </article>
 
-
                         </div>
-                        <div className="o-col-md-12 o-col-xs-6">
-                            <div className="sobre__mobile">
-                                <div className="display">
-
-                                    <SVGSprite  id="battery" class="battery"  />
-
-                                    <div className="hour">
-                                        {new Date().toLocaleString('en-US', { hour: 'numeric', minute: 'numeric', hour12: true }) }
-                                    </div>
-
-                                    <SVGSprite  id="wifi" class="wifi" />
-                                    
-                                </div>
-                            </div>
-                        </div>
-                    </article>
+                    </div>
                 </div>
             </section>
         );
     }
 });
+
+var mobileItem = React.createClass({
+        render: function () {
+            return (
+                <div className="o-col-md-12 o-col-xs-6">
+                    <div className="sobre__mobile">
+                        <div className="display">
+
+                            <SVGSprite  id="battery" class="battery"  />
+
+                            <div className="hour">
+                                {new Date().toLocaleString('en-US', { hour: 'numeric', minute: 'numeric', hour12: true }) }
+                            </div>
+
+                            <SVGSprite  id="wifi" class="wifi" />
+
+                        </div>
+                    </div>
+                </div>
+            );
+        }
+    });
 
 var SocialSection = React.createClass({
     render: function () {
@@ -248,12 +253,12 @@ var SocialSection = React.createClass({
                         <ul className="social_network">
                             <li className="social_network__item--lite">
                                 <a className="social_network__link" title="" href="#">
-                                <SVGSprite  id="githubWhite" class="social_network__image" />   
+                                    <SVGSprite  id="githubWhite" class="social_network__image" />
                                 </a>
                             </li>
                             <li className="social_network__item--lite">
                                 <a className="social_network__link" title="" href="#">
-                                <SVGSprite  id="linkedinWhite" class="social_network__image" />                                 
+                                    <SVGSprite  id="linkedinWhite" class="social_network__image" />
                                 </a>
                             </li>
                         </ul>
