@@ -1,7 +1,7 @@
 var webpack = require('webpack');
 var path = require('path');
 
-var BUILD_DIR = path.resolve(__dirname, 'public');
+var BUILD_DIR = path.resolve(__dirname, 'assets');
 var APP_DIR = path.resolve(__dirname, 'app');
 
 var config = {
@@ -33,4 +33,64 @@ var config = {
   ]
 };
 
+var projetos = {
+  entry: APP_DIR + '/projetos.jsx',
+  output: {
+    path: BUILD_DIR,
+    filename: 'js/bundleProjetos.js'
+  },
+  module : {
+    loaders : [
+      {
+        test : /\.jsx?/,
+        include : APP_DIR,
+        loader : 'babel'
+      }
+    ]
+  },
+  plugins:[
+    new webpack.DefinePlugin({
+      'process.env':{
+        'NODE_ENV': JSON.stringify('production')
+      }
+    }),
+    new webpack.optimize.UglifyJsPlugin({
+      compress:{
+        warnings: true
+      }
+    })
+  ]
+};
+
+var sobre = {
+  entry: APP_DIR + '/sobre.jsx',
+  output: {
+    path: BUILD_DIR,
+    filename: 'js/bundleSobre.js'
+  },
+  module : {
+    loaders : [
+      {
+        test : /\.jsx?/,
+        include : APP_DIR,
+        loader : 'babel'
+      }
+    ]
+  },
+  plugins:[
+    new webpack.DefinePlugin({
+      'process.env':{
+        'NODE_ENV': JSON.stringify('production')
+      }
+    }),
+    new webpack.optimize.UglifyJsPlugin({
+      compress:{
+        warnings: true
+      }
+    })
+  ]
+};
+
+module.exports = projetos;
 module.exports = config;
+module.exports = sobre;

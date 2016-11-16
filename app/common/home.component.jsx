@@ -28,7 +28,7 @@ var HomeSection = React.createClass({
                         </hgroup>
                         <div className="row display-flex fadeOn">
                             <div className="o-col-xs-12">
-                                <a className="button button-1--main" href="/projetos">
+                                <a className="button button-1--main" href="/Projetos">
                                     <svg>
                                         <rect fill="none" height="100%" width="100%" x="0" y="0">
                                         </rect></svg> Conheça Meus Projetos
@@ -120,7 +120,7 @@ var ProjetosSection = React.createClass({
                     </h2>
                     <div className="row">
                         <div className="o-col-xs-12">
-                            <a className="button button-1" href="/projetos">
+                            <a className="button button-1" href="/Projetos">
                                 <svg>
                                     <rect fill="none" height="100%" width="100%" x="0" y="0">
                                     </rect>
@@ -195,7 +195,7 @@ var SobreSection = React.createClass({
 
                                 <div className="sobre__row">
                                     <div className="o-col-xs-12">
-                                        <a className="button button-1" href="/quem_sou">
+                                        <a className="button button-1" href="/Sobre">
                                             <svg>
                                                 <rect fill="none" height="100%" width="100%" x="0" y="0">
                                                 </rect></svg> Veja Completo
@@ -252,12 +252,12 @@ var SocialSection = React.createClass({
                     <nav className="nav">
                         <ul className="social_network">
                             <li className="social_network__item--lite">
-                                <a className="social_network__link" title="" href="#">
+                                <a className="social_network__link" title="GitHub" target="_blank" href="https://github.com/sanchezotavio">
                                     <SVGSprite  id="githubWhite" class="social_network__image" />
                                 </a>
                             </li>
                             <li className="social_network__item--lite">
-                                <a className="social_network__link" title="" href="#">
+                                <a className="social_network__link" title="Linkedin" target="_blank" target="_blank" href="https://www.linkedin.com/in/ot%C3%A1vio-sanchez-a3ba967a">
                                     <SVGSprite  id="linkedinWhite" class="social_network__image" />
                                 </a>
                             </li>
@@ -286,7 +286,7 @@ var ContatoSection = React.createClass({
                     <div id="contatos" className="o-col-md-12 o-col-xs-4">
                         <h2 className="contato__title--info">Entre em contato</h2>
                         <div className="contato__text">
-                            Email: <a className="link first after" href="#">dev @otaviosanchez.com</a>
+                            Email: <a className="link first after" href="mailto:dev@otaviosanchez.com">dev@otaviosanchez.com</a>
                         </div>
                         <div className="contato__text first after">
                             São Paulo - SP
