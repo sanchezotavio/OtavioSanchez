@@ -1,7 +1,7 @@
 var webpack = require('webpack');
 var path = require('path');
 
-var BUILD_DIR = path.resolve(__dirname, 'assets');
+var BUILD_DIR = path.resolve(__dirname, 'public');
 var APP_DIR = path.resolve(__dirname, 'app');
 
 var config = {
@@ -33,7 +33,11 @@ var config = {
   ]
 };
 
-var projetos = {
+module.exports = config;
+
+
+
+/*var projetos = {
   entry: APP_DIR + '/projetos.jsx',
   output: {
     path: BUILD_DIR,
@@ -62,7 +66,11 @@ var projetos = {
   ]
 };
 
-var sobre = {
+module.exports = projetos;
+*/
+
+
+/*var sobre = {
   entry: APP_DIR + '/sobre.jsx',
   output: {
     path: BUILD_DIR,
@@ -91,6 +99,7 @@ var sobre = {
   ]
 };
 
-module.exports = projetos;
-module.exports = config;
 module.exports = sobre;
+*/
+
+

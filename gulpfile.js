@@ -25,15 +25,15 @@ var config = {
 }
 
 gulp.task('sprites', function () {
-    return gulp.src('./assets/styles/images/svg/sprite/*.svg')
+    return gulp.src('./public/styles/images/svg/sprite/*.svg')
         .pipe(svgSprite(config))
-        .pipe(gulp.dest('assets/styles/images'))
+        .pipe(gulp.dest('public/styles/images'))
 })
 
 gulp.task('svg2png', function () {
-    gulp.src('./assets/styles/images/svg/*.svg')
+    gulp.src('./public/styles/images/svg/*.svg')
         .pipe(svg2png())
-        .pipe(gulp.dest('./assets/styles/images/png'))
+        .pipe(gulp.dest('./public/styles/images/png'))
 })
 
 gulp.task('sync', function () {
@@ -44,51 +44,51 @@ gulp.task('sync', function () {
 })
 
 gulp.task('concat', function () {
-    del.sync('assets/js/app.js')
+    del.sync('public/js/app.js')
 
     return gulp.src([
         'app/components/main.js'
     ])
         .pipe(sourcemaps.init())
         .pipe(concat('app.js'))
-        .pipe(gulp.dest('assets/js'))
+        .pipe(gulp.dest('public/js'))
         .pipe(uglify())
         .pipe(rename('main.min.js'))
         .pipe(sourcemaps.write('./'))
-        .pipe(gulp.dest('assets/js'))
+        .pipe(gulp.dest('public/js'))
 })
 
 gulp.task('AllScripts', function () {
     return gulp.src([
-        './assets/js/components/jquery/dist/jquery.min.js',
-        './assets/js/components/react/react.min.js',
-        './assets/js/components/react/react-dom.min.js',
-        './assets/js/components/skrollr/dist/skrollr.min.js',
-        './assets/js/components/particles.js/particles.min.js'
+        './public/js/components/jquery/dist/jquery.min.js',
+        './public/js/components/react/react.min.js',
+        './public/js/components/react/react-dom.min.js',
+        './public/js/components/skrollr/dist/skrollr.min.js',
+        './public/js/components/particles.js/particles.min.js'
     ])
      .pipe(sourcemaps.init())
         .pipe(concat('components.js'))
-        .pipe(gulp.dest('assets/js'))
+        .pipe(gulp.dest('public/js'))
         .pipe(uglify())
         .pipe(rename('components.min.js'))
         .pipe(sourcemaps.write('./'))
-        .pipe(gulp.dest('assets/js'))
+        .pipe(gulp.dest('public/js'))
 })
 
-gulp.task('images', () => gulp.src('assets/styles/images/png/*.png')
+gulp.task('images', () => gulp.src('public/styles/images/png/*.png')
     .pipe(imagemin({
         progressive: true,
         optimizationLevel: 7
     }))
-    .pipe(gulp.dest('assets/styles/images/min'))
+    .pipe(gulp.dest('public/styles/images/min'))
 )
 
-gulp.task('imagesJPG', () => gulp.src('assets/styles/images/*.jpg')
+gulp.task('imagesJPG', () => gulp.src('public/styles/images/*.jpg')
     .pipe(imagemin({
         progressive: true,
         optimizationLevel: 7
     }))
-    .pipe(gulp.dest('assets/styles/images/min'))
+    .pipe(gulp.dest('public/styles/images/min'))
 )
 
 
@@ -98,7 +98,7 @@ gulp.task('sass', function () {
         .pipe(sass().on('error', sass.logError))
         .pipe(sass({ outputStyle: 'compressed' }))
         .pipe(sourcemaps.write('./maps'))
-        .pipe(gulp.dest('assets/styles/css/'))
+        .pipe(gulp.dest('public/styles/css/'))
 })
 
 gulp.task('watch', function () {

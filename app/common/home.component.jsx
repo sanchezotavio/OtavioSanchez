@@ -28,7 +28,7 @@ var HomeSection = React.createClass({
                         </hgroup>
                         <div className="row display-flex fadeOn">
                             <div className="o-col-xs-12">
-                                <a className="button button-1--main" href="/Projetos">
+                                <a className="button button-1--main" href="projetos.html">
                                     <svg>
                                         <rect fill="none" height="100%" width="100%" x="0" y="0">
                                         </rect></svg> Conheça Meus Projetos
@@ -120,7 +120,7 @@ var ProjetosSection = React.createClass({
                     </h2>
                     <div className="row">
                         <div className="o-col-xs-12">
-                            <a className="button button-1" href="/Projetos">
+                            <a className="button button-1" href="projetos.html">
                                 <svg>
                                     <rect fill="none" height="100%" width="100%" x="0" y="0">
                                     </rect>
@@ -195,7 +195,7 @@ var SobreSection = React.createClass({
 
                                 <div className="sobre__row">
                                     <div className="o-col-xs-12">
-                                        <a className="button button-1" href="/Sobre">
+                                        <a className="button button-1" href="sobre.html">
                                             <svg>
                                                 <rect fill="none" height="100%" width="100%" x="0" y="0">
                                                 </rect></svg> Veja Completo
