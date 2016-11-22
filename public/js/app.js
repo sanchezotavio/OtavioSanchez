@@ -19,8 +19,8 @@ $(document).ready(function () {
 })
 
 $(".projetos__list").hover(function() {
-  $(".projetos__list").addClass("opacity");
-  $(this).removeClass("opacity");
+  $(".projetos__list").removeClass("no-opacity").addClass("opacity");
+  $(this).addClass("no-opacity").removeClass("opacity");
 });
 
 
