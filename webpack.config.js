@@ -36,7 +36,7 @@ var APP_DIR = path.resolve(__dirname, 'app');
 module.exports = config;*/
 
 
-
+/*
 var projetos = {
   entry: APP_DIR + '/projetos.jsx',
   output: {
@@ -66,11 +66,11 @@ var projetos = {
   ]
 };
 
-module.exports = projetos;
+module.exports = projetos;*/
 
 
 
-/*var sobre = {
+var sobre = {
   entry: APP_DIR + '/sobre.jsx',
   output: {
     path: BUILD_DIR,
@@ -100,6 +100,6 @@ module.exports = projetos;
 };
 
 module.exports = sobre;
-*/
+
 
 
