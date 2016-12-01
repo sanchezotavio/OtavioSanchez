@@ -1080,6 +1080,49 @@ a.after:hover:after {
     box-shadow: 0 0 0 4px #232730, 0 0 0 5px $color-primary;
   }
 
+.cursos{
+  &__item{
+    list-style: none;
+    line-height: 24px;
+  }
+  &__sub{
+    list-style: none;
+  }
+}
+
+.skills{
+  &__item{
+    background-color: $color-secundary;
+    color: $color-font;
+    padding: 5px 15px 5px 10px;
+    display: inline-block;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    font-size: 0.8em;
+    font-weight: 600;
+    border-radius: 100px;
+  }
+
+  &__nivel{
+    border-left: 1px solid #ffffff;
+    padding-left:  10px;
+    margin-left: 5px;
+    color: $color-primary;
+  }
+}
+
+  &__figure--alter{
+     @extend .figure;
+    align-self: center;
+    text-align: center;
+    overflow: hidden;
+    margin-bottom: 40px;
+    width: 180px;
+    height: 180px;
+    border-radius: 100px;
+    box-shadow: 0 0 0 4px #232730, 0 0 0 5px $color-primary;
+  }
+
   &__header {
     width: 100%;
     text-align: center;
@@ -1122,6 +1165,18 @@ a.after:hover:after {
     -webkit-box-shadow: -2px 3px 25px 2px rgba(0,0,0,0.78);
     -moz-box-shadow: -2px 3px 25px 2px rgba(0,0,0,0.78);
     box-shadow: -2px 3px 25px 2px rgba(0,0,0,0.78);
+  }
+
+  &__item{
+    width: 100%;
+    list-style: none;  
+  }
+
+  .item__title{
+     @extend .title;
+     font-size: 120%;
+     margin-bottom: 10px;
+     color: $color-primary;
   }
 }
 
@@ -1511,6 +1566,15 @@ a.after:hover:after {
   opacity: .5;
 }
 
+.hr{
+  width: 100%;
+  border: 0;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #6d737f;
+  height: 0;
+}
+
 
 .no-opacity {
   -webkit-transition: all 1s ease;
@@ -1557,4 +1621,8 @@ path {
   -ms-transform-origin: 50% 50%;
   -webkit-transform-origin: 50% 50%;
   transform-origin: 50% 50%;
+}
+
+.bg{
+  background-color: $color-three;
 }
