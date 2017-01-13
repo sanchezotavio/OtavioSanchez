@@ -291,7 +291,7 @@ var ContatoSection = React.createClass({
                             São Paulo - SP
                         </div>
                         <div className="contato__text">
-                            Celular: <a className="link first after" href="#">1234-5678</a>
+                            Celular: <a className="link first after" href="tel:11945336910">(11)94533-6910</a>
                         </div>
                     </div>
                     <div className="o-col-md-12 o-col-xs-8">

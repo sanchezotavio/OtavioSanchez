@@ -55,9 +55,9 @@ var ProjetosSection = React.createClass({
 
 
 var projetos = [
-    { title: 'Projeto 1', href: 'http://otaviosanchez.com', img: 'https://www.invisionapp.com/subsystems/main_landing/assets/img/screens/ecommerce-5.png', descricao: 'auuuii aui' , github: 'auuuii aui' },
-    { title: 'Projeto 2', href: 'http://otaviosanchez.com', img: 'https://www.invisionapp.com/subsystems/main_landing/assets/img/screens/ecommerce-5.png', descricao: 'auuuii aui' , github: 'auuuii aui'  },
-    { title: 'Projeto 3', href: 'http://otaviosanchez.com', img: 'https://www.invisionapp.com/subsystems/main_landing/assets/img/screens/ecommerce-5.png', descricao: 'auuuii aui' , github: '' }
+    { title: 'Igapira Consultoria', href: 'http://igapiraconsultoria.com.br/', img:  'styles/images/png/igapira.jpg', descricao: 'A Igapira Consultoria Turística, é uma empresa especializada na elaboração de estudos e planejamento de turismo em nível nacional. Foi criada no ano de 2015, por jovens empreendedores com formação superior em turismo, que resolveram por em prática os conhecimentos adquiridos na universidade.' , github: '' },
+    { title: 'Nilsan Ferramentaria', href: 'http://nilsan.com.br', img: 'styles/images/png//nilsan.jpg', descricao: 'auuuii aui' , github: ''  },
+    { title: 'Associação Bianca Alves', href: 'http://associacaobiancaalves.ga/', img:  'styles/images/png/aba.jpg', descricao: 'Associação sem fins lucrativos de caráter filantrópico, fundada em 2007. Atende portadores de múltipla deficiência, disponibilizando seus voluntários em psicologia, fonoaudiologia e fisioterapia. Oferece todo o tratamento gratuito aos seus pacientes.' , github: '' }
 ];
 
 

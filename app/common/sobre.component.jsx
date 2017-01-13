@@ -16,6 +16,7 @@ var SobreSection = React.createClass({
                             </figure>
                         </div>
                         <div  className="o-col-md-12 o-col-xs-9">
+
                             <article id="quemsou">
                                 <p className="paragraph">
                                     Olá, me chamo Otávio Sanchez.Sou Desenvolvedor Web, entusiasta de tecnologia, autodidata e apaixonado por código.
@@ -23,9 +24,6 @@ var SobreSection = React.createClass({
                                 <p className="paragraph">
                                     Estudante do Bacharelado em Ciência e Tecnologia pela Universidade Federal do ABC - curso multidisciplinar - que me permitiu abrir espaço para novas possibilidades através da tecnologia da informação em suas mais diferentes vertentes.
                                 </p>
-
-
-
                             </article>
 
                             <header className="sobre__item">
@@ -43,8 +41,7 @@ var SobreSection = React.createClass({
                             <div  className="sobre__item">
                                 <Academico />
                             </div>
-
-
+                            
                             <hr className="hr" />
 
                             <header className="sobre__item">
