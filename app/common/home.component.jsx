@@ -58,7 +58,7 @@ var ServicosSection = React.createClass({
                     <article className="servico">
                         <div className="o-col-xs-6 o-col-md-12 order-2" id="servico1">
                             <h2 className="servicos__title">
-                                SAV
+                               Idéias para o seu negócio
                             </h2>
                             <p className="paragraph">
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit.Nunc nec accumsan velit, quis gravida odio.Aliquam mattis fermentum dictum.Vivamus ac diam vitae erat euismod maximus.Aenean porta, diam eu maximus finibus, libero magna facilisis odio, sit amet
@@ -76,7 +76,7 @@ var ServicosSection = React.createClass({
                         </div>
                         <div className="o-col-xs-6 o-col-md-12 order-2" id="servico2">
                             <h2 className="servicos__title">
-                                SAV
+                                Desenvolvimento de Sistemas
                             </h2>
                             <p className="paragraph">
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit.Nunc nec accumsan velit, quis gravida odio.Aliquam mattis fermentum dictum.Vivamus ac diam vitae erat euismod maximus.Aenean porta, diam eu maximus finibus, libero magna facilisis odio, sit amet
@@ -88,7 +88,7 @@ var ServicosSection = React.createClass({
                     <article className="servico">
                         <div className="o-col-xs-6 o-col-md-12 order-2" id="servico3">
                             <h2 className="servicos__title">
-                                SAV
+                               Planejamento e eficiência
                             </h2>
                             <p className="paragraph">
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit.Nunc nec accumsan velit, quis gravida odio.Aliquam mattis fermentum dictum.Vivamus ac diam vitae erat euismod maximus.Aenean porta, diam eu maximus finibus, libero magna facilisis odio, sit amet
@@ -115,8 +115,9 @@ var ProjetosSection = React.createClass({
                         Projetos
                     </h1>
                     <span className="division"></span>
-                    <h2 className="projetos__title--sub">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                    <h2 className="projetos__title--sub">                    
+                        Conheça meu Portfólio e alguns de meus projetos pessoais.
+                   
                     </h2>
                     <div className="row">
                         <div className="o-col-xs-12">
@@ -173,7 +174,7 @@ var ProjetosSection = React.createClass({
 var SobreSection = React.createClass({
     render: function () {
         return (
-            <section className="sobre border" id="sobre">
+            <section className="sobre border" id="quemsou">
                 <header className="sobre__header">
                     <h2 className="sobre__title">Quem Sou</h2>
                     <span className="division"></span>
@@ -183,7 +184,7 @@ var SobreSection = React.createClass({
 
                         <div  className="o-col-xs-12 align_h_center">
                             <figure className="sobre__figure">
-                                <img src="styles/images/otavio-sanchez.jpg" className="sobre__image" alt="Otávio Sanchez" />
+                                <img src="styles/images/otavio-sanchez.jpg" className="sobre__image" alt="Otávio Sanchez" title="Otávio Sanchez" />
                             </figure>
                             <article id="quemsou">                               
                                 <p className="paragraph">
@@ -244,9 +245,7 @@ var SocialSection = React.createClass({
                         Redes Sociais
                     </h1>
                     <span className="division"></span>
-                    <h2 className="content_social__title--sub">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit
-                    </h2>
+                   
                 </header>
                 <div>
                     <nav className="nav">
@@ -279,7 +278,7 @@ var ContatoSection = React.createClass({
                     </h1>
                     <span className="division"></span>
                     <h2 className="contato__title--sub">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                        Deseja entrar em contato comigo?
                     </h2>
                 </header>
                 <div className="container">

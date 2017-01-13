@@ -71,7 +71,7 @@ var Menu = React.createClass({
                         <ul className="list" id="navigation">
                             {paginas.map(function (l) {
                                 return <li className="list__item">
-                                    <a className="list__link link first after" title={l.title} href={l.href}>
+                                    <a className="list__link link first after" title={l.title} href={checkURL() + l.href}>
                                         {l.title}
                                     </a>
                                 </li>
@@ -96,7 +96,7 @@ var FooterText = React.createClass({
                         <ul className="footer__nav" id="navigation">
                             {paginas.map(function (l) {
                                 return <li className="footer__item">
-                                    <a className="link first after" title={l.title} href={l.href}>
+                                    <a className="link first after" title={l.title} href={checkURL() + l.href}>
                                         {l.title}
                                     </a>
                                 </li>
@@ -169,7 +169,13 @@ var Footer = React.createClass({
     }
 })
 
-var mainLink = "otaviosanchez.com";
+function checkURL(){
+    if(document.location.pathname != "/index.html" || document.location.pathname != "/"){
+        return mainLink + "index.html"
+    }
+}
+
+var mainLink = "http://otaviosanchez.com/";
 
 var email = "dev@otaviosanchez.com"
 
@@ -183,10 +189,10 @@ var redesSociais = [
 ];
 
 var paginas = [
-    { title: 'Home', href: '#home' },
+    { title: 'Home', href:   '#home' },
     { title: 'Quem Sou', href: '#quemsou' },
-    { title: 'Projetos', href: '#projetos' },
-    { title: 'Contato', href: '#contato' }
+    { title: 'Projetos', href:  '#projetos' },
+    { title: 'Contato', href:   '#contato' }
 ];
 
 

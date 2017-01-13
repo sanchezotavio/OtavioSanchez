@@ -17,7 +17,7 @@ var ProjetosSection = React.createClass({
                     </h1>
                     <span className="division"></span>
                     <h2 className="projetos__title--sub">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                         Conheça meu portfólio e alguns de meus projetos pessoais.
                     </h2>
                     <div className="row">
                         <div className="o-col-xs-12">
