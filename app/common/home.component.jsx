@@ -56,19 +56,19 @@ var ServicosSection = React.createClass({
                 <div className="container--body">
 
                     <article className="servico">
-                        <div className="o-col-xs-6 o-col-md-12 order-2" id="servico1">
+                        <div className="o-col-xs-6 o-col-md-12 order-2" id="servico3">
                             <h2 className="servicos__title">
-                               Idéias para o seu negócio
+                                Planejamento e eficiência
                             </h2>
                             <p className="paragraph">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.Nunc nec accumsan velit, quis gravida odio.Aliquam mattis fermentum dictum.Vivamus ac diam vitae erat euismod maximus.Aenean porta, diam eu maximus finibus, libero magna facilisis odio, sit amet
-                                ullamcorper augue velit at leo.Fusce id luctus ipsum.Nullam et bibendum justo.
+                                Cada sistema web é desenvolvido sob medida.Isso permite uma resposta adequada às suas necessidades e elimina funcionalidades e custos desnecessários.
                             </p>
                         </div>
                         <div className="o-col-xs-6 o-col-md-12 order-1">
-                            <SVGSprite  id="servicos_1" class="servicos__image"  />
+                            <SVGSprite  id="servicos_3" class="servicos__image"  />
                         </div>
                     </article>
+
 
                     <article className="servico">
                         <div className="o-col-xs-6 o-col-md-12 order-1">
@@ -76,27 +76,25 @@ var ServicosSection = React.createClass({
                         </div>
                         <div className="o-col-xs-6 o-col-md-12 order-2" id="servico2">
                             <h2 className="servicos__title">
-                                Desenvolvimento de Sistemas
+                                Desenvolvimento de Sistemas Web
                             </h2>
                             <p className="paragraph">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.Nunc nec accumsan velit, quis gravida odio.Aliquam mattis fermentum dictum.Vivamus ac diam vitae erat euismod maximus.Aenean porta, diam eu maximus finibus, libero magna facilisis odio, sit amet
-                                ullamcorper augue velit at leo.Fusce id luctus ipsum.Nullam et bibendum justo.
+                                Desenvolvimento de sistemas web exclusivos, personalizados e criativos de acordo com os seus requisitos.Buscando sempre novas tecnologias, capazes de otimizar os processos de seu negócio.
                             </p>
                         </div>
                     </article>
 
                     <article className="servico">
-                        <div className="o-col-xs-6 o-col-md-12 order-2" id="servico3">
+                        <div className="o-col-xs-6 o-col-md-12 order-2" id="servico1">
                             <h2 className="servicos__title">
-                               Planejamento e eficiência
+                                Idéias para o seu negócio
                             </h2>
                             <p className="paragraph">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.Nunc nec accumsan velit, quis gravida odio.Aliquam mattis fermentum dictum.Vivamus ac diam vitae erat euismod maximus.Aenean porta, diam eu maximus finibus, libero magna facilisis odio, sit amet
-                                ullamcorper augue velit at leo.Fusce id luctus ipsum.Nullam et bibendum justo.
+                                Estudando e entendendo os usuário que vão utilizar o sistema web, unindo a visão de negócio com a visão do usuário e a tecnologia necessária.
                             </p>
                         </div>
                         <div className="o-col-xs-6 o-col-md-12 order-1">
-                            <SVGSprite  id="servicos_3" class="servicos__image"  />
+                            <SVGSprite  id="servicos_1" class="servicos__image"  />
                         </div>
                     </article>
                 </div>
@@ -115,9 +113,9 @@ var ProjetosSection = React.createClass({
                         Projetos
                     </h1>
                     <span className="division"></span>
-                    <h2 className="projetos__title--sub">                    
+                    <h2 className="projetos__title--sub">
                         Conheça meu Portfólio e alguns de meus projetos pessoais.
-                   
+
                     </h2>
                     <div className="row">
                         <div className="o-col-xs-12">
@@ -144,10 +142,10 @@ var ProjetosSection = React.createClass({
                                             <img className="carousel__image"  src="styles/images/png/igapira-1.png" alt="Slide 1" />
                                         </li>
                                         <li className="carousel__item">
-                                           <img className="carousel__image"  src="styles/images/png/igapira-2.png" alt="Slide 1" />
+                                            <img className="carousel__image"  src="styles/images/png/igapira-2.png" alt="Slide 1" />
                                         </li>
                                         <li className="carousel__item">
-                                          <img className="carousel__image"  src="styles/images/png/nilsan-1.PNG"alt="Slide 1" />
+                                            <img className="carousel__image"  src="styles/images/png/nilsan-1.PNG"alt="Slide 1" />
                                         </li>
                                         <li className="carousel__item">
                                             <img className="carousel__image" src="styles/images/png/igapira-2.png" alt="Slide 1" />
@@ -186,9 +184,9 @@ var SobreSection = React.createClass({
                             <figure className="sobre__figure">
                                 <img src="styles/images/otavio-sanchez.jpg" className="sobre__image" alt="Otávio Sanchez" title="Otávio Sanchez" />
                             </figure>
-                            <article id="quemsou">                               
+                            <article id="quemsou">
                                 <p className="paragraph">
-                                   Olá, me chamo Otávio Sanchez. Sou Desenvolvedor Web, entusiasta de tecnologia, autodidata e apaixonado por código.
+                                    Olá, eu sou Otávio Sanchez.Sou Desenvolvedor Web, entusiasta de tecnologia, autodidata e apaixonado por código.
                                 </p>
                                 <p className="paragraph">
                                     Estudante do Bacharelado em Ciência e Tecnologia pela Universidade Federal do ABC - curso multidisciplinar - que me permitiu abrir espaço para novas possibilidades através da tecnologia da informação em suas mais diferentes vertentes.
@@ -214,26 +212,26 @@ var SobreSection = React.createClass({
 });
 
 var mobileItem = React.createClass({
-        render: function () {
-            return (
-                <div className="o-col-md-12 o-col-xs-6">
-                    <div className="sobre__mobile">
-                        <div className="display">
+    render: function () {
+        return (
+            <div className="o-col-md-12 o-col-xs-6">
+                <div className="sobre__mobile">
+                    <div className="display">
 
-                            <SVGSprite  id="battery" class="battery"  />
+                        <SVGSprite  id="battery" class="battery"  />
 
-                            <div className="hour">
-                                {new Date().toLocaleString('en-US', { hour: 'numeric', minute: 'numeric', hour12: true }) }
-                            </div>
-
-                            <SVGSprite  id="wifi" class="wifi" />
-
+                        <div className="hour">
+                            {new Date().toLocaleString('en-US', { hour: 'numeric', minute: 'numeric', hour12: true }) }
                         </div>
+
+                        <SVGSprite  id="wifi" class="wifi" />
+
                     </div>
                 </div>
-            );
-        }
-    });
+            </div>
+        );
+    }
+});
 
 var SocialSection = React.createClass({
     render: function () {
@@ -245,7 +243,7 @@ var SocialSection = React.createClass({
                         Redes Sociais
                     </h1>
                     <span className="division"></span>
-                   
+
                 </header>
                 <div>
                     <nav className="nav">
@@ -285,13 +283,13 @@ var ContatoSection = React.createClass({
                     <div id="contatos" className="o-col-md-12 o-col-xs-4">
                         <h2 className="contato__title--info">Entre em contato</h2>
                         <div className="contato__text">
-                            Email: <a className="link first after" href="mailto:dev@otaviosanchez.com">dev@otaviosanchez.com</a>
+                            Email: <a className="link first after" href="mailto:dev@otaviosanchez.com">dev @otaviosanchez.com</a>
                         </div>
                         <div className="contato__text first after">
                             São Paulo - SP
                         </div>
                         <div className="contato__text">
-                            Celular: <a className="link first after" href="tel:11945336910">(11)94533-6910</a>
+                            Celular: <a className="link first after" href="tel:11945336910">(11) 94533-6910</a>
                         </div>
                     </div>
                     <div className="o-col-md-12 o-col-xs-8">

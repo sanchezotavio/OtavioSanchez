@@ -4,7 +4,7 @@ var path = require('path');
 var BUILD_DIR = path.resolve(__dirname, 'public');
 var APP_DIR = path.resolve(__dirname, 'app');
 
-/*
+
 var config = {
   entry: APP_DIR + '/index.jsx',
   output: {
@@ -35,9 +35,9 @@ var config = {
 };
 
 module.exports = config; 
-*/
 
 
+/*
  var projetos = {
   entry: APP_DIR + '/projetos.jsx',
   output: {
@@ -71,7 +71,7 @@ module.exports = projetos;
 
 
 
-/* var sobre = {
+ var sobre = {
   entry: APP_DIR + '/sobre.jsx',
   output: {
     path: BUILD_DIR,
