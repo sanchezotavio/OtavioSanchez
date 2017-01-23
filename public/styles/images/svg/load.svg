@@ -10,6 +10,7 @@
         stroke-dasharray: 500;
         stroke-dashoffset: 500;
          animation: dash 2s linear alternate infinite;
+         fill:#1A1D22;
     }
 
     .load__item-b{
@@ -18,6 +19,7 @@
         stroke-dasharray: 600;
         stroke-dashoffset: 600;
         animation: dash 2s linear alternate infinite;
+         fill:#1A1D22;
     }
 
      .load__item-c{
@@ -26,12 +28,14 @@
         stroke-dasharray: 500;
         stroke-dashoffset: 500;
         animation: dash 2s linear alternate infinite;
+         fill:#1A1D22;
     }
 
      .load__item{
         font-family: Arial;
-        font-size:36px;
-        fill: #ffffff;
+        font-size:30px;
+        fill: #6d737f;
+        
     }
 
 
@@ -62,5 +66,5 @@
 		c3.96,3.96,8.8,8.58,12.32,11.88c7.04,6.38,11.88,13.641,14.3,21.34C387.642,289.928,387.861,297.848,385.661,305.328z"/>
 	<path class="load__item-c" d="M415.361,305.328l48.181-49.061l-48.181-48.621h30.8l48.4,48.4l-48.4,49.281H415.361z"/>
 </g>
-<text transform="matrix(1 0 0 1 167.0737 396.2998)" class="load__item">carregando</text>
+<text transform="matrix(1 0 0 1 167.0737 396.2998)" class="load__item">Carregando ...</text>
 </svg>

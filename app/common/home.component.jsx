@@ -283,7 +283,7 @@ var ContatoSection = React.createClass({
                     <div id="contatos" className="o-col-md-12 o-col-xs-4">
                         <h2 className="contato__title--info">Entre em contato</h2>
                         <div className="contato__text">
-                            Email: <a className="link first after" href="mailto:dev@otaviosanchez.com">dev @otaviosanchez.com</a>
+                            Email: <a className="link first after" href="mailto:dev@otaviosanchez.com">dev@otaviosanchez.com</a>
                         </div>
                         <div className="contato__text first after">
                             São Paulo - SP
