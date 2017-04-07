@@ -27,36 +27,6 @@ $(".projetos__list").hover(function() {
 
 /* Parallax End */
 
-/* Menu */
-
-$('#menu').click(function () {
-  if (menu) {
-    menu = false
-    $('#menu').removeClass('open').addClass('close')
-    $('#menu-container').removeClass('menu-open').addClass('menu-close')
-  } else {
-    menu = true
-    $('#menu').removeClass('close').addClass('open')
-    $('#menu-container').removeClass('menu-close').addClass('menu-open')
-  }
-})
-
-$(document).ready(function () {
-  $('#navigation li a').click(function () {
-    if (menu) {
-      menu = false
-      $('#menu').removeClass('open').addClass('close')
-      $('#menu-container').removeClass('menu-open').addClass('menu-close')
-    } else {
-      menu = true
-      $('#menu').removeClass('close').addClass('open')
-      $('#menu-container').removeClass('menu-close').addClass('menu-open')
-    }
-  }
-  )
-})
-
-/* Menu End */
 
 /* Load */
 
@@ -115,3 +85,6 @@ function rotateMobile () {
     $('#carousel_container .slide').css({ 'left': -item_width + 'px' })
   })
 }
+
+/* Slide End */
+

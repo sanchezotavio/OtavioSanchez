@@ -1,106 +1,69 @@
-var webpack = require('webpack');
-var path = require('path');
+const path = require('path')
+const ExtractTextPlugin = require('extract-text-webpack-plugin')
+const webpack = require('webpack')
+const VENDOR_LIBS = ['react', 'react-dom']
+const HtmlWebPackPlugin = require('html-webpack-plugin')
+const FaviconsWebpackPlugin = require('favicons-webpack-plugin')
 
-var BUILD_DIR = path.resolve(__dirname, 'public');
-var APP_DIR = path.resolve(__dirname, 'app');
-
-
-var config = {
-  entry: APP_DIR + '/index.jsx',
-  output: {
-    path: BUILD_DIR,
-    filename: 'js/bundle.js'
+const config = {
+  entry: {
+    bundle: './app/index.js',
+    vendor: VENDOR_LIBS
   },
-  module : {
-    loaders : [
+  output: {
+    filename: '[name].[chunkhash].js',
+    path: path.resolve(__dirname, 'public')
+  },
+  module: {
+    rules: [
       {
-        test : /\.jsx?/,
-        include : APP_DIR,
-        loader : 'babel'
+        test: /\.scss$/,
+        loader: ExtractTextPlugin.extract(['css-loader', 'sass-loader'])
+      }, {
+        test: /\.(eot|woff|woff2|svg|ttf)([\?]?.*)$/,
+        loader: "file-loader"
+      }, {
+        test: /\.js?$/,
+        exclude: /node_modules/,
+        loader: 'babel-loader',
+        query: {
+          presets: ['react']
+        }
+      }, {
+        test: /\.(gif|png|jpe?g)$/i,
+        loaders: ['file-loader?hash=sha512&digest=hex&name=[hash].[ext]']
+      }
+    ],
+    loaders: [
+      {
+        test: /\.js$/,
+        loaders: [
+          'babel-loader', 'eslint-loader'
+        ],
+        exclude: /node_modules/
       }
     ]
   },
-  plugins:[
+
+  plugins: [
+    new ExtractTextPlugin('styles.css'),
+    new webpack
+      .optimize
+      .CommonsChunkPlugin({
+        name: ['vendor', 'manifest']
+      }),
+    new HtmlWebPackPlugin({template: './app/index.html'}),
+    new FaviconsWebpackPlugin('./styles/favicon/favicon.png'),
+   
     new webpack.DefinePlugin({
-      'process.env':{
-        'NODE_ENV': JSON.stringify('production')
-      }
-    }),
-    new webpack.optimize.UglifyJsPlugin({
-      compress:{
-        warnings: true
+      'process.env': {
+        NODE_ENV: JSON.stringify(process.env.NODE_ENV)
       }
     })
-  ]
-};
+  ],
+  devServer: {
+    historyApiFallback: true
+  }
+}
 
-module.exports = config; 
-
-
-/*
- var projetos = {
-  entry: APP_DIR + '/projetos.jsx',
-  output: {
-    path: BUILD_DIR,
-    filename: 'js/bundleProjetos.js'
-  },
-  module : {
-    loaders : [
-      {
-        test : /\.jsx?/,
-        include : APP_DIR,
-        loader : 'babel'
-      }
-    ]
-  },
-  plugins:[
-    new webpack.DefinePlugin({
-      'process.env':{
-        'NODE_ENV': JSON.stringify('production')
-      }
-    }),
-    new webpack.optimize.UglifyJsPlugin({
-      compress:{
-        warnings: true
-      }
-    })
-  ]
-};
-
-module.exports = projetos; 
-
-
-
- var sobre = {
-  entry: APP_DIR + '/sobre.jsx',
-  output: {
-    path: BUILD_DIR,
-    filename: 'js/bundleSobre.js'
-  },
-  module : {
-    loaders : [
-      {
-        test : /\.jsx?/,
-        include : APP_DIR,
-        loader : 'babel'
-      }
-    ]
-  },
-  plugins:[
-    new webpack.DefinePlugin({
-      'process.env':{
-        'NODE_ENV': JSON.stringify('production')
-      }
-    }),
-    new webpack.optimize.UglifyJsPlugin({
-      compress:{
-        warnings: true
-      }
-    })
-  ]
-};
-
-module.exports = sobre; */
-
-
-
+module.exports = config
