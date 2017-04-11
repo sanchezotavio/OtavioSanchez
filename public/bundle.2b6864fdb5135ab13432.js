@@ -16,7 +16,7 @@ exports.__esModule = true;
 exports.default = routerWarning;
 exports._resetWarned = _resetWarned;
 
-var _warning = __webpack_require__(248);
+var _warning = __webpack_require__(255);
 
 var _warning2 = _interopRequireDefault(_warning);
 
@@ -674,51 +674,51 @@ Object.defineProperty(exports, 'formatPattern', {
   }
 });
 
-var _Router2 = __webpack_require__(222);
+var _Router2 = __webpack_require__(229);
 
 var _Router3 = _interopRequireDefault(_Router2);
 
-var _Link2 = __webpack_require__(102);
+var _Link2 = __webpack_require__(106);
 
 var _Link3 = _interopRequireDefault(_Link2);
 
-var _IndexLink2 = __webpack_require__(216);
+var _IndexLink2 = __webpack_require__(223);
 
 var _IndexLink3 = _interopRequireDefault(_IndexLink2);
 
-var _withRouter2 = __webpack_require__(235);
+var _withRouter2 = __webpack_require__(242);
 
 var _withRouter3 = _interopRequireDefault(_withRouter2);
 
-var _IndexRedirect2 = __webpack_require__(217);
+var _IndexRedirect2 = __webpack_require__(224);
 
 var _IndexRedirect3 = _interopRequireDefault(_IndexRedirect2);
 
-var _IndexRoute2 = __webpack_require__(218);
+var _IndexRoute2 = __webpack_require__(225);
 
 var _IndexRoute3 = _interopRequireDefault(_IndexRoute2);
 
-var _Redirect2 = __webpack_require__(103);
+var _Redirect2 = __webpack_require__(107);
 
 var _Redirect3 = _interopRequireDefault(_Redirect2);
 
-var _Route2 = __webpack_require__(220);
+var _Route2 = __webpack_require__(227);
 
 var _Route3 = _interopRequireDefault(_Route2);
 
-var _History2 = __webpack_require__(215);
+var _History2 = __webpack_require__(222);
 
 var _History3 = _interopRequireDefault(_History2);
 
-var _Lifecycle2 = __webpack_require__(219);
+var _Lifecycle2 = __webpack_require__(226);
 
 var _Lifecycle3 = _interopRequireDefault(_Lifecycle2);
 
-var _RouteContext2 = __webpack_require__(221);
+var _RouteContext2 = __webpack_require__(228);
 
 var _RouteContext3 = _interopRequireDefault(_RouteContext2);
 
-var _useRoutes2 = __webpack_require__(234);
+var _useRoutes2 = __webpack_require__(241);
 
 var _useRoutes3 = _interopRequireDefault(_useRoutes2);
 
@@ -726,33 +726,33 @@ var _RouterContext2 = __webpack_require__(43);
 
 var _RouterContext3 = _interopRequireDefault(_RouterContext2);
 
-var _RoutingContext2 = __webpack_require__(223);
+var _RoutingContext2 = __webpack_require__(230);
 
 var _RoutingContext3 = _interopRequireDefault(_RoutingContext2);
 
 var _PropTypes3 = _interopRequireDefault(_PropTypes2);
 
-var _match2 = __webpack_require__(232);
+var _match2 = __webpack_require__(239);
 
 var _match3 = _interopRequireDefault(_match2);
 
-var _useRouterHistory2 = __webpack_require__(108);
+var _useRouterHistory2 = __webpack_require__(112);
 
 var _useRouterHistory3 = _interopRequireDefault(_useRouterHistory2);
 
-var _applyRouterMiddleware2 = __webpack_require__(225);
+var _applyRouterMiddleware2 = __webpack_require__(232);
 
 var _applyRouterMiddleware3 = _interopRequireDefault(_applyRouterMiddleware2);
 
-var _browserHistory2 = __webpack_require__(226);
+var _browserHistory2 = __webpack_require__(233);
 
 var _browserHistory3 = _interopRequireDefault(_browserHistory2);
 
-var _hashHistory2 = __webpack_require__(230);
+var _hashHistory2 = __webpack_require__(237);
 
 var _hashHistory3 = _interopRequireDefault(_hashHistory2);
 
-var _createMemoryHistory2 = __webpack_require__(105);
+var _createMemoryHistory2 = __webpack_require__(109);
 
 var _createMemoryHistory3 = _interopRequireDefault(_createMemoryHistory2);
 
@@ -826,7 +826,7 @@ var _warning = __webpack_require__(12);
 
 var _warning2 = _interopRequireDefault(_warning);
 
-var _queryString = __webpack_require__(141);
+var _queryString = __webpack_require__(148);
 
 var _runTransitionHook = __webpack_require__(49);
 
@@ -1022,7 +1022,7 @@ var _deprecateObjectProperties = __webpack_require__(44);
 
 var _deprecateObjectProperties2 = _interopRequireDefault(_deprecateObjectProperties);
 
-var _getRouteParams = __webpack_require__(229);
+var _getRouteParams = __webpack_require__(236);
 
 var _getRouteParams2 = _interopRequireDefault(_getRouteParams);
 
@@ -1611,21 +1611,21 @@ var _routerWarning = __webpack_require__(7);
 
 var _routerWarning2 = _interopRequireDefault(_routerWarning);
 
-var _computeChangedRoutes2 = __webpack_require__(227);
+var _computeChangedRoutes2 = __webpack_require__(234);
 
 var _computeChangedRoutes3 = _interopRequireDefault(_computeChangedRoutes2);
 
-var _TransitionUtils = __webpack_require__(224);
+var _TransitionUtils = __webpack_require__(231);
 
-var _isActive2 = __webpack_require__(231);
+var _isActive2 = __webpack_require__(238);
 
 var _isActive3 = _interopRequireDefault(_isActive2);
 
-var _getComponents = __webpack_require__(228);
+var _getComponents = __webpack_require__(235);
 
 var _getComponents2 = _interopRequireDefault(_getComponents);
 
-var _matchRoutes = __webpack_require__(233);
+var _matchRoutes = __webpack_require__(240);
 
 var _matchRoutes2 = _interopRequireDefault(_matchRoutes);
 
@@ -1914,6 +1914,30 @@ module.exports = exports['default'];
 /* 76 */
 /***/ (function(module, exports, __webpack_require__) {
 
+module.exports = __webpack_require__.p + "./images/otavio-sanchez.jpg";
+
+/***/ }),
+/* 77 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "./images/igapira-1.png";
+
+/***/ }),
+/* 78 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "./images/igapira-2.png";
+
+/***/ }),
+/* 79 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "./images/nilsan-1.PNG";
+
+/***/ }),
+/* 80 */
+/***/ (function(module, exports, __webpack_require__) {
+
 "use strict";
 /*eslint-disable no-empty */
 
@@ -1990,7 +2014,7 @@ function readState(key) {
 }
 
 /***/ }),
-/* 77 */
+/* 81 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2010,7 +2034,7 @@ var _ExecutionEnvironment = __webpack_require__(35);
 
 var _DOMUtils = __webpack_require__(47);
 
-var _createHistory = __webpack_require__(79);
+var _createHistory = __webpack_require__(83);
 
 var _createHistory2 = _interopRequireDefault(_createHistory);
 
@@ -2036,7 +2060,7 @@ exports['default'] = createDOMHistory;
 module.exports = exports['default'];
 
 /***/ }),
-/* 78 */
+/* 82 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2064,9 +2088,9 @@ var _ExecutionEnvironment = __webpack_require__(35);
 
 var _DOMUtils = __webpack_require__(47);
 
-var _DOMStateStorage = __webpack_require__(76);
+var _DOMStateStorage = __webpack_require__(80);
 
-var _createDOMHistory = __webpack_require__(77);
+var _createDOMHistory = __webpack_require__(81);
 
 var _createDOMHistory2 = _interopRequireDefault(_createDOMHistory);
 
@@ -2288,7 +2312,7 @@ exports['default'] = createHashHistory;
 module.exports = exports['default'];
 
 /***/ }),
-/* 79 */
+/* 83 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2304,17 +2328,17 @@ var _warning = __webpack_require__(12);
 
 var _warning2 = _interopRequireDefault(_warning);
 
-var _deepEqual = __webpack_require__(120);
+var _deepEqual = __webpack_require__(124);
 
 var _deepEqual2 = _interopRequireDefault(_deepEqual);
 
 var _PathUtils = __webpack_require__(19);
 
-var _AsyncUtils = __webpack_require__(137);
+var _AsyncUtils = __webpack_require__(144);
 
 var _Actions = __webpack_require__(24);
 
-var _createLocation2 = __webpack_require__(139);
+var _createLocation2 = __webpack_require__(146);
 
 var _createLocation3 = _interopRequireDefault(_createLocation2);
 
@@ -2582,7 +2606,7 @@ exports['default'] = createHistory;
 module.exports = exports['default'];
 
 /***/ }),
-/* 80 */
+/* 84 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2746,10 +2770,6 @@ exports['default'] = useBasename;
 module.exports = exports['default'];
 
 /***/ }),
-/* 81 */,
-/* 82 */,
-/* 83 */,
-/* 84 */,
 /* 85 */,
 /* 86 */,
 /* 87 */,
@@ -2767,7 +2787,11 @@ module.exports = exports['default'];
 /* 99 */,
 /* 100 */,
 /* 101 */,
-/* 102 */
+/* 102 */,
+/* 103 */,
+/* 104 */,
+/* 105 */,
+/* 106 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2949,7 +2973,7 @@ exports.default = Link;
 module.exports = exports['default'];
 
 /***/ }),
-/* 103 */
+/* 107 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -3057,7 +3081,7 @@ exports.default = Redirect;
 module.exports = exports['default'];
 
 /***/ }),
-/* 104 */
+/* 108 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -3095,7 +3119,7 @@ function createRoutingHistory(history, transitionManager) {
 }
 
 /***/ }),
-/* 105 */
+/* 109 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -3108,11 +3132,11 @@ var _useQueries = __webpack_require__(36);
 
 var _useQueries2 = _interopRequireDefault(_useQueries);
 
-var _useBasename = __webpack_require__(80);
+var _useBasename = __webpack_require__(84);
 
 var _useBasename2 = _interopRequireDefault(_useBasename);
 
-var _createMemoryHistory = __webpack_require__(140);
+var _createMemoryHistory = __webpack_require__(147);
 
 var _createMemoryHistory2 = _interopRequireDefault(_createMemoryHistory);
 
@@ -3133,7 +3157,7 @@ function createMemoryHistory(options) {
 module.exports = exports['default'];
 
 /***/ }),
-/* 106 */
+/* 110 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -3147,7 +3171,7 @@ exports.default = function (createHistory) {
   return history;
 };
 
-var _useRouterHistory = __webpack_require__(108);
+var _useRouterHistory = __webpack_require__(112);
 
 var _useRouterHistory2 = _interopRequireDefault(_useRouterHistory);
 
@@ -3158,7 +3182,7 @@ var canUseDOM = !!(typeof window !== 'undefined' && window.document && window.do
 module.exports = exports['default'];
 
 /***/ }),
-/* 107 */
+/* 111 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -3213,7 +3237,7 @@ function makeStateWithLocation(state, location) {
 module.exports = exports['default'];
 
 /***/ }),
-/* 108 */
+/* 112 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -3226,7 +3250,7 @@ var _useQueries = __webpack_require__(36);
 
 var _useQueries2 = _interopRequireDefault(_useQueries);
 
-var _useBasename = __webpack_require__(80);
+var _useBasename = __webpack_require__(84);
 
 var _useBasename2 = _interopRequireDefault(_useBasename);
 
@@ -3242,10 +3266,10 @@ function useRouterHistory(createHistory) {
 module.exports = exports['default'];
 
 /***/ }),
-/* 109 */,
-/* 110 */,
-/* 111 */,
-/* 112 */
+/* 113 */,
+/* 114 */,
+/* 115 */,
+/* 116 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -3339,7 +3363,7 @@ function rotateMobile() {
 /* Slide End */
 
 /***/ }),
-/* 113 */
+/* 117 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -3355,19 +3379,19 @@ var _react2 = _interopRequireDefault(_react);
 
 var _reactRouter = __webpack_require__(29);
 
-var _main = __webpack_require__(116);
+var _main = __webpack_require__(120);
 
 var _main2 = _interopRequireDefault(_main);
 
-var _home = __webpack_require__(115);
+var _home = __webpack_require__(119);
 
 var _home2 = _interopRequireDefault(_home);
 
-var _projetos = __webpack_require__(117);
+var _projetos = __webpack_require__(121);
 
 var _projetos2 = _interopRequireDefault(_projetos);
 
-var _sobre = __webpack_require__(118);
+var _sobre = __webpack_require__(122);
 
 var _sobre2 = _interopRequireDefault(_sobre);
 
@@ -3378,19 +3402,19 @@ exports.default = _react2.default.createElement(
     { component: _main2.default },
     _react2.default.createElement(_reactRouter.IndexRoute, { component: _home2.default }),
     _react2.default.createElement(_reactRouter.Route, { path: '/projetos', component: _projetos2.default }),
-    _react2.default.createElement(_reactRouter.Route, { path: '/sobre', component: _sobre2.default }),
+    _react2.default.createElement(_reactRouter.Route, { path: '/quem_sou', component: _sobre2.default }),
     _react2.default.createElement(_reactRouter.Route, { path: '/home', component: _home2.default }),
     _react2.default.createElement(_reactRouter.Route, { path: '*', component: _home2.default })
 );
 
 /***/ }),
-/* 114 */
+/* 118 */
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
 
 /***/ }),
-/* 115 */
+/* 119 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -3410,11 +3434,27 @@ var _reactDom = __webpack_require__(18);
 
 var _reactDom2 = _interopRequireDefault(_reactDom);
 
-var _reactParticlesJs = __webpack_require__(214);
+var _reactParticlesJs = __webpack_require__(221);
 
 var _reactParticlesJs2 = _interopRequireDefault(_reactParticlesJs);
 
 var _reactRouter = __webpack_require__(29);
+
+var _nilsan = __webpack_require__(79);
+
+var _nilsan2 = _interopRequireDefault(_nilsan);
+
+var _igapira = __webpack_require__(77);
+
+var _igapira2 = _interopRequireDefault(_igapira);
+
+var _igapira3 = __webpack_require__(78);
+
+var _igapira4 = _interopRequireDefault(_igapira3);
+
+var _otavioSanchez = __webpack_require__(76);
+
+var _otavioSanchez2 = _interopRequireDefault(_otavioSanchez);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -3451,6 +3491,12 @@ var Home = function (_Component) {
     }
 
     _createClass(Home, [{
+        key: 'componentDidMount',
+        value: function componentDidMount() {
+            window.scrollTo(0, 0);
+            document.title = "Otávio Sanchez - Desenvolvedor Web";
+        }
+    }, {
         key: 'render',
         value: function render() {
             return _react2.default.createElement(
@@ -3469,709 +3515,859 @@ var Home = function (_Component) {
     return Home;
 }(_react.Component);
 
-var ParticlesHome = _react2.default.createClass({
-    displayName: 'ParticlesHome',
-    render: function render() {
-        return _react2.default.createElement(
-            'div',
-            { className: 'ParticlesHome' },
-            _react2.default.createElement(_reactParticlesJs2.default, {
-                params: {
-                    'particles': {
-                        'number': {
-                            'value': particles,
-                            'density': {
-                                'enable': true,
-                                'value_area': area
-                            }
-                        },
-                        'color': {
-                            'value': ['#f26838', '#6d737f']
-                        },
-                        'shape': {
-                            'type': 'circle',
-                            'stroke': {
-                                'width': 0,
-                                'color': '#fff'
-                            },
-                            'polygon': {
-                                'nb_sides': 5
-                            },
-                            'image': {
-                                'src': 'img/github.svg',
-                                'width': 100,
-                                'height': 100
-                            }
-                        },
-                        'opacity': {
-                            'value': 0.6,
-                            'random': false,
-                            'anim': {
-                                'enable': false,
-                                'speed': 1,
-                                'opacity_min': 0.1,
-                                'sync': false
-                            }
-                        },
-                        'size': {
-                            'value': 2,
-                            'random': true,
-                            'anim': {
-                                'enable': false,
-                                'speed': 40,
-                                'size_min': 0.3,
-                                'sync': false
-                            }
-                        },
-                        'line_linked': {
-                            'enable': true,
-                            'distance': 100,
-                            'color': '#ffffff',
-                            'opacity': 0.2,
-                            'width': 1
-                        }
-                    },
-                    'interactivity': {
-                        'detect_on': 'canvas',
-                        'events': {
-                            'onhover': {
-                                'enable': true,
-                                'mode': 'grab'
-                            },
-                            'onclick': {
-                                'enable': false
-                            },
-                            'resize': true
-                        },
-                        'modes': {
-                            'grab': {
-                                'distance': 140,
-                                'line_linked': {
-                                    'opacity': 1
+var ParticlesHome = function (_React$Component) {
+    _inherits(ParticlesHome, _React$Component);
+
+    function ParticlesHome() {
+        _classCallCheck(this, ParticlesHome);
+
+        return _possibleConstructorReturn(this, (ParticlesHome.__proto__ || Object.getPrototypeOf(ParticlesHome)).apply(this, arguments));
+    }
+
+    _createClass(ParticlesHome, [{
+        key: 'render',
+        value: function render() {
+            return _react2.default.createElement(
+                'div',
+                { className: 'ParticlesHome' },
+                _react2.default.createElement(_reactParticlesJs2.default, {
+                    params: {
+                        'particles': {
+                            'number': {
+                                'value': particles,
+                                'density': {
+                                    'enable': true,
+                                    'value_area': area
                                 }
                             },
-                            'bubble': {
-                                'distance': 400,
-                                'size': 40,
-                                'duration': 2,
-                                'opacity': 8,
-                                'speed': 3
+                            'color': {
+                                'value': ['#f26838', '#6d737f']
                             },
-                            'repulse': {
-                                'distance': 200,
-                                'duration': 0.4
+                            'shape': {
+                                'type': 'circle',
+                                'stroke': {
+                                    'width': 0,
+                                    'color': '#fff'
+                                },
+                                'polygon': {
+                                    'nb_sides': 5
+                                },
+                                'image': {
+                                    'src': 'img/github.svg',
+                                    'width': 100,
+                                    'height': 100
+                                }
                             },
-                            'push': {
-                                'particles_nb': 4
+                            'opacity': {
+                                'value': 0.6,
+                                'random': false,
+                                'anim': {
+                                    'enable': false,
+                                    'speed': 1,
+                                    'opacity_min': 0.1,
+                                    'sync': false
+                                }
                             },
-                            'remove': {
-                                'particles_nb': 2
+                            'size': {
+                                'value': 2,
+                                'random': true,
+                                'anim': {
+                                    'enable': false,
+                                    'speed': 40,
+                                    'size_min': 0.3,
+                                    'sync': false
+                                }
+                            },
+                            'line_linked': {
+                                'enable': true,
+                                'distance': 100,
+                                'color': '#ffffff',
+                                'opacity': 0.2,
+                                'width': 1
                             }
-                        }
-                    },
-                    'retina_detect': true
-                } })
-        );
-    }
-});
-var HomeSection = _react2.default.createClass({
-    displayName: 'HomeSection',
+                        },
+                        'interactivity': {
+                            'detect_on': 'canvas',
+                            'events': {
+                                'onhover': {
+                                    'enable': true,
+                                    'mode': 'grab'
+                                },
+                                'onclick': {
+                                    'enable': false
+                                },
+                                'resize': true
+                            },
+                            'modes': {
+                                'grab': {
+                                    'distance': 140,
+                                    'line_linked': {
+                                        'opacity': 1
+                                    }
+                                },
+                                'bubble': {
+                                    'distance': 400,
+                                    'size': 40,
+                                    'duration': 2,
+                                    'opacity': 8,
+                                    'speed': 3
+                                },
+                                'repulse': {
+                                    'distance': 200,
+                                    'duration': 0.4
+                                },
+                                'push': {
+                                    'particles_nb': 4
+                                },
+                                'remove': {
+                                    'particles_nb': 2
+                                }
+                            }
+                        },
+                        'retina_detect': true
+                    } })
+            );
+        }
+    }]);
 
-    render: function render() {
-        return _react2.default.createElement(
-            'section',
-            { className: 'home', id: 'home' },
-            _react2.default.createElement(ParticlesHome, null),
-            _react2.default.createElement(
-                'article',
-                { className: 'home__article' },
+    return ParticlesHome;
+}(_react2.default.Component);
+
+var HomeSection = function (_React$Component2) {
+    _inherits(HomeSection, _React$Component2);
+
+    function HomeSection() {
+        _classCallCheck(this, HomeSection);
+
+        return _possibleConstructorReturn(this, (HomeSection.__proto__ || Object.getPrototypeOf(HomeSection)).apply(this, arguments));
+    }
+
+    _createClass(HomeSection, [{
+        key: 'render',
+        value: function render() {
+            return _react2.default.createElement(
+                'section',
+                { className: 'home', id: 'home' },
+                _react2.default.createElement(ParticlesHome, null),
+                _react2.default.createElement(
+                    'article',
+                    { className: 'home__article' },
+                    _react2.default.createElement(
+                        'div',
+                        { className: 'home__center' },
+                        _react2.default.createElement(
+                            'hgroup',
+                            { className: 'home__group' },
+                            _react2.default.createElement(
+                                'h1',
+                                { id: 'home__titleNameMain', className: 'home__title' },
+                                'Ot\xE1vio'
+                            ),
+                            _react2.default.createElement(
+                                'h1',
+                                { id: 'home__titleName', className: 'home__title' },
+                                'Sanchez'
+                            ),
+                            _react2.default.createElement(
+                                'h1',
+                                { id: 'home__titleSub', className: 'home__title--sub' },
+                                'DESENVOLVEDOR WEB'
+                            )
+                        ),
+                        _react2.default.createElement(
+                            'div',
+                            { className: 'row display-flex fadeOn' },
+                            _react2.default.createElement(
+                                'div',
+                                { className: 'o-col-xs-12' },
+                                _react2.default.createElement(
+                                    _reactRouter.Link,
+                                    { className: 'button button-1--main', to: '/projetos' },
+                                    _react2.default.createElement(
+                                        'svg',
+                                        null,
+                                        _react2.default.createElement('rect', { fill: 'none', height: '100%', width: '100%', x: '0', y: '0' })
+                                    ),
+                                    'Conhe\xE7a Meus Projetos'
+                                )
+                            )
+                        )
+                    )
+                )
+            );
+        }
+    }]);
+
+    return HomeSection;
+}(_react2.default.Component);
+
+;
+
+var ServicosSection = function (_React$Component3) {
+    _inherits(ServicosSection, _React$Component3);
+
+    function ServicosSection() {
+        _classCallCheck(this, ServicosSection);
+
+        return _possibleConstructorReturn(this, (ServicosSection.__proto__ || Object.getPrototypeOf(ServicosSection)).apply(this, arguments));
+    }
+
+    _createClass(ServicosSection, [{
+        key: 'render',
+        value: function render() {
+            return _react2.default.createElement(
+                'section',
+                { className: 'section servicos border', id: 'servicos' },
+                _react2.default.createElement(
+                    'header',
+                    { className: 'servicos__header', id: 'app' },
+                    _react2.default.createElement(
+                        'h1',
+                        { className: 'servicos__title' },
+                        'Servi\xE7os'
+                    ),
+                    _react2.default.createElement('span', { className: 'division' })
+                ),
                 _react2.default.createElement(
                     'div',
-                    { className: 'home__center' },
+                    { className: 'container--body' },
                     _react2.default.createElement(
-                        'hgroup',
-                        { className: 'home__group' },
+                        'article',
+                        { className: 'servico' },
                         _react2.default.createElement(
-                            'h1',
-                            { id: 'home__titleNameMain', className: 'home__title' },
-                            'Ot\xE1vio'
+                            'div',
+                            { className: 'o-col-xs-6 o-col-md-12 order-2', id: 'servico3' },
+                            _react2.default.createElement(
+                                'h2',
+                                { className: 'servicos__title' },
+                                'Planejamento e efici\xEAncia'
+                            ),
+                            _react2.default.createElement(
+                                'p',
+                                { className: 'paragraph' },
+                                'Cada sistema web \xE9 desenvolvido sob medida.Isso permite uma resposta adequada \xE0s suas necessidades e elimina funcionalidades e custos desnecess\xE1rios.'
+                            )
                         ),
                         _react2.default.createElement(
-                            'h1',
-                            { id: 'home__titleName', className: 'home__title' },
-                            'Sanchez'
-                        ),
-                        _react2.default.createElement(
-                            'h1',
-                            { id: 'home__titleSub', className: 'home__title--sub' },
-                            'DESENVOLVEDOR WEB'
+                            'div',
+                            { className: 'o-col-xs-6 o-col-md-12 order-1' },
+                            _react2.default.createElement(SVGSprite, { id: 'servicos_3', 'class': 'servicos__image' })
                         )
                     ),
                     _react2.default.createElement(
+                        'article',
+                        { className: 'servico' },
+                        _react2.default.createElement(
+                            'div',
+                            { className: 'o-col-xs-6 o-col-md-12 order-1' },
+                            _react2.default.createElement(SVGSprite, { id: 'servicos_2', 'class': 'servicos__image' })
+                        ),
+                        _react2.default.createElement(
+                            'div',
+                            { className: 'o-col-xs-6 o-col-md-12 order-2', id: 'servico2' },
+                            _react2.default.createElement(
+                                'h2',
+                                { className: 'servicos__title' },
+                                'Desenvolvimento de Sistemas Web'
+                            ),
+                            _react2.default.createElement(
+                                'p',
+                                { className: 'paragraph' },
+                                'Desenvolvimento de sistemas web exclusivos, personalizados e criativos de acordo com os seus requisitos.Buscando sempre novas tecnologias, capazes de otimizar os processos de seu neg\xF3cio.'
+                            )
+                        )
+                    ),
+                    _react2.default.createElement(
+                        'article',
+                        { className: 'servico' },
+                        _react2.default.createElement(
+                            'div',
+                            { className: 'o-col-xs-6 o-col-md-12 order-2', id: 'servico1' },
+                            _react2.default.createElement(
+                                'h2',
+                                { className: 'servicos__title' },
+                                'Id\xE9ias para o seu neg\xF3cio'
+                            ),
+                            _react2.default.createElement(
+                                'p',
+                                { className: 'paragraph' },
+                                'Estudando e entendendo os usu\xE1rio que v\xE3o utilizar o sistema web, unindo a vis\xE3o de neg\xF3cio com a vis\xE3o do usu\xE1rio e a tecnologia necess\xE1ria.'
+                            )
+                        ),
+                        _react2.default.createElement(
+                            'div',
+                            { className: 'o-col-xs-6 o-col-md-12 order-1' },
+                            _react2.default.createElement(SVGSprite, { id: 'servicos_1', 'class': 'servicos__image' })
+                        )
+                    )
+                )
+            );
+        }
+    }]);
+
+    return ServicosSection;
+}(_react2.default.Component);
+
+var ProjetosSection = function (_React$Component4) {
+    _inherits(ProjetosSection, _React$Component4);
+
+    function ProjetosSection() {
+        _classCallCheck(this, ProjetosSection);
+
+        return _possibleConstructorReturn(this, (ProjetosSection.__proto__ || Object.getPrototypeOf(ProjetosSection)).apply(this, arguments));
+    }
+
+    _createClass(ProjetosSection, [{
+        key: 'render',
+        value: function render() {
+            return _react2.default.createElement(
+                'section',
+                { className: 'section projetos border', id: 'projetos' },
+                _react2.default.createElement(
+                    'header',
+                    { className: 'projetos__header' },
+                    _react2.default.createElement(
+                        'h1',
+                        { className: 'projetos__title' },
+                        'Projetos'
+                    ),
+                    _react2.default.createElement('span', { className: 'division' }),
+                    _react2.default.createElement(
+                        'h2',
+                        { className: 'projetos__title--sub' },
+                        'Conhe\xE7a meu Portf\xF3lio e alguns de meus projetos pessoais.'
+                    ),
+                    _react2.default.createElement(
                         'div',
-                        { className: 'row display-flex fadeOn' },
+                        { className: 'row' },
                         _react2.default.createElement(
                             'div',
                             { className: 'o-col-xs-12' },
                             _react2.default.createElement(
                                 _reactRouter.Link,
-                                { className: 'button button-1--main', to: '/projetos' },
+                                { className: 'button button-1', to: '/projetos' },
                                 _react2.default.createElement(
                                     'svg',
                                     null,
                                     _react2.default.createElement('rect', { fill: 'none', height: '100%', width: '100%', x: '0', y: '0' })
                                 ),
-                                'Conhe\xE7a Meus Projetos'
+                                'Ver Todos'
+                            )
+                        )
+                    )
+                ),
+                _react2.default.createElement(
+                    'div',
+                    { className: 'article' },
+                    _react2.default.createElement(
+                        'div',
+                        { className: 'carousel' },
+                        _react2.default.createElement(
+                            'div',
+                            { className: 'mobile' },
+                            _react2.default.createElement(
+                                'div',
+                                { id: 'visor', className: 'visor' },
+                                _react2.default.createElement(
+                                    'div',
+                                    { id: 'carousel_container' },
+                                    _react2.default.createElement(
+                                        'ul',
+                                        { className: 'slide', id: 'carousel_ul' },
+                                        _react2.default.createElement(
+                                            'li',
+                                            { className: 'carousel__item' },
+                                            _react2.default.createElement('img', {
+                                                className: 'carousel__image',
+                                                src: _nilsan2.default,
+                                                alt: 'Slide 1' })
+                                        ),
+                                        _react2.default.createElement(
+                                            'li',
+                                            { className: 'carousel__item' },
+                                            _react2.default.createElement('img', {
+                                                className: 'carousel__image',
+                                                src: _igapira2.default,
+                                                alt: 'Slide 1' })
+                                        ),
+                                        _react2.default.createElement(
+                                            'li',
+                                            { className: 'carousel__item' },
+                                            _react2.default.createElement('img', {
+                                                className: 'carousel__image',
+                                                src: _igapira4.default,
+                                                alt: 'Slide 1' })
+                                        ),
+                                        _react2.default.createElement(
+                                            'li',
+                                            { className: 'carousel__item' },
+                                            _react2.default.createElement('img', {
+                                                className: 'carousel__image',
+                                                src: _nilsan2.default,
+                                                alt: 'Slide 1' })
+                                        ),
+                                        _react2.default.createElement(
+                                            'li',
+                                            { className: 'carousel__item' },
+                                            _react2.default.createElement('img', {
+                                                className: 'carousel__image',
+                                                src: _igapira4.default,
+                                                alt: 'Slide 1' })
+                                        )
+                                    )
+                                )
+                            )
+                        ),
+                        _react2.default.createElement('div', { className: 'carousel__bg' }),
+                        _react2.default.createElement(
+                            'div',
+                            { id: 'carousel_container-2' },
+                            _react2.default.createElement(
+                                'div',
+                                { id: 'carousel_inner-2' },
+                                _react2.default.createElement('ul', { className: 'slide', id: 'carousel_ul-2' })
                             )
                         )
                     )
                 )
-            )
-        );
+            );
+        }
+    }]);
+
+    return ProjetosSection;
+}(_react2.default.Component);
+
+;
+
+var SobreSection = function (_React$Component5) {
+    _inherits(SobreSection, _React$Component5);
+
+    function SobreSection() {
+        _classCallCheck(this, SobreSection);
+
+        return _possibleConstructorReturn(this, (SobreSection.__proto__ || Object.getPrototypeOf(SobreSection)).apply(this, arguments));
     }
-});
 
-var ServicosSection = _react2.default.createClass({
-    displayName: 'ServicosSection',
-
-    render: function render() {
-        return _react2.default.createElement(
-            'section',
-            { className: 'section servicos border', id: 'servicos' },
-            _react2.default.createElement(
-                'header',
-                { className: 'servicos__header', id: 'app' },
+    _createClass(SobreSection, [{
+        key: 'render',
+        value: function render() {
+            return _react2.default.createElement(
+                'section',
+                { className: 'sobre border', id: 'quemsou' },
                 _react2.default.createElement(
-                    'h1',
-                    { className: 'servicos__title' },
-                    'Servi\xE7os'
-                ),
-                _react2.default.createElement('span', { className: 'division' })
-            ),
-            _react2.default.createElement(
-                'div',
-                { className: 'container--body' },
-                _react2.default.createElement(
-                    'article',
-                    { className: 'servico' },
+                    'header',
+                    { className: 'sobre__header' },
                     _react2.default.createElement(
-                        'div',
-                        { className: 'o-col-xs-6 o-col-md-12 order-2', id: 'servico3' },
-                        _react2.default.createElement(
-                            'h2',
-                            { className: 'servicos__title' },
-                            'Planejamento e efici\xEAncia'
-                        ),
-                        _react2.default.createElement(
-                            'p',
-                            { className: 'paragraph' },
-                            'Cada sistema web \xE9 desenvolvido sob medida.Isso permite uma resposta adequada \xE0s suas necessidades e elimina funcionalidades e custos desnecess\xE1rios.'
-                        )
+                        'h2',
+                        { className: 'sobre__title' },
+                        'Quem Sou'
                     ),
-                    _react2.default.createElement(
-                        'div',
-                        { className: 'o-col-xs-6 o-col-md-12 order-1' },
-                        _react2.default.createElement(SVGSprite, { id: 'servicos_3', 'class': 'servicos__image' })
-                    )
+                    _react2.default.createElement('span', { className: 'division' })
                 ),
                 _react2.default.createElement(
-                    'article',
-                    { className: 'servico' },
+                    'div',
+                    { className: 'container--body' },
                     _react2.default.createElement(
                         'div',
-                        { className: 'o-col-xs-6 o-col-md-12 order-1' },
-                        _react2.default.createElement(SVGSprite, { id: 'servicos_2', 'class': 'servicos__image' })
-                    ),
-                    _react2.default.createElement(
-                        'div',
-                        { className: 'o-col-xs-6 o-col-md-12 order-2', id: 'servico2' },
+                        { className: 'quem_sou' },
                         _react2.default.createElement(
-                            'h2',
-                            { className: 'servicos__title' },
-                            'Desenvolvimento de Sistemas Web'
-                        ),
-                        _react2.default.createElement(
-                            'p',
-                            { className: 'paragraph' },
-                            'Desenvolvimento de sistemas web exclusivos, personalizados e criativos de acordo com os seus requisitos.Buscando sempre novas tecnologias, capazes de otimizar os processos de seu neg\xF3cio.'
+                            'div',
+                            { className: 'o-col-xs-12 align_h_center' },
+                            _react2.default.createElement(
+                                'figure',
+                                { className: 'sobre__figure' },
+                                _react2.default.createElement('img', {
+                                    src: _otavioSanchez2.default,
+                                    className: 'sobre__image',
+                                    alt: 'Ot\xE1vio Sanchez',
+                                    title: 'Ot\xE1vio Sanchez' })
+                            ),
+                            _react2.default.createElement(
+                                'article',
+                                { id: 'quemsou' },
+                                _react2.default.createElement(
+                                    'p',
+                                    { className: 'paragraph' },
+                                    'Ol\xE1, eu sou Ot\xE1vio Sanchez.Sou Desenvolvedor Web, entusiasta de tecnologia, autodidata e apaixonado por c\xF3digo.'
+                                ),
+                                _react2.default.createElement(
+                                    'p',
+                                    { className: 'paragraph' },
+                                    'Estudante do Bacharelado em Ci\xEAncia e Tecnologia pela Universidade Federal do ABC - curso multidisciplinar - que me permitiu abrir espa\xE7o para novas possibilidades atrav\xE9s da tecnologia da informa\xE7\xE3o em suas mais diferentes vertentes.'
+                                ),
+                                _react2.default.createElement(
+                                    'div',
+                                    { className: 'sobre__row' },
+                                    _react2.default.createElement(
+                                        'div',
+                                        { className: 'o-col-xs-12' },
+                                        _react2.default.createElement(
+                                            _reactRouter.Link,
+                                            { className: 'button button-1', to: '/quem_sou' },
+                                            _react2.default.createElement(
+                                                'svg',
+                                                null,
+                                                _react2.default.createElement('rect', { fill: 'none', height: '100%', width: '100%', x: '0', y: '0' })
+                                            ),
+                                            'Veja Completo'
+                                        )
+                                    )
+                                )
+                            )
                         )
-                    )
-                ),
-                _react2.default.createElement(
-                    'article',
-                    { className: 'servico' },
-                    _react2.default.createElement(
-                        'div',
-                        { className: 'o-col-xs-6 o-col-md-12 order-2', id: 'servico1' },
-                        _react2.default.createElement(
-                            'h2',
-                            { className: 'servicos__title' },
-                            'Id\xE9ias para o seu neg\xF3cio'
-                        ),
-                        _react2.default.createElement(
-                            'p',
-                            { className: 'paragraph' },
-                            'Estudando e entendendo os usu\xE1rio que v\xE3o utilizar o sistema web, unindo a vis\xE3o de neg\xF3cio com a vis\xE3o do usu\xE1rio e a tecnologia necess\xE1ria.'
-                        )
-                    ),
-                    _react2.default.createElement(
-                        'div',
-                        { className: 'o-col-xs-6 o-col-md-12 order-1' },
-                        _react2.default.createElement(SVGSprite, { id: 'servicos_1', 'class': 'servicos__image' })
                     )
                 )
-            )
-        );
+            );
+        }
+    }]);
+
+    return SobreSection;
+}(_react2.default.Component);
+
+var mobileItem = function (_React$Component6) {
+    _inherits(mobileItem, _React$Component6);
+
+    function mobileItem() {
+        _classCallCheck(this, mobileItem);
+
+        return _possibleConstructorReturn(this, (mobileItem.__proto__ || Object.getPrototypeOf(mobileItem)).apply(this, arguments));
     }
-});
 
-var ProjetosSection = _react2.default.createClass({
-    displayName: 'ProjetosSection',
-
-    render: function render() {
-        return _react2.default.createElement(
-            'section',
-            { className: 'section projetos border', id: 'projetos' },
-            _react2.default.createElement(
-                'header',
-                { className: 'projetos__header' },
+    _createClass(mobileItem, [{
+        key: 'render',
+        value: function render() {
+            return _react2.default.createElement(
+                'div',
+                { className: 'o-col-md-12 o-col-xs-6' },
                 _react2.default.createElement(
-                    'h1',
-                    { className: 'projetos__title' },
-                    'Projetos'
+                    'div',
+                    { className: 'sobre__mobile' },
+                    _react2.default.createElement(
+                        'div',
+                        { className: 'display' },
+                        _react2.default.createElement(SVGSprite, { id: 'battery', 'class': 'battery' }),
+                        _react2.default.createElement(
+                            'div',
+                            { className: 'hour' },
+                            new Date().toLocaleString('en-US', {
+                                hour: 'numeric',
+                                minute: 'numeric',
+                                hour12: true
+                            })
+                        ),
+                        _react2.default.createElement(SVGSprite, { id: 'wifi', 'class': 'wifi' })
+                    )
+                )
+            );
+        }
+    }]);
+
+    return mobileItem;
+}(_react2.default.Component);
+
+;
+
+var SocialSection = function (_React$Component7) {
+    _inherits(SocialSection, _React$Component7);
+
+    function SocialSection() {
+        _classCallCheck(this, SocialSection);
+
+        return _possibleConstructorReturn(this, (SocialSection.__proto__ || Object.getPrototypeOf(SocialSection)).apply(this, arguments));
+    }
+
+    _createClass(SocialSection, [{
+        key: 'render',
+        value: function render() {
+            var _React$createElement;
+
+            return _react2.default.createElement(
+                'div',
+                { className: 'content_social border' },
+                _react2.default.createElement('div', { className: 'overlay' }),
+                _react2.default.createElement(
+                    'header',
+                    { className: 'content_social__header' },
+                    _react2.default.createElement(
+                        'h1',
+                        { className: 'content_social__title' },
+                        'Redes Sociais'
+                    ),
+                    _react2.default.createElement('span', { className: 'division' })
                 ),
-                _react2.default.createElement('span', { className: 'division' }),
                 _react2.default.createElement(
-                    'h2',
-                    { className: 'projetos__title--sub' },
-                    'Conhe\xE7a meu Portf\xF3lio e alguns de meus projetos pessoais.'
+                    'div',
+                    null,
+                    _react2.default.createElement(
+                        'nav',
+                        { className: 'nav' },
+                        _react2.default.createElement(
+                            'ul',
+                            { className: 'social_network' },
+                            _react2.default.createElement(
+                                'li',
+                                { className: 'social_network__item--lite' },
+                                _react2.default.createElement(
+                                    'a',
+                                    {
+                                        className: 'social_network__link',
+                                        title: 'GitHub',
+                                        target: '_blank',
+                                        href: 'https://github.com/sanchezotavio' },
+                                    _react2.default.createElement(SVGSprite, { id: 'githubWhite', 'class': 'social_network__image' })
+                                )
+                            ),
+                            _react2.default.createElement(
+                                'li',
+                                { className: 'social_network__item--lite' },
+                                _react2.default.createElement(
+                                    'a',
+                                    (_React$createElement = {
+                                        className: 'social_network__link',
+                                        title: 'Linkedin',
+                                        target: '_blank'
+                                    }, _defineProperty(_React$createElement, 'target', '_blank'), _defineProperty(_React$createElement, 'href', 'https://www.linkedin.com/in/ot%C3%A1vio-sanchez-a3ba967a'), _React$createElement),
+                                    _react2.default.createElement(SVGSprite, { id: 'linkedinWhite', 'class': 'social_network__image' })
+                                )
+                            )
+                        )
+                    )
+                )
+            );
+        }
+    }]);
+
+    return SocialSection;
+}(_react2.default.Component);
+
+;
+
+var ContatoSection = function (_React$Component8) {
+    _inherits(ContatoSection, _React$Component8);
+
+    function ContatoSection() {
+        _classCallCheck(this, ContatoSection);
+
+        return _possibleConstructorReturn(this, (ContatoSection.__proto__ || Object.getPrototypeOf(ContatoSection)).apply(this, arguments));
+    }
+
+    _createClass(ContatoSection, [{
+        key: 'render',
+        value: function render() {
+            return _react2.default.createElement(
+                'section',
+                { id: 'contato', className: 'contato border' },
+                _react2.default.createElement(
+                    'header',
+                    { className: 'contato__header' },
+                    _react2.default.createElement(
+                        'h1',
+                        { className: 'contato__title' },
+                        'Contato'
+                    ),
+                    _react2.default.createElement('span', { className: 'division' }),
+                    _react2.default.createElement(
+                        'h2',
+                        { className: 'contato__title--sub' },
+                        'Deseja entrar em contato comigo?'
+                    )
+                ),
+                _react2.default.createElement(
+                    'div',
+                    { className: 'container' },
+                    _react2.default.createElement(
+                        'div',
+                        { id: 'contatos', className: 'o-col-md-12 o-col-xs-4' },
+                        _react2.default.createElement(
+                            'h2',
+                            { className: 'contato__title--info' },
+                            'Entre em contato'
+                        ),
+                        _react2.default.createElement(
+                            'div',
+                            { className: 'contato__text' },
+                            'Email:\xA0',
+                            _react2.default.createElement(
+                                'a',
+                                { className: 'link first after', href: 'mailto:dev@otaviosanchez.com' },
+                                'dev@otaviosanchez.com'
+                            )
+                        ),
+                        _react2.default.createElement(
+                            'div',
+                            { className: 'contato__text first after' },
+                            'S\xE3o Paulo - SP'
+                        ),
+                        _react2.default.createElement(
+                            'div',
+                            { className: 'contato__text' },
+                            'Celular:\xA0',
+                            _react2.default.createElement(
+                                'a',
+                                { className: 'link first after', href: 'tel:11945336910' },
+                                '(11) 94533-6910'
+                            )
+                        )
+                    ),
+                    _react2.default.createElement(
+                        'div',
+                        { className: 'o-col-md-12 o-col-xs-8' },
+                        _react2.default.createElement(FormContato, null)
+                    )
+                )
+            );
+        }
+    }]);
+
+    return ContatoSection;
+}(_react2.default.Component);
+
+;
+
+var FormContato = function (_React$Component9) {
+    _inherits(FormContato, _React$Component9);
+
+    function FormContato() {
+        _classCallCheck(this, FormContato);
+
+        return _possibleConstructorReturn(this, (FormContato.__proto__ || Object.getPrototypeOf(FormContato)).apply(this, arguments));
+    }
+
+    _createClass(FormContato, [{
+        key: 'render',
+        value: function render() {
+            return _react2.default.createElement(
+                'form',
+                {
+                    className: 'form',
+                    action: 'mailto:dev@otaviosanchez.com',
+                    method: 'post' },
+                _react2.default.createElement(
+                    'div',
+                    { className: 'o-col-md-12 o-col-xs-6' },
+                    _react2.default.createElement('input', {
+                        type: 'text',
+                        name: 'assunto',
+                        id: 'assunto',
+                        className: 'textbox',
+                        placeholder: 'Assunto*',
+                        required: true })
+                ),
+                _react2.default.createElement(
+                    'div',
+                    { className: 'o-col-md-12 o-col-xs-6' },
+                    _react2.default.createElement('input', {
+                        type: 'tel',
+                        name: 'telefone',
+                        id: 'telefone',
+                        className: 'textbox',
+                        placeholder: 'Telefone' })
+                ),
+                _react2.default.createElement(
+                    'div',
+                    { className: 'o-col-md-12 o-col-xs-6' },
+                    _react2.default.createElement('input', {
+                        type: 'text',
+                        name: 'name',
+                        id: 'name',
+                        className: 'textbox',
+                        placeholder: 'Seu Nome*',
+                        required: true })
+                ),
+                _react2.default.createElement(
+                    'div',
+                    { className: 'o-col-md-12 o-col-xs-6' },
+                    _react2.default.createElement('input', {
+                        type: 'email',
+                        name: 'email',
+                        id: 'email',
+                        className: 'textbox',
+                        placeholder: 'Email*',
+                        required: true })
+                ),
+                _react2.default.createElement(
+                    'div',
+                    { className: 'o-col-md-12 o-col-xs-12' },
+                    _react2.default.createElement('textarea', {
+                        className: 'textbox--mensagem',
+                        name: 'comment',
+                        id: 'comment',
+                        placeholder: 'Mensagem*',
+                        required: true })
                 ),
                 _react2.default.createElement(
                     'div',
                     { className: 'row' },
-                    _react2.default.createElement(
-                        'div',
-                        { className: 'o-col-xs-12' },
-                        _react2.default.createElement(
-                            _reactRouter.Link,
-                            { className: 'button button-1', to: '/projetos' },
-                            _react2.default.createElement(
-                                'svg',
-                                null,
-                                _react2.default.createElement('rect', { fill: 'none', height: '100%', width: '100%', x: '0', y: '0' })
-                            ),
-                            'Ver Todos'
-                        )
-                    )
+                    _react2.default.createElement('input', {
+                        type: 'submit',
+                        className: 'button button-2',
+                        value: 'Enviar',
+                        name: 'enviar',
+                        id: 'enviar' })
                 )
-            ),
-            _react2.default.createElement(
-                'div',
-                { className: 'article' },
-                _react2.default.createElement(
-                    'div',
-                    { className: 'carousel' },
-                    _react2.default.createElement(
-                        'div',
-                        { className: 'mobile' },
-                        _react2.default.createElement(
-                            'div',
-                            { id: 'visor', className: 'visor' },
-                            _react2.default.createElement(
-                                'div',
-                                { id: 'carousel_container' },
-                                _react2.default.createElement(
-                                    'ul',
-                                    { className: 'slide', id: 'carousel_ul' },
-                                    _react2.default.createElement(
-                                        'li',
-                                        { className: 'carousel__item' },
-                                        _react2.default.createElement('img', {
-                                            className: 'carousel__image',
-                                            src: '../styles/images/png/nilsan-1.PNG',
-                                            alt: 'Slide 1' })
-                                    ),
-                                    _react2.default.createElement(
-                                        'li',
-                                        { className: 'carousel__item' },
-                                        _react2.default.createElement('img', {
-                                            className: 'carousel__image',
-                                            src: '../styles/images/png/igapira-1.png',
-                                            alt: 'Slide 1' })
-                                    ),
-                                    _react2.default.createElement(
-                                        'li',
-                                        { className: 'carousel__item' },
-                                        _react2.default.createElement('img', {
-                                            className: 'carousel__image',
-                                            src: '../styles/images/png/igapira-2.png',
-                                            alt: 'Slide 1' })
-                                    ),
-                                    _react2.default.createElement(
-                                        'li',
-                                        { className: 'carousel__item' },
-                                        _react2.default.createElement('img', {
-                                            className: 'carousel__image',
-                                            src: '../styles/images/png/nilsan-1.PNG',
-                                            alt: 'Slide 1' })
-                                    ),
-                                    _react2.default.createElement(
-                                        'li',
-                                        { className: 'carousel__item' },
-                                        _react2.default.createElement('img', {
-                                            className: 'carousel__image',
-                                            src: '../styles/images/png/igapira-2.png',
-                                            alt: 'Slide 1' })
-                                    )
-                                )
-                            )
-                        )
-                    ),
-                    _react2.default.createElement('div', { className: 'carousel__bg' }),
-                    _react2.default.createElement(
-                        'div',
-                        { id: 'carousel_container-2' },
-                        _react2.default.createElement(
-                            'div',
-                            { id: 'carousel_inner-2' },
-                            _react2.default.createElement('ul', { className: 'slide', id: 'carousel_ul-2' })
-                        )
-                    )
-                )
-            )
-        );
+            );
+        }
+    }]);
+
+    return FormContato;
+}(_react2.default.Component);
+
+;
+
+var SVGSprite = function (_React$Component10) {
+    _inherits(SVGSprite, _React$Component10);
+
+    function SVGSprite() {
+        _classCallCheck(this, SVGSprite);
+
+        return _possibleConstructorReturn(this, (SVGSprite.__proto__ || Object.getPrototypeOf(SVGSprite)).apply(this, arguments));
     }
-});
 
-var SobreSection = _react2.default.createClass({
-    displayName: 'SobreSection',
+    _createClass(SVGSprite, [{
+        key: 'render',
+        value: function render() {
+            return _react2.default.createElement(
+                'svg',
+                { className: this.props.class },
+                _react2.default.createElement('use', { xlinkHref: "#" + this.props.id })
+            );
+        }
+    }]);
 
-    render: function render() {
-        return _react2.default.createElement(
-            'section',
-            { className: 'sobre border', id: 'quemsou' },
-            _react2.default.createElement(
-                'header',
-                { className: 'sobre__header' },
-                _react2.default.createElement(
-                    'h2',
-                    { className: 'sobre__title' },
-                    'Quem Sou'
-                ),
-                _react2.default.createElement('span', { className: 'division' })
-            ),
-            _react2.default.createElement(
-                'div',
-                { className: 'container--body' },
-                _react2.default.createElement(
-                    'div',
-                    { className: 'quem_sou' },
-                    _react2.default.createElement(
-                        'div',
-                        { className: 'o-col-xs-12 align_h_center' },
-                        _react2.default.createElement(
-                            'figure',
-                            { className: 'sobre__figure' },
-                            _react2.default.createElement('img', {
-                                src: '../styles/images/otavio-sanchez.jpg',
-                                className: 'sobre__image',
-                                alt: 'Ot\xE1vio Sanchez',
-                                title: 'Ot\xE1vio Sanchez' })
-                        ),
-                        _react2.default.createElement(
-                            'article',
-                            { id: 'quemsou' },
-                            _react2.default.createElement(
-                                'p',
-                                { className: 'paragraph' },
-                                'Ol\xE1, eu sou Ot\xE1vio Sanchez.Sou Desenvolvedor Web, entusiasta de tecnologia, autodidata e apaixonado por c\xF3digo.'
-                            ),
-                            _react2.default.createElement(
-                                'p',
-                                { className: 'paragraph' },
-                                'Estudante do Bacharelado em Ci\xEAncia e Tecnologia pela Universidade Federal do ABC - curso multidisciplinar - que me permitiu abrir espa\xE7o para novas possibilidades atrav\xE9s da tecnologia da informa\xE7\xE3o em suas mais diferentes vertentes.'
-                            ),
-                            _react2.default.createElement(
-                                'div',
-                                { className: 'sobre__row' },
-                                _react2.default.createElement(
-                                    'div',
-                                    { className: 'o-col-xs-12' },
-                                    _react2.default.createElement(
-                                        _reactRouter.Link,
-                                        { className: 'button button-1', to: '/sobre' },
-                                        _react2.default.createElement(
-                                            'svg',
-                                            null,
-                                            _react2.default.createElement('rect', { fill: 'none', height: '100%', width: '100%', x: '0', y: '0' })
-                                        ),
-                                        'Veja Completo'
-                                    )
-                                )
-                            )
-                        )
-                    )
-                )
-            )
-        );
+    return SVGSprite;
+}(_react2.default.Component);
+
+;
+
+var SVG = function (_React$Component11) {
+    _inherits(SVG, _React$Component11);
+
+    function SVG() {
+        _classCallCheck(this, SVG);
+
+        return _possibleConstructorReturn(this, (SVG.__proto__ || Object.getPrototypeOf(SVG)).apply(this, arguments));
     }
-});
 
-var mobileItem = _react2.default.createClass({
-    displayName: 'mobileItem',
+    _createClass(SVG, [{
+        key: 'render',
+        value: function render() {
+            return _react2.default.createElement(
+                'svg',
+                { alt: this.props.name, className: this.props.class },
+                _react2.default.createElement('use', { xlinkHref: '#' + this.props.id })
+            );
+        }
+    }]);
 
-    render: function render() {
-        return _react2.default.createElement(
-            'div',
-            { className: 'o-col-md-12 o-col-xs-6' },
-            _react2.default.createElement(
-                'div',
-                { className: 'sobre__mobile' },
-                _react2.default.createElement(
-                    'div',
-                    { className: 'display' },
-                    _react2.default.createElement(SVGSprite, { id: 'battery', 'class': 'battery' }),
-                    _react2.default.createElement(
-                        'div',
-                        { className: 'hour' },
-                        new Date().toLocaleString('en-US', {
-                            hour: 'numeric',
-                            minute: 'numeric',
-                            hour12: true
-                        })
-                    ),
-                    _react2.default.createElement(SVGSprite, { id: 'wifi', 'class': 'wifi' })
-                )
-            )
-        );
-    }
-});
+    return SVG;
+}(_react2.default.Component);
 
-var SocialSection = _react2.default.createClass({
-    displayName: 'SocialSection',
-
-    render: function render() {
-        var _React$createElement;
-
-        return _react2.default.createElement(
-            'div',
-            { className: 'content_social border' },
-            _react2.default.createElement('div', { className: 'overlay' }),
-            _react2.default.createElement(
-                'header',
-                { className: 'content_social__header' },
-                _react2.default.createElement(
-                    'h1',
-                    { className: 'content_social__title' },
-                    'Redes Sociais'
-                ),
-                _react2.default.createElement('span', { className: 'division' })
-            ),
-            _react2.default.createElement(
-                'div',
-                null,
-                _react2.default.createElement(
-                    'nav',
-                    { className: 'nav' },
-                    _react2.default.createElement(
-                        'ul',
-                        { className: 'social_network' },
-                        _react2.default.createElement(
-                            'li',
-                            { className: 'social_network__item--lite' },
-                            _react2.default.createElement(
-                                'a',
-                                {
-                                    className: 'social_network__link',
-                                    title: 'GitHub',
-                                    target: '_blank',
-                                    href: 'https://github.com/sanchezotavio' },
-                                _react2.default.createElement(SVGSprite, { id: 'githubWhite', 'class': 'social_network__image' })
-                            )
-                        ),
-                        _react2.default.createElement(
-                            'li',
-                            { className: 'social_network__item--lite' },
-                            _react2.default.createElement(
-                                'a',
-                                (_React$createElement = {
-                                    className: 'social_network__link',
-                                    title: 'Linkedin',
-                                    target: '_blank'
-                                }, _defineProperty(_React$createElement, 'target', '_blank'), _defineProperty(_React$createElement, 'href', 'https://www.linkedin.com/in/ot%C3%A1vio-sanchez-a3ba967a'), _React$createElement),
-                                _react2.default.createElement(SVGSprite, { id: 'linkedinWhite', 'class': 'social_network__image' })
-                            )
-                        )
-                    )
-                )
-            )
-        );
-    }
-});
-
-var ContatoSection = _react2.default.createClass({
-    displayName: 'ContatoSection',
-
-    render: function render() {
-        return _react2.default.createElement(
-            'section',
-            { id: 'contato', className: 'contato border' },
-            _react2.default.createElement(
-                'header',
-                { className: 'contato__header' },
-                _react2.default.createElement(
-                    'h1',
-                    { className: 'contato__title' },
-                    'Contato'
-                ),
-                _react2.default.createElement('span', { className: 'division' }),
-                _react2.default.createElement(
-                    'h2',
-                    { className: 'contato__title--sub' },
-                    'Deseja entrar em contato comigo?'
-                )
-            ),
-            _react2.default.createElement(
-                'div',
-                { className: 'container' },
-                _react2.default.createElement(
-                    'div',
-                    { id: 'contatos', className: 'o-col-md-12 o-col-xs-4' },
-                    _react2.default.createElement(
-                        'h2',
-                        { className: 'contato__title--info' },
-                        'Entre em contato'
-                    ),
-                    _react2.default.createElement(
-                        'div',
-                        { className: 'contato__text' },
-                        'Email:\xA0',
-                        _react2.default.createElement(
-                            'a',
-                            { className: 'link first after', href: 'mailto:dev@otaviosanchez.com' },
-                            'dev@otaviosanchez.com'
-                        )
-                    ),
-                    _react2.default.createElement(
-                        'div',
-                        { className: 'contato__text first after' },
-                        'S\xE3o Paulo - SP'
-                    ),
-                    _react2.default.createElement(
-                        'div',
-                        { className: 'contato__text' },
-                        'Celular:\xA0',
-                        _react2.default.createElement(
-                            'a',
-                            { className: 'link first after', href: 'tel:11945336910' },
-                            '(11) 94533-6910'
-                        )
-                    )
-                ),
-                _react2.default.createElement(
-                    'div',
-                    { className: 'o-col-md-12 o-col-xs-8' },
-                    _react2.default.createElement(
-                        'form',
-                        { className: 'form' },
-                        _react2.default.createElement(
-                            'div',
-                            { className: 'o-col-md-12 o-col-xs-6' },
-                            _react2.default.createElement('input', {
-                                type: 'text',
-                                name: 'assunto',
-                                id: 'assunto',
-                                className: 'textbox',
-                                placeholder: 'Assunto*',
-                                required: true })
-                        ),
-                        _react2.default.createElement(
-                            'div',
-                            { className: 'o-col-md-12 o-col-xs-6' },
-                            _react2.default.createElement('input', {
-                                type: 'tel',
-                                name: 'telefone',
-                                id: 'telefone',
-                                className: 'textbox',
-                                placeholder: 'Telefone' })
-                        ),
-                        _react2.default.createElement(
-                            'div',
-                            { className: 'o-col-md-12 o-col-xs-6' },
-                            _react2.default.createElement('input', {
-                                type: 'text',
-                                name: 'nome',
-                                id: 'nome',
-                                className: 'textbox',
-                                placeholder: 'Seu Nome*',
-                                required: true })
-                        ),
-                        _react2.default.createElement(
-                            'div',
-                            { className: 'o-col-md-12 o-col-xs-6' },
-                            _react2.default.createElement('input', {
-                                type: 'email',
-                                name: 'email',
-                                id: 'email',
-                                className: 'textbox',
-                                placeholder: 'Email*',
-                                required: true })
-                        ),
-                        _react2.default.createElement(
-                            'div',
-                            { className: 'o-col-md-12 o-col-xs-12' },
-                            _react2.default.createElement('textarea', {
-                                className: 'textbox--mensagem',
-                                name: 'mensagem',
-                                id: 'mensagem',
-                                placeholder: 'Mensagem*',
-                                required: true })
-                        ),
-                        _react2.default.createElement(
-                            'div',
-                            { className: 'row' },
-                            _react2.default.createElement('input', {
-                                type: 'submit',
-                                className: 'button button-2',
-                                value: 'Enviar',
-                                name: 'enviar',
-                                id: 'enviar' })
-                        )
-                    )
-                )
-            )
-        );
-    }
-});
-
-var SVGSprite = _react2.default.createClass({
-    displayName: 'SVGSprite',
-
-    render: function render() {
-        return _react2.default.createElement(
-            'svg',
-            { className: this.props.class },
-            _react2.default.createElement('use', { xlinkHref: "#" + this.props.id })
-        );
-    }
-});
-
-var SVG = _react2.default.createClass({
-    displayName: 'SVG',
-
-    render: function render() {
-        return _react2.default.createElement(
-            'svg',
-            { alt: this.props.name, className: this.props.class },
-            _react2.default.createElement('use', { xlinkHref: '#' + this.props.id })
-        );
-    }
-});
+;
 
 exports.default = Home;
 
 /***/ }),
-/* 116 */
+/* 120 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -4193,6 +4389,14 @@ var _reactDom2 = _interopRequireDefault(_reactDom);
 
 var _reactRouter = __webpack_require__(29);
 
+var _scroll = __webpack_require__(143);
+
+var _scroll2 = _interopRequireDefault(_scroll);
+
+var _load = __webpack_require__(142);
+
+var _load2 = _interopRequireDefault(_load);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -4201,253 +4405,373 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var Load = _react2.default.createClass({
-    displayName: 'Load',
+var Load = function (_React$Component) {
+    _inherits(Load, _React$Component);
 
-    render: function render() {
-        return _react2.default.createElement(
-            'div',
-            { className: 'load' },
-            _react2.default.createElement(SVG, { name: 'load', id: 'load-item', 'class': 'load__item' })
-        );
+    function Load() {
+        _classCallCheck(this, Load);
+
+        return _possibleConstructorReturn(this, (Load.__proto__ || Object.getPrototypeOf(Load)).apply(this, arguments));
     }
-});
 
-var SVG = _react2.default.createClass({
-    displayName: 'SVG',
-
-    render: function render() {
-        return _react2.default.createElement('img', {
-            id: this.props.id,
-            className: this.props.class,
-            onerror: this.src = '../styles/images/png/' + this.props.name + '.png',
-            src: "../styles/images/svg/" + this.props.name + ".svg" });
-    }
-});
-
-var SVGSprite = _react2.default.createClass({
-    displayName: 'SVGSprite',
-
-    render: function render() {
-        return _react2.default.createElement(
-            'svg',
-            { className: this.props.class },
-            _react2.default.createElement('use', { xlinkHref: "#" + this.props.id })
-        );
-    }
-});
-
-var Header = _react2.default.createClass({
-    displayName: 'Header',
-
-    render: function render() {
-        return _react2.default.createElement(
-            'div',
-            { id: 'menu-bar', className: 'container--header' },
-            _react2.default.createElement(
+    _createClass(Load, [{
+        key: 'render',
+        value: function render() {
+            return _react2.default.createElement(
                 'div',
-                { className: 'o-col-xs-5 align_h_left' },
-                _react2.default.createElement(ButtonMenu, null)
-            ),
-            _react2.default.createElement(
+                { className: 'load ' + this.props.loading },
+                _react2.default.createElement('img', {
+                    name: 'load-item',
+                    title: 'load-item',
+                    className: 'load__item',
+                    src: _load2.default })
+            );
+        }
+    }]);
+
+    return Load;
+}(_react2.default.Component);
+
+var SVGSprite = function (_React$Component2) {
+    _inherits(SVGSprite, _React$Component2);
+
+    function SVGSprite() {
+        _classCallCheck(this, SVGSprite);
+
+        return _possibleConstructorReturn(this, (SVGSprite.__proto__ || Object.getPrototypeOf(SVGSprite)).apply(this, arguments));
+    }
+
+    _createClass(SVGSprite, [{
+        key: 'render',
+        value: function render() {
+            return _react2.default.createElement(
+                'svg',
+                { className: this.props.class },
+                _react2.default.createElement('use', { xlinkHref: "#" + this.props.id })
+            );
+        }
+    }]);
+
+    return SVGSprite;
+}(_react2.default.Component);
+
+;
+
+var Header = function (_React$Component3) {
+    _inherits(Header, _React$Component3);
+
+    function Header(props) {
+        _classCallCheck(this, Header);
+
+        var _this3 = _possibleConstructorReturn(this, (Header.__proto__ || Object.getPrototypeOf(Header)).call(this, props));
+
+        _this3.state = {
+            isToggleOn: true
+        };
+
+        _this3.handleClick = _this3.handleClick.bind(_this3);
+        return _this3;
+    }
+
+    _createClass(Header, [{
+        key: 'handleClick',
+        value: function handleClick() {
+            this.setState(function (prevState) {
+                return {
+                    isToggleOn: !prevState.isToggleOn
+                };
+            });
+        }
+    }, {
+        key: 'render',
+        value: function render() {
+            return _react2.default.createElement(
                 'div',
-                { className: 'o-col-xs-2 align_h_center' },
-                _react2.default.createElement(Logo, { href: mainLink, title: name, logo: "<OS>" })
-            ),
-            _react2.default.createElement(
-                'nav',
-                { className: 'o-col-xs-5 align_h_right' },
-                _react2.default.createElement(NavRedesSociais, null)
-            )
-        );
-    }
-});
-
-var Logo = _react2.default.createClass({
-    displayName: 'Logo',
-
-    render: function render() {
-        return _react2.default.createElement(
-            'h1',
-            { id: 'logo', className: 'logo__title hidden' },
-            _react2.default.createElement(
-                _reactRouter.Link,
-                { to: '/', className: 'logo__link', title: this.props.title },
-                this.props.logo
-            )
-        );
-    }
-});
-
-var Menu = _react2.default.createClass({
-    displayName: 'Menu',
-
-    render: function render() {
-        return _react2.default.createElement(
-            'div',
-            { id: 'Menu', className: 'container' },
-            _react2.default.createElement(
-                'nav',
-                { className: 'nav__menu o-col-xs-12' },
-                _react2.default.createElement(
-                    'ul',
-                    { className: 'list', id: 'navigation' },
-                    paginas.map(function (l) {
-                        return _react2.default.createElement(
-                            'li',
-                            { className: 'list__item', key: l.id + '-paginas' },
-                            _react2.default.createElement(
-                                _reactRouter.Link,
-                                {
-                                    className: 'list__link link first after',
-                                    title: l.title,
-                                    to: '#' + l.href },
-                                l.title
-                            )
-                        );
-                    })
-                )
-            )
-        );
-    }
-});
-
-var ScrollItem = _react2.default.createClass({
-    displayName: 'ScrollItem',
-
-    render: function render() {
-        return _react2.default.createElement(
-            'div',
-            { className: 'scroll' },
-            _react2.default.createElement(SVG, { name: 'scroll', id: 'scroll', className: 'scroll__button' })
-        );
-    }
-});
-
-var FooterText = _react2.default.createClass({
-    displayName: 'FooterText',
-
-    render: function render() {
-        return _react2.default.createElement(
-            'div',
-            { className: 'footer' },
-            _react2.default.createElement(
-                'div',
-                { className: 'container  align_h_center' },
-                _react2.default.createElement(
-                    'nav',
-                    { className: 'nav' },
-                    _react2.default.createElement(
-                        'ul',
-                        { className: 'footer__nav', id: 'navigation' },
-                        paginas.map(function (l) {
-                            return _react2.default.createElement(
-                                'li',
-                                { className: 'footer__item', key: l.id + '-paginas' },
-                                _react2.default.createElement(
-                                    _reactRouter.Link,
-                                    { className: 'link first after', title: l.title, to: '/home#' + l.href },
-                                    l.title
-                                )
-                            );
-                        })
-                    )
-                )
-            ),
-            _react2.default.createElement(FooterConteudo, null)
-        );
-    }
-});
-
-var FooterConteudo = _react2.default.createClass({
-    displayName: 'FooterConteudo',
-
-    render: function render() {
-        return _react2.default.createElement(
-            'div',
-            { className: 'border space container' },
-            _react2.default.createElement(
-                'div',
-                { className: 'o-col-xs-6 o-col-lg-12  align_h_left--responsive' },
+                null,
                 _react2.default.createElement(
                     'div',
-                    { className: 'text' },
-                    'Desenvolvido por\xA0',
+                    { id: 'menu-bar', className: 'container--header' },
                     _react2.default.createElement(
-                        'a',
-                        { href: mainLink, className: 'link first after', title: name },
-                        name
+                        'div',
+                        { className: 'o-col-xs-5 align_h_left' },
+                        _react2.default.createElement('button', {
+                            className: 'button--menu ' + (this.state.isToggleOn ? 'open' : 'close'),
+                            onClick: this.handleClick })
                     ),
-                    '.'
+                    _react2.default.createElement(
+                        'div',
+                        { className: 'o-col-xs-2 align_h_center' },
+                        _react2.default.createElement(Logo, { href: mainLink, title: name, logo: "<OS>" })
+                    ),
+                    _react2.default.createElement(
+                        'nav',
+                        { className: 'o-col-xs-5 align_h_right' },
+                        _react2.default.createElement(NavRedesSociais, null)
+                    )
                 ),
                 _react2.default.createElement(
                     'div',
-                    { className: 'text' },
-                    'Copyright \xA9 ',
-                    ano,
-                    name,
-                    '.Todos os direitos reservados.'
+                    {
+                        id: 'Menu',
+                        className: 'menu ' + (this.state.isToggleOn ? 'menu-open' : 'menu-close') },
+                    _react2.default.createElement(
+                        'nav',
+                        { className: 'nav__menu o-col-xs-12' },
+                        _react2.default.createElement(
+                            'ul',
+                            { className: 'list', id: 'navigation' },
+                            paginas.map(function (l) {
+                                return _react2.default.createElement(
+                                    'li',
+                                    { key: l.id + '-paginas-menu', className: 'list__item' },
+                                    _react2.default.createElement(
+                                        _reactRouter.Link,
+                                        {
+                                            className: 'list__link link first after',
+                                            title: l.title,
+                                            onClick: this.handleClick.bind(this),
+                                            key: l.id + '-paginas-menu',
+                                            to: '/' + l.href },
+                                        l.title
+                                    )
+                                );
+                            }, this)
+                        )
+                    )
                 )
-            ),
-            _react2.default.createElement(
+            );
+        }
+    }]);
+
+    return Header;
+}(_react2.default.Component);
+
+;
+
+var Logo = function (_React$Component4) {
+    _inherits(Logo, _React$Component4);
+
+    function Logo() {
+        _classCallCheck(this, Logo);
+
+        return _possibleConstructorReturn(this, (Logo.__proto__ || Object.getPrototypeOf(Logo)).apply(this, arguments));
+    }
+
+    _createClass(Logo, [{
+        key: 'render',
+        value: function render() {
+            return _react2.default.createElement(
+                'h1',
+                { id: 'logo', className: 'logo__title hidden' },
+                _react2.default.createElement(
+                    _reactRouter.Link,
+                    { to: '/', className: 'logo__link', title: this.props.title },
+                    this.props.logo
+                )
+            );
+        }
+    }]);
+
+    return Logo;
+}(_react2.default.Component);
+
+;
+
+var ScrollItem = function (_React$Component5) {
+    _inherits(ScrollItem, _React$Component5);
+
+    function ScrollItem() {
+        _classCallCheck(this, ScrollItem);
+
+        return _possibleConstructorReturn(this, (ScrollItem.__proto__ || Object.getPrototypeOf(ScrollItem)).apply(this, arguments));
+    }
+
+    _createClass(ScrollItem, [{
+        key: 'render',
+        value: function render() {
+            return _react2.default.createElement(
                 'div',
-                { className: 'o-col-xs-6 o-col-lg-12  align_h_right--responsive' },
+                { className: 'scroll' },
+                _react2.default.createElement('img', { id: 'scroll', className: 'scroll__button', src: _scroll2.default })
+            );
+        }
+    }]);
+
+    return ScrollItem;
+}(_react2.default.Component);
+
+;
+
+var FooterText = function (_React$Component6) {
+    _inherits(FooterText, _React$Component6);
+
+    function FooterText() {
+        _classCallCheck(this, FooterText);
+
+        return _possibleConstructorReturn(this, (FooterText.__proto__ || Object.getPrototypeOf(FooterText)).apply(this, arguments));
+    }
+
+    _createClass(FooterText, [{
+        key: 'render',
+        value: function render() {
+            return _react2.default.createElement(
+                'div',
+                { className: 'footer' },
                 _react2.default.createElement(
                     'div',
-                    { className: 'text' },
-                    'Entre em contato:'
+                    { className: 'container  align_h_center' },
+                    _react2.default.createElement(
+                        'nav',
+                        { className: 'nav' },
+                        _react2.default.createElement(
+                            'ul',
+                            { className: 'footer__nav', id: 'navigation' },
+                            paginas.map(function (l) {
+                                return _react2.default.createElement(
+                                    'li',
+                                    { className: 'footer__item', key: l.id + '-paginas--li' },
+                                    _react2.default.createElement(
+                                        _reactRouter.Link,
+                                        {
+                                            className: 'link first after',
+                                            title: l.title,
+                                            to: '/' + l.href,
+                                            key: l.id + '-paginas--link' },
+                                        l.title
+                                    )
+                                );
+                            })
+                        )
+                    )
+                ),
+                _react2.default.createElement(FooterConteudo, null)
+            );
+        }
+    }]);
+
+    return FooterText;
+}(_react2.default.Component);
+
+;
+
+var FooterConteudo = function (_React$Component7) {
+    _inherits(FooterConteudo, _React$Component7);
+
+    function FooterConteudo() {
+        _classCallCheck(this, FooterConteudo);
+
+        return _possibleConstructorReturn(this, (FooterConteudo.__proto__ || Object.getPrototypeOf(FooterConteudo)).apply(this, arguments));
+    }
+
+    _createClass(FooterConteudo, [{
+        key: 'render',
+        value: function render() {
+            return _react2.default.createElement(
+                'div',
+                { className: 'border space container' },
+                _react2.default.createElement(
+                    'div',
+                    { className: 'o-col-xs-6 o-col-lg-12  align_h_left--responsive' },
+                    _react2.default.createElement(
+                        'div',
+                        { className: 'text' },
+                        'Desenvolvido por\xA0',
+                        _react2.default.createElement(
+                            'a',
+                            { href: mainLink, className: 'link first after', title: name },
+                            name
+                        ),
+                        '.'
+                    ),
+                    _react2.default.createElement(
+                        'div',
+                        { className: 'text' },
+                        'Copyright \xA9 ',
+                        ano,
+                        name,
+                        '.Todos os direitos reservados.'
+                    )
                 ),
                 _react2.default.createElement(
                     'div',
-                    { className: 'text' },
+                    { className: 'o-col-xs-6 o-col-lg-12  align_h_right--responsive' },
                     _react2.default.createElement(
-                        'a',
-                        { href: "mailto:" + email, className: 'link first after', title: email },
-                        email
+                        'div',
+                        { className: 'text' },
+                        'Entre em contato:'
+                    ),
+                    _react2.default.createElement(
+                        'div',
+                        { className: 'text' },
+                        _react2.default.createElement(
+                            'a',
+                            { href: "mailto:" + email, className: 'link first after', title: email },
+                            email
+                        )
                     )
                 )
-            )
-        );
+            );
+        }
+    }]);
+
+    return FooterConteudo;
+}(_react2.default.Component);
+
+;
+
+var NavRedesSociais = function (_React$Component8) {
+    _inherits(NavRedesSociais, _React$Component8);
+
+    function NavRedesSociais() {
+        _classCallCheck(this, NavRedesSociais);
+
+        return _possibleConstructorReturn(this, (NavRedesSociais.__proto__ || Object.getPrototypeOf(NavRedesSociais)).apply(this, arguments));
     }
-});
 
-var NavRedesSociais = _react2.default.createClass({
-    displayName: 'NavRedesSociais',
+    _createClass(NavRedesSociais, [{
+        key: 'render',
+        value: function render() {
+            return _react2.default.createElement(
+                'ul',
+                { className: 'social_network' },
+                redesSociais.map(function (l) {
+                    return _react2.default.createElement(
+                        'li',
+                        { className: 'social_network__item', key: l.title + '-rs' },
+                        _react2.default.createElement(
+                            'a',
+                            { className: 'social_network__link', title: l.title, href: l.href },
+                            _react2.default.createElement(SVGSprite, { 'class': 'social_network__image', id: l.title })
+                        )
+                    );
+                })
+            );
+        }
+    }]);
 
-    render: function render() {
-        return _react2.default.createElement(
-            'ul',
-            { className: 'social_network' },
-            redesSociais.map(function (l) {
-                return _react2.default.createElement(
-                    'li',
-                    { className: 'social_network__item', key: l.title + '-rs' },
-                    _react2.default.createElement(
-                        'a',
-                        { className: 'social_network__link', title: l.title, href: l.href },
-                        _react2.default.createElement(SVGSprite, { 'class': 'social_network__image', id: l.title })
-                    )
-                );
-            })
-        );
+    return NavRedesSociais;
+}(_react2.default.Component);
+
+;
+
+var Footer = function (_React$Component9) {
+    _inherits(Footer, _React$Component9);
+
+    function Footer() {
+        _classCallCheck(this, Footer);
+
+        return _possibleConstructorReturn(this, (Footer.__proto__ || Object.getPrototypeOf(Footer)).apply(this, arguments));
     }
-});
 
-var ButtonMenu = _react2.default.createClass({
-    displayName: 'ButtonMenu',
+    _createClass(Footer, [{
+        key: 'render',
+        value: function render() {
+            return _react2.default.createElement(FooterText, null);
+        }
+    }]);
 
-    render: function render() {
-        return _react2.default.createElement('input', { type: 'button', id: 'menu', title: 'Menu', className: 'button--menu open' });
-    }
-});
-
-var Footer = _react2.default.createClass({
-    displayName: 'Footer',
-
-    render: function render() {
-        return _react2.default.createElement(FooterText, null);
-    }
-});
+    return Footer;
+}(_react2.default.Component);
 
 var mainLink = "http://otaviosanchez.com/";
 
@@ -4473,34 +4797,44 @@ var paginas = [{
     id: 1
 }, {
     title: 'Quem Sou',
-    href: 'quemsou',
+    href: 'quem_sou',
     id: 2
 }, {
     title: 'Projetos',
     href: 'projetos',
     id: 3
-}, {
-    title: 'Contato',
-    href: 'contato',
-    id: 4
 }];
 
 var Main = function (_Component) {
     _inherits(Main, _Component);
 
-    function Main() {
+    function Main(props, context) {
         _classCallCheck(this, Main);
 
-        return _possibleConstructorReturn(this, (Main.__proto__ || Object.getPrototypeOf(Main)).apply(this, arguments));
+        var _this10 = _possibleConstructorReturn(this, (Main.__proto__ || Object.getPrototypeOf(Main)).call(this, props));
+
+        _this10.state = {
+            loading: ''
+        };
+        return _this10;
     }
 
     _createClass(Main, [{
+        key: 'componentDidMount',
+        value: function componentDidMount() {
+            var _this11 = this;
+
+            setTimeout(function () {
+                return _this11.setState({ loading: 'loadComplete' });
+            }, 500);
+        }
+    }, {
         key: 'render',
         value: function render() {
             return _react2.default.createElement(
                 'div',
                 null,
-                _react2.default.createElement(Load, null),
+                _react2.default.createElement(Load, { loading: this.state.loading }),
                 _react2.default.createElement(ScrollItem, null),
                 _react2.default.createElement(Header, null),
                 ' ',
@@ -4516,7 +4850,7 @@ var Main = function (_Component) {
 exports.default = Main;
 
 /***/ }),
-/* 117 */
+/* 121 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -4537,6 +4871,22 @@ var _reactDom = __webpack_require__(18);
 var _reactDom2 = _interopRequireDefault(_reactDom);
 
 var _reactRouter = __webpack_require__(29);
+
+var _nilsan = __webpack_require__(79);
+
+var _nilsan2 = _interopRequireDefault(_nilsan);
+
+var _igapira = __webpack_require__(77);
+
+var _igapira2 = _interopRequireDefault(_igapira);
+
+var _igapira3 = __webpack_require__(78);
+
+var _igapira4 = _interopRequireDefault(_igapira3);
+
+var _aba = __webpack_require__(141);
+
+var _aba2 = _interopRequireDefault(_aba);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -4556,6 +4906,11 @@ var Projetos = function (_Component) {
     }
 
     _createClass(Projetos, [{
+        key: 'componentDidMount',
+        value: function componentDidMount() {
+            window.scrollTo(0, 0);
+        }
+    }, {
         key: 'render',
         value: function render() {
             return _react2.default.createElement(ProjetosSection, null);
@@ -4565,77 +4920,115 @@ var Projetos = function (_Component) {
     return Projetos;
 }(_react.Component);
 
-var ProjetosSection = _react2.default.createClass({
-    displayName: 'ProjetosSection',
+var ProjetosSection = function (_React$Component) {
+    _inherits(ProjetosSection, _React$Component);
 
-    render: function render() {
-        return _react2.default.createElement(
-            'section',
-            { className: 'section projetos border', id: 'projetos' },
-            _react2.default.createElement(
-                'header',
-                { className: 'projetos__header' },
-                _react2.default.createElement(
-                    'h1',
-                    { className: 'projetos__title' },
-                    'Projetos'
-                ),
-                _react2.default.createElement('span', { className: 'division' }),
-                _react2.default.createElement(
-                    'h2',
-                    { className: 'projetos__title--sub' },
-                    'Conhe\xE7a meu portf\xF3lio e alguns de meus projetos pessoais.'
-                )
-            ),
-            _react2.default.createElement(
-                'article',
-                { className: 'container' },
-                projetos.map(function (l) {
-                    return _react2.default.createElement(
-                        'div',
-                        { className: 'projetos__list  display-flex' },
-                        _react2.default.createElement(
-                            'div',
-                            { className: 'o-col-xs-3 o-col-md-12' },
-                            _react2.default.createElement('img', { src: l.img, className: 'projeto__img', alt: l.title })
-                        ),
-                        _react2.default.createElement(
-                            'div',
-                            { className: 'o-col-xs-9 o-col-md-12' },
-                            _react2.default.createElement(
-                                'h2',
-                                { className: 'title' },
-                                l.title
-                            ),
-                            _react2.default.createElement(
-                                'p',
-                                { className: 'projetos__text' },
-                                l.descricao
-                            ),
-                            _react2.default.createElement(
-                                'a',
-                                { className: 'button button-1', target: '_blank', href: l.link, title: "Acessar " + l.title },
-                                _react2.default.createElement(
-                                    'svg',
-                                    null,
-                                    _react2.default.createElement('rect', { fill: 'none', height: '100%', width: '100%', x: '0', y: '0' })
-                                ),
-                                ' Acessar Projeto'
-                            )
-                        )
-                    );
-                })
-            )
-        );
+    function ProjetosSection() {
+        _classCallCheck(this, ProjetosSection);
+
+        return _possibleConstructorReturn(this, (ProjetosSection.__proto__ || Object.getPrototypeOf(ProjetosSection)).apply(this, arguments));
     }
-});
 
-var projetos = [{ title: 'Igapira Consultoria', href: 'http://igapiraconsultoria.com.br/', img: '../styles/images/png/igapira-1.png', descricao: 'A Igapira Consultoria Turística, é uma empresa especializada na elaboração de estudos e planejamento de turismo em nível nacional. Foi criada no ano de 2015, por jovens empreendedores com formação superior em turismo, que resolveram por em prática os conhecimentos adquiridos na universidade.', github: '', link: 'http://igapiraconsultoria.com.br/' }, { title: 'Nilsan Ferramentaria', href: 'http://nilsan.com.br', img: '../styles/images/png/nilsan-1.PNG', descricao: 'A Nilsan é uma empresa especializada no ramo de injeção de plásticos.', github: '', link: 'http://nilsan.com.br/' }, { title: 'Associação Bianca Alves', href: 'http://associacaobiancaalves.ga/', img: '../styles/images/png/aba.png', descricao: 'Associação sem fins lucrativos de caráter filantrópico, fundada em 2007. Atende portadores de múltipla deficiência, disponibilizando seus voluntários em psicologia, fonoaudiologia e fisioterapia. Oferece todo o tratamento gratuito aos seus pacientes.', github: '', link: 'http://associacaobiancaalves.ga/' }];
+    _createClass(ProjetosSection, [{
+        key: 'render',
+        value: function render() {
+            return _react2.default.createElement(
+                'section',
+                { className: 'section projetos projetos--page border', id: 'projetos' },
+                _react2.default.createElement(
+                    'header',
+                    { className: 'projetos__header' },
+                    _react2.default.createElement(
+                        'h1',
+                        { className: 'projetos__title' },
+                        'Projetos'
+                    ),
+                    _react2.default.createElement('span', { className: 'division' }),
+                    _react2.default.createElement(
+                        'h2',
+                        { className: 'projetos__title--sub' },
+                        'Conhe\xE7a meu portf\xF3lio e alguns de meus projetos pessoais.'
+                    )
+                ),
+                _react2.default.createElement(
+                    'article',
+                    { className: 'container' },
+                    projetos.map(function (l) {
+                        return _react2.default.createElement(
+                            'div',
+                            { className: 'projetos__list  display-flex' },
+                            _react2.default.createElement(
+                                'div',
+                                { className: 'o-col-xs-3 o-col-md-12' },
+                                _react2.default.createElement('img', { src: l.img, className: 'projeto__img', alt: l.title })
+                            ),
+                            _react2.default.createElement(
+                                'div',
+                                { className: 'o-col-xs-9 o-col-md-12' },
+                                _react2.default.createElement(
+                                    'h2',
+                                    { className: 'title' },
+                                    l.title
+                                ),
+                                _react2.default.createElement(
+                                    'p',
+                                    { className: 'projetos__text' },
+                                    l.descricao
+                                ),
+                                _react2.default.createElement(
+                                    'a',
+                                    {
+                                        className: 'button button-1',
+                                        target: '_blank',
+                                        href: l.link,
+                                        title: "Acessar " + l.title },
+                                    _react2.default.createElement(
+                                        'svg',
+                                        null,
+                                        _react2.default.createElement('rect', { fill: 'none', height: '100%', width: '100%', x: '0', y: '0' })
+                                    ),
+                                    'Acessar Projeto'
+                                )
+                            )
+                        );
+                    })
+                )
+            );
+        }
+    }]);
+
+    return ProjetosSection;
+}(_react2.default.Component);
+
+;
+
+var projetos = [{
+    title: 'Igapira Consultoria',
+    href: 'http://igapiraconsultoria.com.br/',
+    img: _igapira2.default,
+    descricao: 'A Igapira Consultoria Turística, é uma empresa especializada na elaboração de es' + 'tudos e planejamento de turismo em nível nacional. Foi criada no ano de 2015, po' + 'r jovens empreendedores com formação superior em turismo, que resolveram por em ' + 'prática os conhecimentos adquiridos na universidade.',
+    github: '',
+    link: 'http://igapiraconsultoria.com.br/'
+}, {
+    title: 'Nilsan Ferramentaria',
+    href: 'http://nilsan.com.br',
+    img: _nilsan2.default,
+    descricao: 'A Nilsan é uma empresa especializada no ramo de injeção de plásticos.',
+    github: '',
+    link: 'http://nilsan.com.br/'
+}, {
+    title: 'Associação Bianca Alves',
+    href: 'http://associacaobiancaalves.ga/',
+    img: _aba2.default,
+    descricao: 'Associação sem fins lucrativos de caráter filantrópico, fundada em 2007. Atende ' + 'portadores de múltipla deficiência, disponibilizando seus voluntários em psicolo' + 'gia, fonoaudiologia e fisioterapia. Oferece todo o tratamento gratuito aos seus ' + 'pacientes.',
+    github: '',
+    link: 'http://associacaobiancaalves.ga/'
+}];
 
 exports.default = Projetos;
 
 /***/ }),
-/* 118 */
+/* 122 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -4655,6 +5048,10 @@ var _reactDom = __webpack_require__(18);
 
 var _reactDom2 = _interopRequireDefault(_reactDom);
 
+var _otavioSanchez = __webpack_require__(76);
+
+var _otavioSanchez2 = _interopRequireDefault(_otavioSanchez);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -4663,367 +5060,456 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var SobreSection = _react2.default.createClass({
-    displayName: 'SobreSection',
+var SobreSection = function (_React$Component) {
+    _inherits(SobreSection, _React$Component);
 
-    render: function render() {
-        return _react2.default.createElement(
-            'section',
-            { className: 'sobre bg border', id: 'sobre' },
-            _react2.default.createElement(
-                'header',
-                { className: 'sobre__header' },
+    function SobreSection() {
+        _classCallCheck(this, SobreSection);
+
+        return _possibleConstructorReturn(this, (SobreSection.__proto__ || Object.getPrototypeOf(SobreSection)).apply(this, arguments));
+    }
+
+    _createClass(SobreSection, [{
+        key: 'render',
+        value: function render() {
+            return _react2.default.createElement(
+                'section',
+                { className: 'sobre sobre--page bg border', id: 'sobre' },
                 _react2.default.createElement(
-                    'h2',
-                    { className: 'sobre__title' },
-                    'Quem Sou'
+                    'header',
+                    { className: 'sobre__header' },
+                    _react2.default.createElement(
+                        'h2',
+                        { className: 'sobre__title' },
+                        'Quem Sou'
+                    ),
+                    _react2.default.createElement('span', { className: 'division' })
                 ),
-                _react2.default.createElement('span', { className: 'division' })
-            ),
-            _react2.default.createElement(
-                'div',
-                { className: 'container' },
                 _react2.default.createElement(
                     'div',
-                    { className: 'quem_sou display-flex' },
+                    { className: 'container' },
                     _react2.default.createElement(
                         'div',
-                        { className: 'o-col-md-12 o-col-xs-3' },
+                        { className: 'quem_sou display-flex' },
                         _react2.default.createElement(
-                            'figure',
-                            { className: 'sobre__figure--alter' },
-                            _react2.default.createElement('img', { src: '../styles/images/otavio-sanchez.jpg', className: 'sobre__image', alt: 'Ot\xE1vio Sanchez' })
-                        )
-                    ),
-                    _react2.default.createElement(
-                        'div',
-                        { className: 'o-col-md-12 o-col-xs-9' },
-                        _react2.default.createElement(
-                            'article',
-                            { id: 'quemsou' },
+                            'div',
+                            { className: 'o-col-md-12 o-col-xs-3' },
                             _react2.default.createElement(
-                                'p',
-                                { className: 'paragraph' },
-                                'Ol\xE1, me chamo Ot\xE1vio Sanchez.Sou Desenvolvedor Web, entusiasta de tecnologia, autodidata e apaixonado por c\xF3digo.'
+                                'figure',
+                                { className: 'sobre__figure--alter' },
+                                _react2.default.createElement('img', {
+                                    src: _otavioSanchez2.default,
+                                    className: 'sobre__image',
+                                    alt: 'Ot\xE1vio Sanchez' })
+                            )
+                        ),
+                        _react2.default.createElement(
+                            'div',
+                            { className: 'o-col-md-12 o-col-xs-9' },
+                            _react2.default.createElement(
+                                'article',
+                                { id: 'quemsou' },
+                                _react2.default.createElement(
+                                    'p',
+                                    { className: 'paragraph' },
+                                    'Ol\xE1, me chamo Ot\xE1vio Sanchez.Sou Desenvolvedor Web, entusiasta de tecnologia, autodidata e apaixonado por c\xF3digo.'
+                                ),
+                                _react2.default.createElement(
+                                    'p',
+                                    { className: 'paragraph' },
+                                    'Estudante do Bacharelado em Ci\xEAncia e Tecnologia pela Universidade Federal do ABC - curso multidisciplinar - que me permitiu abrir espa\xE7o para novas possibilidades atrav\xE9s da tecnologia da informa\xE7\xE3o em suas mais diferentes vertentes.'
+                                )
                             ),
                             _react2.default.createElement(
-                                'p',
-                                { className: 'paragraph' },
-                                'Estudante do Bacharelado em Ci\xEAncia e Tecnologia pela Universidade Federal do ABC - curso multidisciplinar - que me permitiu abrir espa\xE7o para novas possibilidades atrav\xE9s da tecnologia da informa\xE7\xE3o em suas mais diferentes vertentes.'
-                            )
-                        ),
-                        _react2.default.createElement(
-                            'header',
-                            { className: 'sobre__item' },
+                                'header',
+                                { className: 'sobre__item' },
+                                _react2.default.createElement(
+                                    'h2',
+                                    { className: 'item__title align_h_center' },
+                                    'Skills'
+                                )
+                            ),
                             _react2.default.createElement(
-                                'h2',
-                                { className: 'item__title align_h_center' },
-                                'Skills'
-                            )
-                        ),
-                        _react2.default.createElement(
-                            'div',
-                            { className: 'sobre__item' },
-                            _react2.default.createElement(Skills, null)
-                        ),
-                        _react2.default.createElement('hr', { className: 'hr' }),
-                        _react2.default.createElement(
-                            'header',
-                            { className: 'sobre__item' },
+                                'div',
+                                { className: 'sobre__item' },
+                                _react2.default.createElement(Skills, null)
+                            ),
+                            _react2.default.createElement('hr', { className: 'hr' }),
                             _react2.default.createElement(
-                                'h2',
-                                { className: 'item__title' },
-                                'Academico'
-                            )
-                        ),
-                        _react2.default.createElement(
-                            'div',
-                            { className: 'sobre__item' },
-                            _react2.default.createElement(Academico, null)
-                        ),
-                        _react2.default.createElement('hr', { className: 'hr' }),
-                        _react2.default.createElement(
-                            'header',
-                            { className: 'sobre__item' },
+                                'header',
+                                { className: 'sobre__item' },
+                                _react2.default.createElement(
+                                    'h2',
+                                    { className: 'item__title' },
+                                    'Academico'
+                                )
+                            ),
                             _react2.default.createElement(
-                                'h2',
-                                { className: 'item__title' },
-                                'Experi\xEAncia Acad\xEAmica'
-                            )
-                        ),
-                        _react2.default.createElement(
-                            'div',
-                            { className: 'sobre__item' },
-                            _react2.default.createElement(Profissional, null)
-                        ),
-                        _react2.default.createElement('hr', { className: 'hr' }),
-                        _react2.default.createElement(
-                            'header',
-                            { className: 'sobre__item' },
+                                'div',
+                                { className: 'sobre__item' },
+                                _react2.default.createElement(Academico, null)
+                            ),
+                            _react2.default.createElement('hr', { className: 'hr' }),
                             _react2.default.createElement(
-                                'h2',
-                                { className: 'item__title' },
-                                'Cursos'
-                            )
-                        ),
-                        _react2.default.createElement(
-                            'div',
-                            { className: 'sobre__item' },
-                            _react2.default.createElement(Cursos, null)
-                        ),
-                        _react2.default.createElement('hr', { className: 'hr' }),
-                        _react2.default.createElement(
-                            'header',
-                            { className: 'sobre__item' },
+                                'header',
+                                { className: 'sobre__item' },
+                                _react2.default.createElement(
+                                    'h2',
+                                    { className: 'item__title' },
+                                    'Experi\xEAncia Acad\xEAmica'
+                                )
+                            ),
                             _react2.default.createElement(
-                                'h2',
-                                { className: 'item__title' },
-                                'Certifica\xE7\xF5es'
-                            )
-                        ),
-                        _react2.default.createElement(
-                            'div',
-                            { className: 'sobre__item' },
-                            _react2.default.createElement(Certificacoes, null)
-                        ),
-                        _react2.default.createElement('hr', { className: 'hr' }),
-                        _react2.default.createElement(
-                            'header',
-                            { className: 'sobre__item' },
+                                'div',
+                                { className: 'sobre__item' },
+                                _react2.default.createElement(Profissional, null)
+                            ),
+                            _react2.default.createElement('hr', { className: 'hr' }),
                             _react2.default.createElement(
-                                'h2',
-                                { className: 'item__title' },
-                                'Outros Cursos'
+                                'header',
+                                { className: 'sobre__item' },
+                                _react2.default.createElement(
+                                    'h2',
+                                    { className: 'item__title' },
+                                    'Cursos'
+                                )
+                            ),
+                            _react2.default.createElement(
+                                'div',
+                                { className: 'sobre__item' },
+                                _react2.default.createElement(Cursos, null)
+                            ),
+                            _react2.default.createElement('hr', { className: 'hr' }),
+                            _react2.default.createElement(
+                                'header',
+                                { className: 'sobre__item' },
+                                _react2.default.createElement(
+                                    'h2',
+                                    { className: 'item__title' },
+                                    'Certifica\xE7\xF5es'
+                                )
+                            ),
+                            _react2.default.createElement(
+                                'div',
+                                { className: 'sobre__item' },
+                                _react2.default.createElement(Certificacoes, null)
+                            ),
+                            _react2.default.createElement('hr', { className: 'hr' }),
+                            _react2.default.createElement(
+                                'header',
+                                { className: 'sobre__item' },
+                                _react2.default.createElement(
+                                    'h2',
+                                    { className: 'item__title' },
+                                    'Outros Cursos'
+                                )
+                            ),
+                            _react2.default.createElement(
+                                'div',
+                                { className: 'sobre__item' },
+                                _react2.default.createElement(CursosAleatorios, null)
                             )
-                        ),
-                        _react2.default.createElement(
-                            'div',
-                            { className: 'sobre__item' },
-                            _react2.default.createElement(CursosAleatorios, null)
                         )
                     )
                 )
-            )
-        );
+            );
+        }
+    }]);
+
+    return SobreSection;
+}(_react2.default.Component);
+
+var Academico = function (_React$Component2) {
+    _inherits(Academico, _React$Component2);
+
+    function Academico() {
+        _classCallCheck(this, Academico);
+
+        return _possibleConstructorReturn(this, (Academico.__proto__ || Object.getPrototypeOf(Academico)).apply(this, arguments));
     }
-});
 
-var Academico = _react2.default.createClass({
-    displayName: 'Academico',
-
-    render: function render() {
-        return _react2.default.createElement(
-            'ul',
-            { className: 'academico' },
-            academico.map(function (l) {
-                return _react2.default.createElement(
-                    'li',
-                    { className: 'cursos__item' },
-                    _react2.default.createElement(
-                        'h1',
-                        { className: 'title' },
-                        l.instituicao
-                    ),
-                    _react2.default.createElement(
-                        'h2',
-                        { className: 'cursos__sub' },
-                        l.nome
-                    ),
-                    _react2.default.createElement(
-                        'p',
-                        { className: 'text' },
-                        l.descricao
-                    ),
-                    _react2.default.createElement(
-                        'div',
-                        { className: 'data' },
-                        l.data
-                    )
-                );
-            })
-        );
-    }
-});
-
-var Skills = _react2.default.createClass({
-    displayName: 'Skills',
-
-    render: function render() {
-        return _react2.default.createElement(
-            'div',
-            { className: 'skills' },
-            skills.map(function (l) {
-                return _react2.default.createElement(
-                    'div',
-                    { className: 'skills__item' },
-                    ' ',
-                    l.nome,
-                    ' ',
-                    _react2.default.createElement(
-                        'span',
-                        { className: 'skills__nivel' },
-                        l.nivel
-                    ),
-                    ' '
-                );
-            })
-        );
-    }
-});
-
-var Profissional = _react2.default.createClass({
-    displayName: 'Profissional',
-
-    render: function render() {
-        return _react2.default.createElement(
-            'ul',
-            { className: 'profissional' },
-            profissional.map(function (l) {
-                return _react2.default.createElement(
-                    'li',
-                    { className: 'cursos__item' },
-                    _react2.default.createElement(
-                        'h1',
-                        { className: 'title' },
-                        l.empresa
-                    ),
-                    _react2.default.createElement(
-                        'h2',
-                        { className: 'cursos__sub' },
-                        l.nome
-                    ),
-                    _react2.default.createElement(
-                        'p',
-                        { className: 'text' },
-                        l.descricao
-                    ),
-                    _react2.default.createElement(
-                        'div',
-                        { className: 'data' },
-                        l.data
-                    )
-                );
-            })
-        );
-    }
-});
-
-var Cursos = _react2.default.createClass({
-    displayName: 'Cursos',
-
-    render: function render() {
-        return _react2.default.createElement(
-            'ul',
-            { className: 'cursos' },
-            cursos.map(function (l) {
-                return _react2.default.createElement(
-                    'li',
-                    { className: 'cursos__item' },
-                    _react2.default.createElement(
-                        'ul',
-                        { className: 'cursos__list' },
+    _createClass(Academico, [{
+        key: 'render',
+        value: function render() {
+            return _react2.default.createElement(
+                'ul',
+                { className: 'academico' },
+                academico.map(function (l) {
+                    return _react2.default.createElement(
+                        'li',
+                        { className: 'cursos__item' },
                         _react2.default.createElement(
-                            'li',
-                            { className: 'cursos__sub title' },
+                            'h1',
+                            { className: 'title' },
                             l.instituicao
                         ),
                         _react2.default.createElement(
-                            'li',
+                            'h2',
                             { className: 'cursos__sub' },
                             l.nome
                         ),
                         _react2.default.createElement(
-                            'li',
+                            'p',
+                            { className: 'text' },
+                            l.descricao
+                        ),
+                        _react2.default.createElement(
+                            'div',
                             { className: 'data' },
                             l.data
                         )
-                    )
-                );
-            })
-        );
+                    );
+                })
+            );
+        }
+    }]);
+
+    return Academico;
+}(_react2.default.Component);
+
+;
+
+var Skills = function (_React$Component3) {
+    _inherits(Skills, _React$Component3);
+
+    function Skills() {
+        _classCallCheck(this, Skills);
+
+        return _possibleConstructorReturn(this, (Skills.__proto__ || Object.getPrototypeOf(Skills)).apply(this, arguments));
     }
-});
 
-var Certificacoes = _react2.default.createClass({
-    displayName: 'Certificacoes',
-
-    render: function render() {
-        return _react2.default.createElement(
-            'ul',
-            { className: 'cursos' },
-            certificacoes.map(function (l) {
-                return _react2.default.createElement(
-                    'li',
-                    { className: 'cursos__item' },
-                    _react2.default.createElement(
-                        'ul',
-                        { className: 'cursos__list' },
+    _createClass(Skills, [{
+        key: 'render',
+        value: function render() {
+            return _react2.default.createElement(
+                'div',
+                { className: 'skills' },
+                skills.map(function (l) {
+                    return _react2.default.createElement(
+                        'div',
+                        { className: 'skills__item' },
+                        l.nome,
                         _react2.default.createElement(
-                            'li',
-                            { className: 'cursos__sub title' },
-                            l.instituicao
+                            'span',
+                            { className: 'skills__nivel' },
+                            l.nivel
+                        )
+                    );
+                })
+            );
+        }
+    }]);
+
+    return Skills;
+}(_react2.default.Component);
+
+;
+
+var Profissional = function (_React$Component4) {
+    _inherits(Profissional, _React$Component4);
+
+    function Profissional() {
+        _classCallCheck(this, Profissional);
+
+        return _possibleConstructorReturn(this, (Profissional.__proto__ || Object.getPrototypeOf(Profissional)).apply(this, arguments));
+    }
+
+    _createClass(Profissional, [{
+        key: 'render',
+        value: function render() {
+            return _react2.default.createElement(
+                'ul',
+                { className: 'profissional' },
+                profissional.map(function (l) {
+                    return _react2.default.createElement(
+                        'li',
+                        { className: 'cursos__item' },
+                        _react2.default.createElement(
+                            'h1',
+                            { className: 'title' },
+                            l.empresa
                         ),
                         _react2.default.createElement(
-                            'li',
+                            'h2',
                             { className: 'cursos__sub' },
                             l.nome
                         ),
                         _react2.default.createElement(
-                            'li',
-                            { className: 'cursos__sub' },
+                            'p',
+                            { className: 'text' },
+                            l.descricao
+                        ),
+                        _react2.default.createElement(
+                            'div',
+                            { className: 'data' },
+                            l.data
+                        )
+                    );
+                })
+            );
+        }
+    }]);
+
+    return Profissional;
+}(_react2.default.Component);
+
+;
+
+var Cursos = function (_React$Component5) {
+    _inherits(Cursos, _React$Component5);
+
+    function Cursos() {
+        _classCallCheck(this, Cursos);
+
+        return _possibleConstructorReturn(this, (Cursos.__proto__ || Object.getPrototypeOf(Cursos)).apply(this, arguments));
+    }
+
+    _createClass(Cursos, [{
+        key: 'render',
+        value: function render() {
+            return _react2.default.createElement(
+                'ul',
+                { className: 'cursos' },
+                cursos.map(function (l) {
+                    return _react2.default.createElement(
+                        'li',
+                        { className: 'cursos__item' },
+                        _react2.default.createElement(
+                            'ul',
+                            { className: 'cursos__list' },
                             _react2.default.createElement(
-                                'a',
-                                { href: l.link, target: '_blank', className: 'link' },
-                                'Acessar'
+                                'li',
+                                { className: 'cursos__sub title' },
+                                l.instituicao
+                            ),
+                            _react2.default.createElement(
+                                'li',
+                                { className: 'cursos__sub' },
+                                l.nome
+                            ),
+                            _react2.default.createElement(
+                                'li',
+                                { className: 'data' },
+                                l.data
                             )
-                        ),
-                        _react2.default.createElement(
-                            'li',
-                            { className: 'data' },
-                            l.data
                         )
-                    )
-                );
-            })
-        );
+                    );
+                })
+            );
+        }
+    }]);
+
+    return Cursos;
+}(_react2.default.Component);
+
+;
+
+var Certificacoes = function (_React$Component6) {
+    _inherits(Certificacoes, _React$Component6);
+
+    function Certificacoes() {
+        _classCallCheck(this, Certificacoes);
+
+        return _possibleConstructorReturn(this, (Certificacoes.__proto__ || Object.getPrototypeOf(Certificacoes)).apply(this, arguments));
     }
-});
 
-var CursosAleatorios = _react2.default.createClass({
-    displayName: 'CursosAleatorios',
-
-    render: function render() {
-        return _react2.default.createElement(
-            'ul',
-            { className: 'cursos' },
-            cursosAleatorios.map(function (l) {
-                return _react2.default.createElement(
-                    'li',
-                    { className: 'cursos__item' },
-                    _react2.default.createElement(
-                        'ul',
-                        { className: 'cursos__list' },
+    _createClass(Certificacoes, [{
+        key: 'render',
+        value: function render() {
+            return _react2.default.createElement(
+                'ul',
+                { className: 'cursos' },
+                certificacoes.map(function (l) {
+                    return _react2.default.createElement(
+                        'li',
+                        { className: 'cursos__item' },
                         _react2.default.createElement(
-                            'li',
-                            { className: 'cursos__sub title' },
-                            l.instituicao
-                        ),
-                        _react2.default.createElement(
-                            'li',
-                            { className: 'cursos__sub ' },
-                            l.nome
-                        ),
-                        _react2.default.createElement(
-                            'li',
-                            { className: 'data' },
-                            l.data
+                            'ul',
+                            { className: 'cursos__list' },
+                            _react2.default.createElement(
+                                'li',
+                                { className: 'cursos__sub title' },
+                                l.instituicao
+                            ),
+                            _react2.default.createElement(
+                                'li',
+                                { className: 'cursos__sub' },
+                                l.nome
+                            ),
+                            _react2.default.createElement(
+                                'li',
+                                { className: 'cursos__sub' },
+                                _react2.default.createElement(
+                                    'a',
+                                    { href: l.link, target: '_blank', className: 'link' },
+                                    'Acessar'
+                                )
+                            ),
+                            _react2.default.createElement(
+                                'li',
+                                { className: 'data' },
+                                l.data
+                            )
                         )
-                    )
-                );
-            })
-        );
+                    );
+                })
+            );
+        }
+    }]);
+
+    return Certificacoes;
+}(_react2.default.Component);
+
+;
+
+var CursosAleatorios = function (_React$Component7) {
+    _inherits(CursosAleatorios, _React$Component7);
+
+    function CursosAleatorios() {
+        _classCallCheck(this, CursosAleatorios);
+
+        return _possibleConstructorReturn(this, (CursosAleatorios.__proto__ || Object.getPrototypeOf(CursosAleatorios)).apply(this, arguments));
     }
-});
+
+    _createClass(CursosAleatorios, [{
+        key: 'render',
+        value: function render() {
+            return _react2.default.createElement(
+                'ul',
+                { className: 'cursos' },
+                cursosAleatorios.map(function (l) {
+                    return _react2.default.createElement(
+                        'li',
+                        { className: 'cursos__item' },
+                        _react2.default.createElement(
+                            'ul',
+                            { className: 'cursos__list' },
+                            _react2.default.createElement(
+                                'li',
+                                { className: 'cursos__sub title' },
+                                l.instituicao
+                            ),
+                            _react2.default.createElement(
+                                'li',
+                                { className: 'cursos__sub ' },
+                                l.nome
+                            ),
+                            _react2.default.createElement(
+                                'li',
+                                { className: 'data' },
+                                l.data
+                            )
+                        )
+                    );
+                })
+            );
+        }
+    }]);
+
+    return CursosAleatorios;
+}(_react2.default.Component);
+
+;
 
 var Sobre = function (_Component) {
     _inherits(Sobre, _Component);
@@ -5035,6 +5521,12 @@ var Sobre = function (_Component) {
     }
 
     _createClass(Sobre, [{
+        key: 'componentDidMount',
+        value: function componentDidMount() {
+            window.scrollTo(0, 0);
+            document.title = "Quem Sou | Otávio Sanchez";
+        }
+    }, {
         key: 'render',
         value: function render() {
             return _react2.default.createElement(SobreSection, null);
@@ -5044,22 +5536,80 @@ var Sobre = function (_Component) {
     return Sobre;
 }(_react.Component);
 
-var cursos = [{ nome: 'Curso Técnico de Informática para Internet', data: 'Junho de 2010 a Dezembro de 2011', instituicao: 'Centro Paula Souza - ETEC São Mateus' }, { nome: 'Criação de Web Sites em HTML 5 e CSS 3.0', data: 'Julho de 2013 a Agosto de 2013', instituicao: 'SENAC' }, { nome: ' Programando em C# com Visual Studio', data: 'Janeiro de 2014', instituicao: 'SENAC' }];
+var cursos = [{
+    nome: 'Curso Técnico de Informática para Internet',
+    data: 'Junho de 2010 a Dezembro de 2011',
+    instituicao: 'Centro Paula Souza - ETEC São Mateus'
+}, {
+    nome: 'Criação de Web Sites em HTML 5 e CSS 3.0',
+    data: 'Julho de 2013 a Agosto de 2013',
+    instituicao: 'SENAC'
+}, {
+    nome: ' Programando em C# com Visual Studio',
+    data: 'Janeiro de 2014',
+    instituicao: 'SENAC'
+}];
 
-var cursosAleatorios = [{ nome: 'Arduino na UFABC', data: 'Janeiro de 2014', instituicao: 'Universidade Federal do ABC - UFABC' }];
+var cursosAleatorios = [{
+    nome: 'Arduino na UFABC',
+    data: 'Janeiro de 2014',
+    instituicao: 'Universidade Federal do ABC - UFABC'
+}];
 
-var academico = [{ nome: 'Bacharel Ciência e Tecnologia', data: 'Julho de 2013 a Dezembro de 2017', instituicao: 'Universidade Federal do ABC - UFABC ', descricao: 'Dando ênfase para a formação em Ciências da Computação' }];
+var academico = [{
+    nome: 'Bacharel Ciência e Tecnologia',
+    data: 'Julho de 2013 a Dezembro de 2017',
+    instituicao: 'Universidade Federal do ABC - UFABC ',
+    descricao: 'Dando ênfase para a formação em Ciências da Computação'
+}];
 
-var profissional = [{ nome: 'Universidade Federal do ABC', data: 'Março de 2014 a Março de 2015 ', empresa: 'PIBID – Programa de iniciação à docência', descricao: 'Bolsista que atuava desenvolvendo projetos em sala de aula e auxiliando o trabalho do professor. Além de atuar desenvolvendo sistemas digitais que contribuíssem para o ensino e aprendizado dos alunos. Área de atuação: Matemática' }];
+var profissional = [{
+    nome: 'Universidade Federal do ABC',
+    data: 'Março de 2014 a Março de 2015 ',
+    empresa: 'PIBID – Programa de iniciação à docência',
+    descricao: 'Bolsista que atuava desenvolvendo projetos em sala de aula e auxiliando o trabal' + 'ho do professor. Além de atuar desenvolvendo sistemas digitais que contribuíssem' + ' para o ensino e aprendizado dos alunos. Área de atuação: Matemática'
+}];
 
-var skills = [{ nome: 'HTML5', nivel: 9 }, { nome: 'CSS3', nivel: 8 }, { nome: 'SASS', nivel: 8 }, { nome: 'Javascript', nivel: 8 }, { nome: 'AngularJS', nivel: 7 }, { nome: 'NodeJS', nivel: 7 }, { nome: 'React', nivel: 8 }, { nome: 'C#', nivel: 6 }, { nome: '.NET', nivel: 6 }];
+var skills = [{
+    nome: 'HTML5',
+    nivel: 9
+}, {
+    nome: 'CSS3',
+    nivel: 8
+}, {
+    nome: 'SASS',
+    nivel: 8
+}, {
+    nome: 'Javascript',
+    nivel: 8
+}, {
+    nome: 'AngularJS',
+    nivel: 7
+}, {
+    nome: 'NodeJS',
+    nivel: 7
+}, {
+    nome: 'React',
+    nivel: 8
+}, {
+    nome: 'C#',
+    nivel: 6
+}, {
+    nome: '.NET',
+    nivel: 6
+}];
 
-var certificacoes = [{ nome: '70-480 - Programming in HTML5 with JavaScript and CSS3', data: '2/26/2016', instituicao: 'MCPS: Microsoft Certified Professional', link: 'http://www.mycertprofile.com/Profile/1599820672' }];
+var certificacoes = [{
+    nome: '70-480 - Programming in HTML5 with JavaScript and CSS3',
+    data: '2/26/2016',
+    instituicao: 'MCPS: Microsoft Certified Professional',
+    link: 'http://www.mycertprofile.com/Profile/1599820672'
+}];
 
 exports.default = Sobre;
 
 /***/ }),
-/* 119 */
+/* 123 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -5073,27 +5623,39 @@ var _reactDom = __webpack_require__(18);
 
 var _reactDom2 = _interopRequireDefault(_reactDom);
 
-__webpack_require__(114);
+__webpack_require__(118);
 
 var _reactRouter = __webpack_require__(29);
 
-var _routes = __webpack_require__(113);
+var _routes = __webpack_require__(117);
 
 var _routes2 = _interopRequireDefault(_routes);
 
-__webpack_require__(112);
+__webpack_require__(116);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-_reactDom2.default.render(_react2.default.createElement(_reactRouter.Router, { history: _reactRouter.hashHistory, routes: _routes2.default }), document.getElementById('container'));
+var hashLinkScroll = function hashLinkScroll() {
+    var hash = window.location.hash;
+
+    if (hash !== '') {
+        setTimeout(function () {
+            var id = hash.replace('#', '');
+            var element = document.getElementById(id);
+            if (element) element.scrollIntoView();
+        }, 0);
+    }
+};
+
+_reactDom2.default.render(_react2.default.createElement(_reactRouter.Router, { history: _reactRouter.hashHistory, routes: _routes2.default, onUpdate: hashLinkScroll }), document.getElementById('container'));
 
 /***/ }),
-/* 120 */
+/* 124 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var pSlice = Array.prototype.slice;
-var objectKeys = __webpack_require__(122);
-var isArguments = __webpack_require__(121);
+var objectKeys = __webpack_require__(126);
+var isArguments = __webpack_require__(125);
 
 var deepEqual = module.exports = function (actual, expected, opts) {
   if (!opts) opts = {};
@@ -5188,7 +5750,7 @@ function objEquiv(a, b, opts) {
 
 
 /***/ }),
-/* 121 */
+/* 125 */
 /***/ (function(module, exports) {
 
 var supportsArgumentsClass = (function(){
@@ -5214,7 +5776,7 @@ function unsupported(object){
 
 
 /***/ }),
-/* 122 */
+/* 126 */
 /***/ (function(module, exports) {
 
 exports = module.exports = typeof Object.keys === 'function'
@@ -5229,10 +5791,6 @@ function shim (obj) {
 
 
 /***/ }),
-/* 123 */,
-/* 124 */,
-/* 125 */,
-/* 126 */,
 /* 127 */,
 /* 128 */,
 /* 129 */,
@@ -5243,7 +5801,29 @@ function shim (obj) {
 /* 134 */,
 /* 135 */,
 /* 136 */,
-/* 137 */
+/* 137 */,
+/* 138 */,
+/* 139 */,
+/* 140 */,
+/* 141 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "./images/aba.png";
+
+/***/ }),
+/* 142 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "./images/load.svg";
+
+/***/ }),
+/* 143 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "./images/scroll.svg";
+
+/***/ }),
+/* 144 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -5307,7 +5887,7 @@ function loopAsync(turns, work, callback) {
 }
 
 /***/ }),
-/* 138 */
+/* 145 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -5331,9 +5911,9 @@ var _ExecutionEnvironment = __webpack_require__(35);
 
 var _DOMUtils = __webpack_require__(47);
 
-var _DOMStateStorage = __webpack_require__(76);
+var _DOMStateStorage = __webpack_require__(80);
 
-var _createDOMHistory = __webpack_require__(77);
+var _createDOMHistory = __webpack_require__(81);
 
 var _createDOMHistory2 = _interopRequireDefault(_createDOMHistory);
 
@@ -5493,7 +6073,7 @@ exports['default'] = createBrowserHistory;
 module.exports = exports['default'];
 
 /***/ }),
-/* 139 */
+/* 146 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -5550,7 +6130,7 @@ exports['default'] = createLocation;
 module.exports = exports['default'];
 
 /***/ }),
-/* 140 */
+/* 147 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -5574,7 +6154,7 @@ var _PathUtils = __webpack_require__(19);
 
 var _Actions = __webpack_require__(24);
 
-var _createHistory = __webpack_require__(79);
+var _createHistory = __webpack_require__(83);
 
 var _createHistory2 = _interopRequireDefault(_createHistory);
 
@@ -5710,12 +6290,12 @@ exports['default'] = createMemoryHistory;
 module.exports = exports['default'];
 
 /***/ }),
-/* 141 */
+/* 148 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
-var strictUriEncode = __webpack_require__(247);
+var strictUriEncode = __webpack_require__(254);
 
 exports.extract = function (str) {
 	return str.split('?')[1] || '';
@@ -5783,7 +6363,7 @@ exports.stringify = function (obj) {
 
 
 /***/ }),
-/* 142 */
+/* 149 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -5840,13 +6420,6 @@ module.exports = function hoistNonReactStatics(targetComponent, sourceComponent,
 
 
 /***/ }),
-/* 143 */,
-/* 144 */,
-/* 145 */,
-/* 146 */,
-/* 147 */,
-/* 148 */,
-/* 149 */,
 /* 150 */,
 /* 151 */,
 /* 152 */,
@@ -5911,7 +6484,14 @@ module.exports = function hoistNonReactStatics(targetComponent, sourceComponent,
 /* 211 */,
 /* 212 */,
 /* 213 */,
-/* 214 */
+/* 214 */,
+/* 215 */,
+/* 216 */,
+/* 217 */,
+/* 218 */,
+/* 219 */,
+/* 220 */,
+/* 221 */
 /***/ (function(module, exports, __webpack_require__) {
 
 !function(e, t) {
@@ -7045,7 +7625,7 @@ module.exports = function hoistNonReactStatics(targetComponent, sourceComponent,
 });
 
 /***/ }),
-/* 215 */
+/* 222 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -7080,7 +7660,7 @@ exports.default = History;
 module.exports = exports['default'];
 
 /***/ }),
-/* 216 */
+/* 223 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -7094,7 +7674,7 @@ var _react = __webpack_require__(3);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _Link = __webpack_require__(102);
+var _Link = __webpack_require__(106);
 
 var _Link2 = _interopRequireDefault(_Link);
 
@@ -7114,7 +7694,7 @@ exports.default = IndexLink;
 module.exports = exports['default'];
 
 /***/ }),
-/* 217 */
+/* 224 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -7134,7 +7714,7 @@ var _invariant = __webpack_require__(8);
 
 var _invariant2 = _interopRequireDefault(_invariant);
 
-var _Redirect = __webpack_require__(103);
+var _Redirect = __webpack_require__(107);
 
 var _Redirect2 = _interopRequireDefault(_Redirect);
 
@@ -7183,7 +7763,7 @@ exports.default = IndexRedirect;
 module.exports = exports['default'];
 
 /***/ }),
-/* 218 */
+/* 225 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -7249,7 +7829,7 @@ exports.default = IndexRoute;
 module.exports = exports['default'];
 
 /***/ }),
-/* 219 */
+/* 226 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -7323,7 +7903,7 @@ exports.default = Lifecycle;
 module.exports = exports['default'];
 
 /***/ }),
-/* 220 */
+/* 227 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -7386,7 +7966,7 @@ exports.default = Route;
 module.exports = exports['default'];
 
 /***/ }),
-/* 221 */
+/* 228 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -7437,7 +8017,7 @@ exports.default = RouteContext;
 module.exports = exports['default'];
 
 /***/ }),
-/* 222 */
+/* 229 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -7447,7 +8027,7 @@ exports.__esModule = true;
 
 var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
 
-var _createHashHistory = __webpack_require__(78);
+var _createHashHistory = __webpack_require__(82);
 
 var _createHashHistory2 = _interopRequireDefault(_createHashHistory);
 
@@ -7475,7 +8055,7 @@ var _RouterContext2 = _interopRequireDefault(_RouterContext);
 
 var _RouteUtils = __webpack_require__(17);
 
-var _RouterUtils = __webpack_require__(104);
+var _RouterUtils = __webpack_require__(108);
 
 var _routerWarning = __webpack_require__(7);
 
@@ -7667,7 +8247,7 @@ exports.default = Router;
 module.exports = exports['default'];
 
 /***/ }),
-/* 223 */
+/* 230 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -7703,7 +8283,7 @@ exports.default = RoutingContext;
 module.exports = exports['default'];
 
 /***/ }),
-/* 224 */
+/* 231 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -7831,7 +8411,7 @@ function runLeaveHooks(routes, prevState) {
 }
 
 /***/ }),
-/* 225 */
+/* 232 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -7894,7 +8474,7 @@ exports.default = function () {
 module.exports = exports['default'];
 
 /***/ }),
-/* 226 */
+/* 233 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -7902,11 +8482,11 @@ module.exports = exports['default'];
 
 exports.__esModule = true;
 
-var _createBrowserHistory = __webpack_require__(138);
+var _createBrowserHistory = __webpack_require__(145);
 
 var _createBrowserHistory2 = _interopRequireDefault(_createBrowserHistory);
 
-var _createRouterHistory = __webpack_require__(106);
+var _createRouterHistory = __webpack_require__(110);
 
 var _createRouterHistory2 = _interopRequireDefault(_createRouterHistory);
 
@@ -7916,7 +8496,7 @@ exports.default = (0, _createRouterHistory2.default)(_createBrowserHistory2.defa
 module.exports = exports['default'];
 
 /***/ }),
-/* 227 */
+/* 234 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -7999,7 +8579,7 @@ exports.default = computeChangedRoutes;
 module.exports = exports['default'];
 
 /***/ }),
-/* 228 */
+/* 235 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -8009,7 +8589,7 @@ exports.__esModule = true;
 
 var _AsyncUtils = __webpack_require__(65);
 
-var _makeStateWithLocation = __webpack_require__(107);
+var _makeStateWithLocation = __webpack_require__(111);
 
 var _makeStateWithLocation2 = _interopRequireDefault(_makeStateWithLocation);
 
@@ -8051,7 +8631,7 @@ exports.default = getComponents;
 module.exports = exports['default'];
 
 /***/ }),
-/* 229 */
+/* 236 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -8083,7 +8663,7 @@ exports.default = getRouteParams;
 module.exports = exports['default'];
 
 /***/ }),
-/* 230 */
+/* 237 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -8091,11 +8671,11 @@ module.exports = exports['default'];
 
 exports.__esModule = true;
 
-var _createHashHistory = __webpack_require__(78);
+var _createHashHistory = __webpack_require__(82);
 
 var _createHashHistory2 = _interopRequireDefault(_createHashHistory);
 
-var _createRouterHistory = __webpack_require__(106);
+var _createRouterHistory = __webpack_require__(110);
 
 var _createRouterHistory2 = _interopRequireDefault(_createRouterHistory);
 
@@ -8105,7 +8685,7 @@ exports.default = (0, _createRouterHistory2.default)(_createHashHistory2.default
 module.exports = exports['default'];
 
 /***/ }),
-/* 231 */
+/* 238 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -8263,7 +8843,7 @@ function isActive(_ref, indexOnly, currentLocation, routes, params) {
 module.exports = exports['default'];
 
 /***/ }),
-/* 232 */
+/* 239 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -8279,7 +8859,7 @@ var _invariant = __webpack_require__(8);
 
 var _invariant2 = _interopRequireDefault(_invariant);
 
-var _createMemoryHistory = __webpack_require__(105);
+var _createMemoryHistory = __webpack_require__(109);
 
 var _createMemoryHistory2 = _interopRequireDefault(_createMemoryHistory);
 
@@ -8289,7 +8869,7 @@ var _createTransitionManager2 = _interopRequireDefault(_createTransitionManager)
 
 var _RouteUtils = __webpack_require__(17);
 
-var _RouterUtils = __webpack_require__(104);
+var _RouterUtils = __webpack_require__(108);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -8352,7 +8932,7 @@ exports.default = match;
 module.exports = exports['default'];
 
 /***/ }),
-/* 233 */
+/* 240 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -8368,7 +8948,7 @@ exports.default = matchRoutes;
 
 var _AsyncUtils = __webpack_require__(65);
 
-var _makeStateWithLocation = __webpack_require__(107);
+var _makeStateWithLocation = __webpack_require__(111);
 
 var _makeStateWithLocation2 = _interopRequireDefault(_makeStateWithLocation);
 
@@ -8609,7 +9189,7 @@ function matchRoutes(routes, location, callback, remainingPathname) {
 module.exports = exports['default'];
 
 /***/ }),
-/* 234 */
+/* 241 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -8666,7 +9246,7 @@ exports.default = useRoutes;
 module.exports = exports['default'];
 
 /***/ }),
-/* 235 */
+/* 242 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -8686,7 +9266,7 @@ var _react = __webpack_require__(3);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _hoistNonReactStatics = __webpack_require__(142);
+var _hoistNonReactStatics = __webpack_require__(149);
 
 var _hoistNonReactStatics2 = _interopRequireDefault(_hoistNonReactStatics);
 
@@ -8736,18 +9316,18 @@ function withRouter(WrappedComponent, options) {
 module.exports = exports['default'];
 
 /***/ }),
-/* 236 */,
-/* 237 */,
-/* 238 */,
-/* 239 */,
-/* 240 */,
-/* 241 */,
-/* 242 */,
 /* 243 */,
 /* 244 */,
 /* 245 */,
 /* 246 */,
-/* 247 */
+/* 247 */,
+/* 248 */,
+/* 249 */,
+/* 250 */,
+/* 251 */,
+/* 252 */,
+/* 253 */,
+/* 254 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -8760,7 +9340,7 @@ module.exports = function (str) {
 
 
 /***/ }),
-/* 248 */
+/* 255 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -8827,4 +9407,4 @@ module.exports = warning;
 
 
 /***/ })
-],[119]);
+],[123]);

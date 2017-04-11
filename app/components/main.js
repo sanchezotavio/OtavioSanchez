@@ -24,53 +24,6 @@ $(".projetos__list").hover(function() {
 });
 
 
-
-/* Parallax End */
-
-/* Menu */
-
-$('#menu').click(function () {
-  if (menu) {
-    menu = false
-    $('#menu').removeClass('open').addClass('close')
-    $('#menu-container').removeClass('menu-open').addClass('menu-close')
-  } else {
-    menu = true
-    $('#menu').removeClass('close').addClass('open')
-    $('#menu-container').removeClass('menu-close').addClass('menu-open')
-  }
-})
-
-$(document).ready(function () {
-  $('#navigation li a').click(function () {
-    if (menu) {
-      menu = false
-      $('#menu').removeClass('open').addClass('close')
-      $('#menu-container').removeClass('menu-open').addClass('menu-close')
-    } else {
-      menu = true
-      $('#menu').removeClass('close').addClass('open')
-      $('#menu-container').removeClass('menu-close').addClass('menu-open')
-    }
-  }
-  )
-})
-
-/* Menu End */
-
-/* Load */
-
-$(window).on('load', function () {
-  $('#load-item').fadeOut('fast', function () {
-    $('.load').animate({ left: '-100%' }, function () {
-      $('#home__titleNameMain').css('opacity', '1')
-      $('#home__titleName').css('opacity', '1')
-      $('#home__titleSub').css('opacity', '1')
-      $('.fadeOn').css('opacity', '1')
-    })
-  })
-})
-
 /* End Load */
 
 /* Slide */

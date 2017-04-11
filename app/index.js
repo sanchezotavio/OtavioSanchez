@@ -6,4 +6,18 @@ import {Router, hashHistory} from 'react-router';
 import routes from './routes.js';
 import './js/app';
 
-ReactDOM.render(<Router history={hashHistory} routes={routes}/>, document.getElementById('container'))
+const hashLinkScroll = () => {
+    const {hash} = window.location;
+    if (hash !== '') {
+        setTimeout(() => {
+            const id = hash.replace('#', '');
+            const element = document.getElementById(id);
+            if (element) 
+                element.scrollIntoView();
+            }
+        , 0);
+    }
+}
+
+ReactDOM.render(
+    <Router history={hashHistory} routes={routes} onUpdate={hashLinkScroll}/>, document.getElementById('container'))

@@ -11,7 +11,7 @@ export default(
     <Route component={Main}>
         <IndexRoute component={Home}/>
         <Route path="/projetos" component={Projetos}/>
-        <Route path="/sobre" component={Sobre}/>
+        <Route path="/quem_sou" component={Sobre}/>
         <Route path="/home" component={Home}/>
         <Route path="*" component={Home}/>
     </Route>

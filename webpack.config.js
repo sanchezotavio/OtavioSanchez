@@ -20,7 +20,7 @@ const config = {
         test: /\.scss$/,
         loader: ExtractTextPlugin.extract(['css-loader', 'sass-loader'])
       }, {
-        test: /\.(eot|woff|woff2|svg|ttf)([\?]?.*)$/,
+        test: /\.(eot|woff|woff2|ttf)([\?]?.*)$/,
         loader: "file-loader"
       }, {
         test: /\.js?$/,
@@ -30,8 +30,8 @@ const config = {
           presets: ['react']
         }
       }, {
-        test: /\.(gif|png|jpe?g)$/i,
-        loaders: ['file-loader?hash=sha512&digest=hex&name=[hash].[ext]']
+        test: /\.(jpe?g|png|gif|svg)$/i,
+        loader: "file-loader?name=./images/[name].[ext]"
       }
     ],
     loaders: [
@@ -54,7 +54,7 @@ const config = {
       }),
     new HtmlWebPackPlugin({template: './app/index.html'}),
     new FaviconsWebpackPlugin('./styles/favicon/favicon.png'),
-   
+
     new webpack.DefinePlugin({
       'process.env': {
         NODE_ENV: JSON.stringify(process.env.NODE_ENV)

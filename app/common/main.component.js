@@ -1,59 +1,104 @@
 import React, {Component} from 'react';
 import ReactDOM from 'react-dom';
 import {Link} from 'react-router'
+import ImageScroll from '../../styles/images/svg/scroll.svg'
+import ImageLoad from '../../styles/images/svg/load.svg'
 
-var Load = React.createClass({
-    render: function () {
+class Load extends React.Component {
+    render() {
         return (
-            <div className="load">
-                <SVG name="load" id="load-item" class="load__item"/>
+            <div className={`load ${this.props.loading}`}>
+                <img
+                    name="load-item"
+                    title="load-item"
+                    className={`load__item`}
+                    src={ImageLoad}/>
             </div>
         );
     }
-});
+}
 
-var SVG = React.createClass({
-    render: function () {
-        return (<img
-            id={this.props.id}
-            className={this.props.class}
-            onerror={this.src = '../styles/images/png/' + this.props.name + '.png'}
-            src={"../styles/images/svg/" + this.props.name + ".svg"}/>);
-    }
-});
-
-var SVGSprite = React.createClass({
-    render: function () {
+class SVGSprite extends React.Component {
+    render() {
         return (
             <svg className={this.props.class}>
                 <use xlinkHref={"#" + this.props.id}></use>
             </svg>
         );
     }
-});
+};
 
-var Header = React.createClass({
-    render: function () {
+class Header extends React.Component {
+
+    constructor(props) {
+        super(props);
+        this.state = {
+            isToggleOn: true
+        };
+
+        this.handleClick = this
+            .handleClick
+            .bind(this);
+    }
+
+    handleClick() {
+        this.setState(prevState => ({
+            isToggleOn: !prevState.isToggleOn
+        }));
+    }
+
+    render() {
         return (
+            <div>
+                <div id="menu-bar" className="container--header">
+                    <div className="o-col-xs-5 align_h_left">
+                        <button
+                            className={`button--menu ${this.state.isToggleOn
+                            ? 'open'
+                            : 'close'}`}
+                            onClick={this.handleClick}></button>
+                    </div>
+                    <div className="o-col-xs-2 align_h_center">
+                        <Logo href={mainLink} title={name} logo={"<OS>"}/>
+                    </div>
+                    <nav className="o-col-xs-5 align_h_right">
+                        <NavRedesSociais/>
+                    </nav>
 
-            <div id="menu-bar" className="container--header">
-                <div className="o-col-xs-5 align_h_left">
-                    <ButtonMenu/>
                 </div>
-                <div className="o-col-xs-2 align_h_center">
-                    <Logo href={mainLink} title={name} logo={"<OS>"}/>
+                <div
+                    id="Menu"
+                    className={`menu ${this.state.isToggleOn
+                    ? 'menu-open'
+                    : 'menu-close'}`}>
+                    <nav className="nav__menu o-col-xs-12">
+                        <ul className="list" id="navigation">
+                            {paginas
+                                .map(function (l) {
+                                    return <li key={`${l.id}-paginas-menu`} className="list__item">
+                                        <Link
+                                            className="list__link link first after"
+                                            title={l.title}
+                                            onClick={this
+                                            .handleClick
+                                            .bind(this)}
+                                            key={`${l.id}-paginas-menu`}
+                                            to={`/${l.href}`}>
+                                            {l.title}
+                                        </Link>
+                                    </li>
+                                }, this)}
+                        </ul>
+                    </nav>
                 </div>
-                <nav className="o-col-xs-5 align_h_right">
-                    <NavRedesSociais/>
-                </nav>
             </div>
 
         );
     }
-});
+};
 
-var Logo = React.createClass({
-    render: function () {
+class Logo extends React.Component {
+    render() {
         return (
 
             <h1 id="logo" className="logo__title hidden">
@@ -64,46 +109,20 @@ var Logo = React.createClass({
 
         )
     }
-});
+};
 
-var Menu = React.createClass({
-    render: function () {
-        return (
-
-            <div id="Menu" className="container">
-                <nav className="nav__menu o-col-xs-12">
-                    <ul className="list" id="navigation">
-                        {paginas
-                            .map(function (l) {
-                                return <li className="list__item" key={`${l.id}-paginas`}>
-                                   <Link
-                                        className="list__link link first after"
-                                        title={l.title}
-                                        to={`#${l.href}`}>
-                                        {l.title}
-                                    </Link>
-                                </li>
-                            })}
-                    </ul>
-                </nav>
-            </div>
-
-        )
-    }
-});
-
-var ScrollItem = React.createClass({
-    render: function () {
+class ScrollItem extends React.Component {
+    render() {
         return (
             <div className="scroll">
-                <SVG name="scroll" id="scroll" className="scroll__button"/>
+                <img id="scroll" className="scroll__button" src={ImageScroll}/>
             </div>
         )
     }
-});
+};
 
-var FooterText = React.createClass({
-    render: function () {
+class FooterText extends React.Component {
+    render() {
         return (
             <div className="footer">
                 <div className="container  align_h_center">
@@ -111,8 +130,12 @@ var FooterText = React.createClass({
                         <ul className="footer__nav" id="navigation">
                             {paginas
                                 .map(function (l) {
-                                    return <li className="footer__item" key={`${l.id}-paginas`}>
-                                        <Link className="link first after" title={l.title} to={`/home#${l.href}`}>
+                                    return <li className="footer__item" key={`${l.id}-paginas--li`}>
+                                        <Link
+                                            className="link first after"
+                                            title={l.title}
+                                            to={`/${l.href}`}
+                                            key={`${l.id}-paginas--link`}>
                                             {l.title}
                                         </Link>
                                     </li>
@@ -124,10 +147,10 @@ var FooterText = React.createClass({
             </div>
         )
     }
-});
+};
 
-var FooterConteudo = React.createClass({
-    render: function () {
+class FooterConteudo extends React.Component {
+    render() {
         return (
             <div className="border space container">
                 <div className="o-col-xs-6 o-col-lg-12  align_h_left--responsive">
@@ -151,10 +174,10 @@ var FooterConteudo = React.createClass({
             </div>
         )
     }
-});
+};
 
-var NavRedesSociais = React.createClass({
-    render: function () {
+class NavRedesSociais extends React.Component {
+    render() {
         return (
 
             <ul className="social_network">
@@ -170,21 +193,13 @@ var NavRedesSociais = React.createClass({
 
         )
     }
-});
+};
 
-var ButtonMenu = React.createClass({
-    render: function () {
-        return (<input type="button" id="menu" title="Menu" className="button--menu open"/>)
-    }
-})
-
-var Footer = React.createClass({
-    render: function () {
+class Footer extends React.Component {
+    render() {
         return (<FooterText/>)
     }
-})
-
-
+}
 
 var mainLink = "http://otaviosanchez.com/";
 
@@ -213,25 +228,31 @@ var paginas = [
         id: 1
     }, {
         title: 'Quem Sou',
-        href: 'quemsou',
+        href: 'quem_sou',
         id: 2
     }, {
         title: 'Projetos',
         href: 'projetos',
         id: 3
-    }, {
-        title: 'Contato',
-        href: 'contato',
-        id: 4
     }
 ];
 
 class Main extends Component {
+    constructor(props, context) {
+        super(props);
+        this.state = {
+            loading: ''
+        };
+    }
+
+   componentDidMount() {
+    setTimeout(() => this.setState({ loading: 'loadComplete' }), 500); 
+  }
 
     render() {
         return (
             <div>
-                <Load/>
+                <Load loading={this.state.loading}/>
                 <ScrollItem/>
                 <Header/> {this.props.children}
                 <Footer/>

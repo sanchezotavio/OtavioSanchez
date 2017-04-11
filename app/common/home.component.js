@@ -3,6 +3,11 @@ import ReactDOM from 'react-dom';
 import Particles from 'react-particles-js';
 import {Link} from 'react-router'
 
+import nilsan1 from '../../styles/images/png/nilsan-1.PNG'
+import igapira1 from '../../styles/images/png/igapira-1.png'
+import igapira2 from '../../styles/images/png/igapira-2.png'
+import otaviosanchez from '../../styles/images/otavio-sanchez.jpg'
+
 var particles = 120
 var area = 1000
 
@@ -19,9 +24,13 @@ if ($(window).width() < 800) {
 }
 
 class Home extends Component {
+    componentDidMount() {
+        window.scrollTo(0, 0)
+        document.title = "Otávio Sanchez - Desenvolvedor Web"
+    }
     render() {
         return (
-            <div className="wrap">                
+            <div className="wrap">
                 <HomeSection/>
                 <ServicosSection/>
                 <ProjetosSection/>
@@ -33,7 +42,7 @@ class Home extends Component {
     }
 }
 
-var ParticlesHome = React.createClass({
+class ParticlesHome extends React.Component {
     render() {
         return (
             <div className="ParticlesHome">
@@ -136,12 +145,13 @@ var ParticlesHome = React.createClass({
             </div>
         )
     }
-})
-var HomeSection = React.createClass({
-    render: function () {
+}
+
+class HomeSection extends React.Component {
+    render() {
         return (
             <section className="home" id="home">
-            <ParticlesHome/>
+                <ParticlesHome/>
                 <article className="home__article">
                     <div className="home__center">
                         <hgroup className="home__group">
@@ -164,10 +174,10 @@ var HomeSection = React.createClass({
             </section>
         );
     }
-});
+};
 
-var ServicosSection = React.createClass({
-    render: function () {
+class ServicosSection extends React.Component {
+    render() {
         return (
             <section className="section servicos border" id="servicos">
 
@@ -227,10 +237,10 @@ var ServicosSection = React.createClass({
             </section>
         );
     }
-});
+}
 
-var ProjetosSection = React.createClass({
-    render: function () {
+class ProjetosSection extends React.Component {
+    render() {
         return (
             <section className="section projetos border" id="projetos">
 
@@ -264,31 +274,31 @@ var ProjetosSection = React.createClass({
                                         <li className="carousel__item">
                                             <img
                                                 className="carousel__image"
-                                                src="../styles/images/png/nilsan-1.PNG"
+                                                src={nilsan1}
                                                 alt="Slide 1"/>
                                         </li>
                                         <li className="carousel__item">
                                             <img
                                                 className="carousel__image"
-                                                src="../styles/images/png/igapira-1.png"
+                                                src={igapira1}
                                                 alt="Slide 1"/>
                                         </li>
                                         <li className="carousel__item">
                                             <img
                                                 className="carousel__image"
-                                                src="../styles/images/png/igapira-2.png"
+                                                src={igapira2}
                                                 alt="Slide 1"/>
                                         </li>
                                         <li className="carousel__item">
                                             <img
                                                 className="carousel__image"
-                                                src="../styles/images/png/nilsan-1.PNG"
+                                                src={nilsan1}
                                                 alt="Slide 1"/>
                                         </li>
                                         <li className="carousel__item">
                                             <img
                                                 className="carousel__image"
-                                                src="../styles/images/png/igapira-2.png"
+                                                src={igapira2}
                                                 alt="Slide 1"/>
                                         </li>
                                     </ul>
@@ -307,10 +317,10 @@ var ProjetosSection = React.createClass({
 
         );
     }
-});
+};
 
-var SobreSection = React.createClass({
-    render: function () {
+class SobreSection extends React.Component {
+    render() {
         return (
             <section className="sobre border" id="quemsou">
                 <header className="sobre__header">
@@ -323,7 +333,7 @@ var SobreSection = React.createClass({
                         <div className="o-col-xs-12 align_h_center">
                             <figure className="sobre__figure">
                                 <img
-                                    src="../styles/images/otavio-sanchez.jpg"
+                                    src={otaviosanchez}
                                     className="sobre__image"
                                     alt="Otávio Sanchez"
                                     title="Otávio Sanchez"/>
@@ -342,7 +352,7 @@ var SobreSection = React.createClass({
 
                                 <div className="sobre__row">
                                     <div className="o-col-xs-12">
-                                        <Link className="button button-1" to="/sobre">
+                                        <Link className="button button-1" to="/quem_sou">
                                             <svg>
                                                 <rect fill="none" height="100%" width="100%" x="0" y="0"></rect>
                                             </svg>
@@ -358,10 +368,10 @@ var SobreSection = React.createClass({
             </section>
         );
     }
-});
+}
 
-var mobileItem = React.createClass({
-    render: function () {
+class mobileItem extends React.Component {
+    render() {
         return (
             <div className="o-col-md-12 o-col-xs-6">
                 <div className="sobre__mobile">
@@ -384,10 +394,10 @@ var mobileItem = React.createClass({
             </div>
         );
     }
-});
+};
 
-var SocialSection = React.createClass({
-    render: function () {
+class SocialSection extends React.Component {
+    render() {
         return (
             <div className="content_social border">
                 <div className="overlay"></div>
@@ -426,10 +436,10 @@ var SocialSection = React.createClass({
             </div>
         );
     }
-});
+};
 
-var ContatoSection = React.createClass({
-    render: function () {
+class ContatoSection extends React.Component {
+    render() {
         return (
             <section id="contato" className="contato border">
                 <header className="contato__header">
@@ -457,84 +467,95 @@ var ContatoSection = React.createClass({
                         </div>
                     </div>
                     <div className="o-col-md-12 o-col-xs-8">
-                        <form className="form">
-                            <div className="o-col-md-12 o-col-xs-6">
-                                <input
-                                    type="text"
-                                    name="assunto"
-                                    id="assunto"
-                                    className="textbox"
-                                    placeholder="Assunto*"
-                                    required/>
-                            </div>
-                            <div className="o-col-md-12 o-col-xs-6">
-                                <input
-                                    type="tel"
-                                    name="telefone"
-                                    id="telefone"
-                                    className="textbox"
-                                    placeholder="Telefone"/>
-                            </div>
-                            <div className="o-col-md-12 o-col-xs-6">
-                                <input
-                                    type="text"
-                                    name="nome"
-                                    id="nome"
-                                    className="textbox"
-                                    placeholder="Seu Nome*"
-                                    required/>
-                            </div>
-                            <div className="o-col-md-12 o-col-xs-6">
-                                <input
-                                    type="email"
-                                    name="email"
-                                    id="email"
-                                    className="textbox"
-                                    placeholder="Email*"
-                                    required/>
-                            </div>
-                            <div className="o-col-md-12 o-col-xs-12">
-                                <textarea
-                                    className="textbox--mensagem"
-                                    name="mensagem"
-                                    id="mensagem"
-                                    placeholder="Mensagem*"
-                                    required></textarea>
-                            </div>
-                            <div className="row">
-                                <input
-                                    type="submit"
-                                    className="button button-2"
-                                    value="Enviar"
-                                    name="enviar"
-                                    id="enviar"/>
-                            </div>
-                        </form>
+                        <FormContato/>
                     </div>
                 </div>
             </section>
         );
     }
-});
+};
 
-var SVGSprite = React.createClass({
-    render: function () {
+class FormContato extends React.Component {
+    render() {
+        return (
+            <form
+                className="form"
+                action="mailto:dev@otaviosanchez.com"
+                method="post">
+                <div className="o-col-md-12 o-col-xs-6">
+                    <input
+                        type="text"
+                        name="assunto"
+                        id="assunto"
+                        className="textbox"
+                        placeholder="Assunto*"
+                        required/>
+                </div>
+                <div className="o-col-md-12 o-col-xs-6">
+                    <input
+                        type="tel"
+                        name="telefone"
+                        id="telefone"
+                        className="textbox"
+                        placeholder="Telefone"/>
+                </div>
+                <div className="o-col-md-12 o-col-xs-6">
+                    <input
+                        type="text"
+                        name="name"
+                        id="name"
+                        className="textbox"
+                        placeholder="Seu Nome*"
+                        required/>
+                </div>
+                <div className="o-col-md-12 o-col-xs-6">
+                    <input
+                        type="email"
+                        name="email"
+                        id="email"
+                        className="textbox"
+                        placeholder="Email*"
+                        required/>
+                </div>
+                <div className="o-col-md-12 o-col-xs-12">
+                    <textarea
+                        className="textbox--mensagem"
+                        name="comment"
+                        id="comment"
+                        placeholder="Mensagem*"
+                        required></textarea>
+                </div>
+                <div className="row">
+                    <input
+                        type="submit"
+                        className="button button-2"
+                        value="Enviar"
+                        name="enviar"
+                        id="enviar"/>
+                </div>
+            </form>
+        );
+    }
+};
+
+class SVGSprite extends React.Component {
+    render() {
         return (
             <svg className={this.props.class}>
                 <use xlinkHref={"#" + this.props.id}></use>
             </svg>
         );
     }
-});
+};
 
-var SVG = React.createClass({
-    render: function () {
+class SVG extends React.Component {
+    render() {
         return (
             <svg alt={this.props.name} className={this.props.class}>
                 <use xlinkHref={'#' + this.props.id}></use>
             </svg>
         );
     }
-});
+};
 
 export default Home
