@@ -32,9 +32,9 @@ class Home extends Component {
         return (
             <div className="wrap">
                 <HomeSection/>
-                <ServicosSection/>
-                <ProjetosSection/>
                 <SobreSection/>
+                <ProjetosSection/>
+                <ServicosSection/>
                 <SocialSection/>
                 <ContatoSection/>
             </div>
@@ -148,6 +148,19 @@ class ParticlesHome extends React.Component {
 }
 
 class HomeSection extends React.Component {
+    constructor(props) {
+        super(props);
+        this.handleClick = this
+            .handleClick
+            .bind(this);
+    }
+
+    handleClick() {
+        document
+            .getElementById('projetos')
+            .scrollIntoView()
+    }
+
     render() {
         return (
             <section className="home" id="home">
@@ -161,12 +174,12 @@ class HomeSection extends React.Component {
                         </hgroup>
                         <div className="row display-flex fadeOn">
                             <div className="o-col-xs-12">
-                                <Link className="button button-1--main" to="/projetos">
+                                <a className="button button-1--main"  onClick={this.handleClick}>
                                     <svg>
                                         <rect fill="none" height="100%" width="100%" x="0" y="0"></rect>
                                     </svg>
                                     Conheça Meus Projetos
-                                </Link>
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -272,34 +285,19 @@ class ProjetosSection extends React.Component {
                                 <div id='carousel_container'>
                                     <ul className="slide" id='carousel_ul'>
                                         <li className="carousel__item">
-                                            <img
-                                                className="carousel__image"
-                                                src={nilsan1}
-                                                alt="Slide 1"/>
+                                            <img className="carousel__image" src={nilsan1} alt="Slide 1"/>
                                         </li>
                                         <li className="carousel__item">
-                                            <img
-                                                className="carousel__image"
-                                                src={igapira1}
-                                                alt="Slide 1"/>
+                                            <img className="carousel__image" src={igapira1} alt="Slide 1"/>
                                         </li>
                                         <li className="carousel__item">
-                                            <img
-                                                className="carousel__image"
-                                                src={igapira2}
-                                                alt="Slide 1"/>
+                                            <img className="carousel__image" src={igapira2} alt="Slide 1"/>
                                         </li>
                                         <li className="carousel__item">
-                                            <img
-                                                className="carousel__image"
-                                                src={nilsan1}
-                                                alt="Slide 1"/>
+                                            <img className="carousel__image" src={nilsan1} alt="Slide 1"/>
                                         </li>
                                         <li className="carousel__item">
-                                            <img
-                                                className="carousel__image"
-                                                src={igapira2}
-                                                alt="Slide 1"/>
+                                            <img className="carousel__image" src={igapira2} alt="Slide 1"/>
                                         </li>
                                     </ul>
                                 </div>
@@ -448,12 +446,11 @@ class ContatoSection extends React.Component {
                     </h1>
                     <span className="division"></span>
                     <h2 className="contato__title--sub">
-                        Deseja entrar em contato comigo?
+                        Deseja entrar em contato?
                     </h2>
                 </header>
                 <div className="container">
-                    <div id="contatos" className="o-col-md-12 o-col-xs-4">
-                        <h2 className="contato__title--info">Entre em contato</h2>
+                    <div id="contatos" className="o-col-md-12 o-col-xs-12 align_h_center">
                         <div className="contato__text">
                             Email:&nbsp;
                             <a className="link first after" href="mailto:dev@otaviosanchez.com">dev@otaviosanchez.com</a>
@@ -466,9 +463,6 @@ class ContatoSection extends React.Component {
                             <a className="link first after" href="tel:11945336910">(11) 94533-6910</a>
                         </div>
                     </div>
-                    <div className="o-col-md-12 o-col-xs-8">
-                        <FormContato/>
-                    </div>
                 </div>
             </section>
         );
@@ -478,10 +472,7 @@ class ContatoSection extends React.Component {
 class FormContato extends React.Component {
     render() {
         return (
-            <form
-                className="form"
-                action="mailto:dev@otaviosanchez.com"
-                method="post">
+            <form className="form" action="mailto:dev@otaviosanchez.com" method="post">
                 <div className="o-col-md-12 o-col-xs-6">
                     <input
                         type="text"

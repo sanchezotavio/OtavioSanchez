@@ -765,6 +765,7 @@ a.after:hover:after {
   background-color: transparent;
   width: 100%;
   text-align: center;
+  cursor: pointer;
 
   &--menu {
     width: 35px;
@@ -1082,6 +1083,7 @@ a.after:hover:after {
   text-justify: center;
   width: 100%;
   padding-top: 5%;
+  padding-bottom: 5%;
   @extend .display-flex;
   @include flex-flow(row wrap);
 
@@ -1313,6 +1315,8 @@ a.after:hover:after {
   z-index: 2;
   background-color: $color-three;
   padding-bottom: 30px;
+  padding-top: 5%;
+  padding-bottom: 5%;
 
   &__header {
     padding-top: 20px;

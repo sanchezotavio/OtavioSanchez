@@ -847,7 +847,8 @@ a.after:hover:after {
   background-repeat: no-repeat;
   background-color: transparent;
   width: 100%;
-  text-align: center; }
+  text-align: center;
+  cursor: pointer; }
   .button--menu {
     width: 35px;
     height: 35px;
@@ -1093,6 +1094,7 @@ a.after:hover:after {
   text-justify: center;
   width: 100%;
   padding-top: 5%;
+  padding-bottom: 5%;
   -webkit-flex-flow: row wrap;
   -moz-flex-flow: row wrap;
   -ms-flex-flow: row wrap;
@@ -1261,7 +1263,9 @@ a.after:hover:after {
   position: relative;
   z-index: 2;
   background-color: #1f2229;
-  padding-bottom: 30px; }
+  padding-bottom: 30px;
+  padding-top: 5%;
+  padding-bottom: 5%; }
   .contato__header {
     padding-top: 20px;
     padding-bottom: 20px;
